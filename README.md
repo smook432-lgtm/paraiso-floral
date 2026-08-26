@@ -11,7 +11,7 @@ Sitio estático listo para publicar en Netlify. Incluye:
 Copia tus fotos dentro de la carpeta `images/` con estos nombres (o cambia los nombres en `js/products.js`):
 
 ```
-images/logo.png
+images/logo.jpg   (ya está agregado ✔)
 images/producto-01.jpg
 images/producto-02.jpg
 ...
