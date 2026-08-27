@@ -5,14 +5,6 @@
 
 const PRODUCTS = [
   {
-    codigo: "PF-01",
-    nombre: "Ramo Clásico de Rosas Rojas",
-    categoria: ["rosas"],
-    descripcion: "Ramo de rosas rojas frescas, ideal para expresar amor y cariño en cualquier ocasión.",
-    precio: 85000,
-    img: "images/producto-01.jpg"
-  },
-  {
     codigo: "PF-02",
     nombre: "Girasoles Radiantes",
     categoria: ["girasoles", "bouquets"],
@@ -69,14 +61,6 @@ const PRODUCTS = [
     img: "images/producto-08.jpg"
   },
   {
-    codigo: "PF-09",
-    nombre: "Arreglo Premium Paraíso",
-    categoria: ["premium", "rosas"],
-    descripcion: "Arreglo exclusivo con rosas y flores importadas, para ocasiones muy especiales.",
-    precio: 220000,
-    img: "images/producto-09.jpg"
-  },
-  {
     codigo: "PF-10",
     nombre: "Caja de Girasoles",
     categoria: ["cajas", "girasoles"],
@@ -91,14 +75,6 @@ const PRODUCTS = [
     descripcion: "Canasta festiva con rosas rosadas, pompones verdes y fruta fresca, rematada con un globo metalizado. Perfecta para celebrar a alguien especial.",
     precio: 135000,
     img: "images/canasta-cumpleanos.jpg"
-  },
-  {
-    codigo: "PF-12",
-    nombre: "Mini Ramo Económico",
-    categoria: ["rosas", "bouquets"],
-    descripcion: "Pequeño ramo de rosas, ideal para un detalle sencillo y significativo.",
-    precio: 55000,
-    img: "images/producto-12.jpg"
   },
   {
     codigo: "PF-13",
