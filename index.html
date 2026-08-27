@@ -4,108 +4,370 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Floristería Paraíso Floral | Floristería en Santa Rosa de Cabal</title>
-<meta name="description" content="Floristería Paraíso Floral, tu floristería en Santa Rosa de Cabal. Flores frescas, ramos, arreglos y detalles a domicilio. Pide fácil por WhatsApp.">
-<meta name="keywords" content="floristeria en santa rosa de cabal, floristeria santa rosa de cabal, flores a domicilio santa rosa de cabal, floristeria paraiso floral">
+<meta name="description" content="Floristería Paraíso Floral: floristería en Santa Rosa de Cabal. Ramos, arreglos florales y detalles con flores frescas y entrega a domicilio. Pide por WhatsApp.">
+<meta name="keywords" content="floristeria en santa rosa de cabal, floristeria santa rosa de cabal, flores a domicilio santa rosa de cabal, ramos santa rosa de cabal, paraiso floral">
+<meta name="theme-color" content="#5A1A1C">
 <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Floristería Paraíso Floral | Santa Rosa de Cabal">
+<meta property="og:description" content="Ramos y arreglos florales con flores frescas y entrega a domicilio en Santa Rosa de Cabal.">
+<meta property="og:image" content="images/logo.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-inner">
-    <div class="logo">
-      <img src="images/logo.jpg" alt="Floristería Paraíso Floral - Floristería en Santa Rosa de Cabal" onerror="this.style.display='none'">
-      <h1 class="header-title">Paraíso Floral</h1>
-    </div>
-    <a class="header-whatsapp" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">
-      <span class="ico">📱</span> WhatsApp
+<!-- ══ Barra superior ══ -->
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <span class="topbar-item">✦ Flores frescas todos los días</span>
+    <span class="topbar-sep">·</span>
+    <span class="topbar-item">Entrega a domicilio en Santa Rosa de Cabal</span>
+    <span class="topbar-sep">·</span>
+    <span class="topbar-item">Dedicatoria de regalo</span>
+  </div>
+</div>
+
+<!-- ══ Encabezado ══ -->
+<header class="header" id="header">
+  <div class="wrap header-inner">
+    <a href="#inicio" class="brand">
+      <img class="brand-logo" src="images/logo.jpg" alt="Floristería Paraíso Floral">
+      <span class="brand-text">
+        <span class="brand-name">Paraíso Floral</span>
+        <span class="brand-sub">Floristería · Santa Rosa de Cabal</span>
+      </span>
     </a>
+
+    <nav class="nav" id="nav">
+      <a href="#ocasiones">Ocasiones</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#personalizado">A tu medida</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+
+    <a class="btn btn-wa btn-sm header-cta" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">
+      Pedir por WhatsApp
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <h2>Tu Floristería en Santa Rosa de Cabal</h2>
-    <p>Flores frescas, ramos y detalles con entrega a domicilio. Pedidos fáciles y rápidos por WhatsApp.</p>
-    <a class="btn-whatsapp" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">
-      <span class="ico">📱</span> Contactar por WhatsApp
+<!-- ══ Portada ══ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow reveal">Floristería en Santa Rosa de Cabal</span>
+    <h1 class="hero-title reveal">Flores que dicen<br><em>lo que sientes</em></h1>
+    <p class="hero-text reveal">Ramos y arreglos elaborados a mano con flores frescas, listos para entregar a domicilio el mismo día.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-wa" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">
+        Pedir por WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#catalogo">Ver el catálogo</a>
+    </div>
+  </div>
+  <a href="#confianza" class="hero-scroll" aria-label="Bajar">↓</a>
+</section>
+
+<!-- ══ Franja de confianza ══ -->
+<section class="trust" id="confianza">
+  <div class="wrap trust-grid">
+    <div class="trust-item reveal">
+      <span class="trust-ico">✿</span>
+      <h3>Flores frescas</h3>
+      <p>Selección diaria para que tu ramo llegue en su mejor momento.</p>
+    </div>
+    <div class="trust-item reveal">
+      <span class="trust-ico">✦</span>
+      <h3>Entrega a domicilio</h3>
+      <p>Llevamos tu detalle en Santa Rosa de Cabal y alrededores.</p>
+    </div>
+    <div class="trust-item reveal">
+      <span class="trust-ico">✎</span>
+      <h3>Tarjeta dedicada</h3>
+      <p>Escribimos a mano tu mensaje sin costo adicional.</p>
+    </div>
+    <div class="trust-item reveal">
+      <span class="trust-ico">✆</span>
+      <h3>Pedido en minutos</h3>
+      <p>Todo se coordina por WhatsApp, sin registros ni formularios.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Ocasiones ══ -->
+<section class="section occasions" id="ocasiones">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Empecemos por aquí</span>
+      <h2>¿Cuál es la ocasión?</h2>
+      <p class="section-sub">Toca una opción y te mostramos los arreglos que mejor le van.</p>
+    </div>
+
+    <div class="occ-grid" id="occGrid">
+      <button class="occ" data-occ="rosas">
+        <span class="occ-ico">❤</span>
+        <span class="occ-name">Amor y aniversario</span>
+        <span class="occ-go">Ver ramos →</span>
+      </button>
+      <button class="occ" data-occ="girasoles">
+        <span class="occ-ico">☀</span>
+        <span class="occ-name">Cumpleaños</span>
+        <span class="occ-go">Ver ramos →</span>
+      </button>
+      <button class="occ" data-occ="chocolates">
+        <span class="occ-ico">✧</span>
+        <span class="occ-name">Perdón y gratitud</span>
+        <span class="occ-go">Ver detalles →</span>
+      </button>
+      <button class="occ" data-occ="novia">
+        <span class="occ-ico">◈</span>
+        <span class="occ-name">Bodas y novia</span>
+        <span class="occ-go">Ver ramos →</span>
+      </button>
+      <button class="occ" data-occ="funebres">
+        <span class="occ-ico">✤</span>
+        <span class="occ-name">Condolencias</span>
+        <span class="occ-go">Ver arreglos →</span>
+      </button>
+      <button class="occ" data-occ="premium">
+        <span class="occ-ico">✦</span>
+        <span class="occ-name">Algo especial</span>
+        <span class="occ-go">Ver premium →</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Catálogo ══ -->
+<section class="section catalog" id="catalogo">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Nuestro catálogo</span>
+      <h2>Ramos y arreglos</h2>
+      <p class="section-sub">Cada pieza se arma a mano el día de la entrega.</p>
+    </div>
+
+    <div class="tools reveal">
+      <div class="search">
+        <span class="search-ico">⌕</span>
+        <input type="text" id="searchInput" placeholder="Buscar rosas, girasoles, canastas…" autocomplete="off">
+        <button id="clearSearch" aria-label="Limpiar búsqueda" hidden>×</button>
+      </div>
+
+      <div class="chips" id="filterButtons">
+        <button class="chip is-active" data-filter="todos">Todos</button>
+        <button class="chip" data-filter="rosas">Rosas</button>
+        <button class="chip" data-filter="girasoles">Ramos en Girasoles</button>
+        <button class="chip" data-filter="bouquets">Ramos Buchones</button>
+        <button class="chip" data-filter="ramos-redondos">Ramos Redondos</button>
+        <button class="chip" data-filter="canastas">Canastas</button>
+        <button class="chip" data-filter="cajas">Cajas</button>
+        <button class="chip" data-filter="chocolates">Con Chocolates</button>
+        <button class="chip" data-filter="novia">Novia</button>
+        <button class="chip" data-filter="funebres">Ramos Fúnebres</button>
+        <button class="chip" data-filter="premium">Premium</button>
+      </div>
+
+      <div class="tools-foot">
+        <span class="count" id="resultsCount"></span>
+        <label class="sort">
+          Ordenar
+          <select id="sortSelect">
+            <option value="destacados">Destacados</option>
+            <option value="precio-asc">Menor precio</option>
+            <option value="precio-desc">Mayor precio</option>
+            <option value="nombre">Nombre A–Z</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="grid" id="productsGrid"></div>
+  </div>
+</section>
+
+<!-- ══ Pedido personalizado ══ -->
+<section class="custom" id="personalizado">
+  <div class="wrap custom-inner reveal">
+    <span class="eyebrow">Diseño a tu medida</span>
+    <h2>¿No encuentras justo lo que imaginas?</h2>
+    <p>Cuéntanos el color, el presupuesto y la ocasión. Diseñamos un arreglo único para ti y te enviamos una foto antes de entregarlo.</p>
+    <a class="btn btn-wa btn-lg" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20un%20arreglo%20personalizado.%20Mi%20presupuesto%20es%3A%20" target="_blank" rel="noopener">
+      Diseñar mi ramo por WhatsApp
     </a>
+    <span class="custom-note">Te respondemos en minutos durante el horario de atención.</span>
   </div>
 </section>
 
-<section class="toolbar container">
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Buscar ramos, rosas, girasoles, gerberas...">
-    <button id="clearSearch" aria-label="Limpiar búsqueda">×</button>
+<!-- ══ Cómo pedir ══ -->
+<section class="section steps">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Así de fácil</span>
+      <h2>Pedir toma menos de un minuto</h2>
+    </div>
+    <ol class="steps-grid">
+      <li class="step reveal">
+        <span class="step-num">01</span>
+        <h3>Elige tu arreglo</h3>
+        <p>Explora el catálogo y toca “Pedir” en el que más te guste.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">02</span>
+        <h3>Escríbenos</h3>
+        <p>Se abre WhatsApp con el pedido listo. Nos dices dirección y fecha.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">03</span>
+        <h3>Confirmamos</h3>
+        <p>Te enviamos la foto del arreglo terminado antes de salir.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">04</span>
+        <h3>Entregamos</h3>
+        <p>Llevamos tu detalle a domicilio en el horario acordado.</p>
+      </li>
+    </ol>
   </div>
-  <div class="filters">
-    <span class="filters-label">Filtrar:</span>
-    <div class="filter-buttons" id="filterButtons">
-      <button class="filter-btn active" data-filter="todos">Todos</button>
-      <button class="filter-btn" data-filter="rosas">Rosas</button>
-      <button class="filter-btn" data-filter="girasoles">Ramos en Girasoles</button>
-      <button class="filter-btn" data-filter="bouquets">Ramos Buchones</button>
-      <button class="filter-btn" data-filter="ramos-redondos">Ramos Redondos</button>
-      <button class="filter-btn" data-filter="canastas">Canastas</button>
-      <button class="filter-btn" data-filter="cajas">Cajas</button>
-      <button class="filter-btn" data-filter="chocolates">Con Chocolates</button>
-      <button class="filter-btn" data-filter="novia">Novia</button>
-      <button class="filter-btn" data-filter="funebres">Ramos Fúnebres</button>
-      <button class="filter-btn" data-filter="premium">Premium</button>
+</section>
+
+<!-- ══ Preguntas frecuentes ══ -->
+<section class="section faq" id="preguntas">
+  <div class="wrap faq-wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Preguntas frecuentes</span>
+      <h2>Resolvemos tus dudas</h2>
+    </div>
+
+    <div class="acc" id="acc">
+      <details class="acc-item reveal">
+        <summary>¿Hacen entregas a domicilio?</summary>
+        <div class="acc-body"><p>Sí. Realizamos entregas en Santa Rosa de Cabal y zonas cercanas. Escríbenos por WhatsApp con la dirección y te confirmamos disponibilidad y costo del domicilio.</p></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary>¿Puedo pedir para el mismo día?</summary>
+        <div class="acc-body"><p>En la mayoría de los casos sí, siempre que nos escribas con anticipación dentro del horario de atención. Para fechas especiales te recomendamos reservar con un día de anticipación.</p></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary>¿Cómo puedo pagar?</summary>
+        <div class="acc-body"><p>Coordinamos el medio de pago directamente por WhatsApp al confirmar tu pedido.</p></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary>¿Puedo incluir una tarjeta con dedicatoria?</summary>
+        <div class="acc-body"><p>Claro. Incluimos tarjeta con tu mensaje escrito a mano sin costo adicional. Solo envíanos el texto por WhatsApp.</p></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary>¿Puedo pedir un arreglo distinto a los del catálogo?</summary>
+        <div class="acc-body"><p>Sí. Diseñamos arreglos personalizados según tu presupuesto, colores y ocasión. Escríbenos y lo armamos contigo.</p></div>
+      </details>
     </div>
   </div>
 </section>
 
-<p class="results-count container" id="resultsCount">Mostrando productos</p>
-
-<main class="products container" id="productsGrid">
-  <!-- Las tarjetas de producto se generan con js/script.js a partir de products en js/products.js -->
-</main>
-
-<section class="about container">
-  <div class="about-grid">
-    <div class="about-text">
-      <h3>Sobre Paraíso Floral</h3>
-      <p>Somos una floristería en Santa Rosa de Cabal dedicada a crear arreglos florales frescos para cada ocasión: cumpleaños, aniversarios, condolencias, San Valentín y más. Trabajamos con flores frescas y entrega a domicilio en Santa Rosa de Cabal y alrededores.</p>
-      <ul class="about-list">
-        <li>🌸 Flores frescas todos los días</li>
-        <li>🚚 Entrega a domicilio</li>
-        <li>💬 Pedidos por WhatsApp</li>
-        <li>🎁 Detalles personalizados</li>
-      </ul>
+<!-- ══ Sobre nosotros ══ -->
+<section class="about">
+  <div class="wrap about-inner reveal">
+    <div class="about-mark"><img src="images/logo.jpg" alt="Paraíso Floral"></div>
+    <div class="about-copy">
+      <span class="eyebrow dark">Paraíso Floral</span>
+      <h2>Tu floristería en Santa Rosa de Cabal</h2>
+      <p>Creamos arreglos florales frescos para cada momento importante: cumpleaños, aniversarios, nacimientos, condolencias y celebraciones. Cada ramo se elabora a mano, cuidando la selección de flores, el color y la presentación.</p>
+      <p>Escríbenos y con gusto te ayudamos a elegir el detalle perfecto.</p>
+      <a class="link-arrow" href="https://wa.me/573146872446?text=Hola%2C%20quisiera%20asesor%C3%ADa%20para%20elegir%20un%20detalle" target="_blank" rel="noopener">Pedir asesoría por WhatsApp →</a>
     </div>
   </div>
 </section>
 
+<!-- ══ Pie ══ -->
 <footer class="footer">
-  <div class="container footer-inner">
+  <div class="wrap footer-grid">
     <div class="footer-col">
-      <h4>Paraíso Floral</h4>
-      <p>Floristería en Santa Rosa de Cabal. Flores frescas y detalles a domicilio.</p>
+      <h4 class="footer-brand">Paraíso Floral</h4>
+      <p>Floristería en Santa Rosa de Cabal. Flores frescas, ramos y detalles a domicilio.</p>
     </div>
     <div class="footer-col">
       <h4>Contacto</h4>
-      <p>📱 WhatsApp: <a href="https://wa.me/573146872446" target="_blank" rel="noopener">314 687 2446</a></p>
-      <p>📍 Santa Rosa de Cabal, Risaralda</p>
+      <p><a href="https://wa.me/573146872446" target="_blank" rel="noopener">WhatsApp 314 687 2446</a></p>
+      <p>Santa Rosa de Cabal, Risaralda</p>
     </div>
     <div class="footer-col">
-      <h4>Horario</h4>
-      <p>Lunes a Domingo</p>
-      <p>Escríbenos por WhatsApp para confirmar disponibilidad</p>
+      <h4>Catálogo</h4>
+      <p><a href="#catalogo">Ramos y arreglos</a></p>
+      <p><a href="#ocasiones">Por ocasión</a></p>
+      <p><a href="#personalizado">Diseño a tu medida</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Atención</h4>
+      <p>Lunes a domingo</p>
+      <p>Confirma disponibilidad por WhatsApp</p>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> Floristería Paraíso Floral. Todos los derechos reservados.</p>
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Floristería Paraíso Floral · Santa Rosa de Cabal</p>
+    </div>
   </div>
 </footer>
 
-<a class="floating-whatsapp" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-  📱
+<!-- ══ Vista rápida de producto ══ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <div class="modal-media" id="modalMedia"></div>
+    <div class="modal-info">
+      <span class="modal-code" id="modalCode"></span>
+      <h3 id="modalTitle"></h3>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-price" id="modalPrice"></div>
+      <ul class="modal-includes">
+        <li>Flores frescas seleccionadas el día de la entrega</li>
+        <li>Tarjeta con dedicatoria escrita a mano</li>
+        <li>Entrega a domicilio coordinada por WhatsApp</li>
+      </ul>
+      <a class="btn btn-wa btn-block" id="modalWa" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      <a class="btn btn-outline btn-block" id="modalCustom" href="#" target="_blank" rel="noopener">Quiero una variación de este</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ Botón flotante ══ -->
+<a class="fab" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.34-.5.05-.96.23-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.76 0-1.31.69-1.96.93-2.22.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.22.53.76 1.83.83 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.24.09 1.54.73 1.8.86.27.13.44.2.51.31.07.11.07.65-.17 1.33z"/></svg>
 </a>
+
+<!-- ══ Barra fija móvil ══ -->
+<div class="mobile-bar">
+  <a class="mobile-bar-ghost" href="#catalogo">Ver catálogo</a>
+  <a class="mobile-bar-wa" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "Floristería Paraíso Floral",
+  "description": "Floristería en Santa Rosa de Cabal. Ramos y arreglos florales con flores frescas y entrega a domicilio.",
+  "image": "images/logo.jpg",
+  "telephone": "+573146872446",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Santa Rosa de Cabal",
+    "addressRegion": "Risaralda",
+    "addressCountry": "CO"
+  },
+  "areaServed": "Santa Rosa de Cabal"
+}
+</script>
 
 <script src="js/products.js"></script>
 <script src="js/script.js"></script>
