@@ -99,5 +99,21 @@ const PRODUCTS = [
     descripcion: "Pequeño ramo de rosas, ideal para un detalle sencillo y significativo.",
     precio: 55000,
     img: "images/producto-12.jpg"
+  },
+  {
+    codigo: "PF-13",
+    nombre: "Ramo Redondo Clásico",
+    categoria: ["ramos-redondos", "rosas"],
+    descripcion: "Ramo compacto en forma circular con rosas y follaje, armado a mano en presentación tradicional.",
+    precio: 90000,
+    img: "images/producto-13.jpg"
+  },
+  {
+    codigo: "PF-14",
+    nombre: "Esfera Multicolor",
+    categoria: ["ramos-redondos", "bouquets"],
+    descripcion: "Ramo redondo con flores de varios colores dispuestas en capas, ideal como regalo llamativo.",
+    precio: 105000,
+    img: "images/producto-14.jpg"
   }
 ];
