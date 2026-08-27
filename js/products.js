@@ -31,10 +31,10 @@ const PRODUCTS = [
   {
     codigo: "PF-04",
     nombre: "Canasta Frutal y Floral",
-    categoria: ["canastas"],
-    descripcion: "Canasta decorada con flores frescas y fruta seleccionada, ideal para regalar.",
+    categoria: ["canastas", "chocolates", "rosas"],
+    descripcion: "Rosas rojas y rosadas con gypsophila sobre una base de fruta fresca seleccionada, acompañada de chocolates finos. Un regalo abundante y elegante.",
     precio: 145000,
-    img: "images/producto-04.jpg"
+    img: "images/canasta-frutal.jpg"
   },
   {
     codigo: "PF-05",
@@ -87,10 +87,10 @@ const PRODUCTS = [
   {
     codigo: "PF-11",
     nombre: "Canasta de Cumpleaños",
-    categoria: ["canastas", "chocolates"],
-    descripcion: "Canasta festiva con flores, globo y chocolates para celebrar un cumpleaños.",
+    categoria: ["canastas", "rosas"],
+    descripcion: "Canasta festiva con rosas rosadas, pompones verdes y fruta fresca, rematada con un globo metalizado. Perfecta para celebrar a alguien especial.",
     precio: 135000,
-    img: "images/producto-11.jpg"
+    img: "images/canasta-cumpleanos.jpg"
   },
   {
     codigo: "PF-12",
@@ -104,17 +104,17 @@ const PRODUCTS = [
     codigo: "PF-13",
     nombre: "Ramo Redondo Clásico",
     categoria: ["ramos-redondos", "rosas"],
-    descripcion: "Ramo compacto en forma circular con rosas y follaje, armado a mano en presentación tradicional.",
+    descripcion: "Ramo redondo de rosas rojas con hypericum y eucalipto, envuelto en papel kraft. Una composición romántica de acabado impecable.",
     precio: 90000,
-    img: "images/producto-13.jpg"
+    img: "images/ramo-redondo-clasico.jpg"
   },
   {
     codigo: "PF-14",
-    nombre: "Esfera Multicolor",
-    categoria: ["ramos-redondos", "bouquets"],
-    descripcion: "Ramo redondo con flores de varios colores dispuestas en capas, ideal como regalo llamativo.",
+    nombre: "Ramo Redondo Imperial",
+    categoria: ["ramos-redondos", "rosas", "cajas", "premium"],
+    descripcion: "Domo abundante de rosas rojas con follaje fresco sobre caja negra y lazo dorado. Nuestra pieza más imponente para una ocasión inolvidable.",
     precio: 105000,
-    img: "images/producto-14.jpg"
+    img: "images/ramo-redondo-imperial.jpg"
   },
   {
     codigo: "PF-15",
