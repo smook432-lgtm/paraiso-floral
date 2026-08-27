@@ -115,5 +115,21 @@ const PRODUCTS = [
     descripcion: "Ramo redondo con flores de varios colores dispuestas en capas, ideal como regalo llamativo.",
     precio: 105000,
     img: "images/producto-14.jpg"
+  },
+  {
+    codigo: "PF-15",
+    nombre: "Corona Fúnebre Blanca",
+    categoria: ["funebres"],
+    descripcion: "Corona en tonos blancos y verdes, elaborada con flores frescas como muestra de condolencia y respeto.",
+    precio: 210000,
+    img: "images/producto-15.jpg"
+  },
+  {
+    codigo: "PF-16",
+    nombre: "Ramo Fúnebre Clásico",
+    categoria: ["funebres"],
+    descripcion: "Ramo funerario en tonos blancos y follaje verde, una expresión sobria y elegante de acompañamiento.",
+    precio: 150000,
+    img: "images/producto-16.jpg"
   }
 ];
