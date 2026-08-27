@@ -131,5 +131,21 @@ const PRODUCTS = [
     descripcion: "Ramo funerario en tonos blancos y follaje verde, una expresión sobria y elegante de acompañamiento.",
     precio: 150000,
     img: "images/producto-16.jpg"
+  },
+  {
+    codigo: "PF-17",
+    nombre: "Copa Encanto Rosado",
+    categoria: ["rosas", "premium"],
+    descripcion: "Rosas rosadas y blancas con gypsophila y boca de dragón, montadas en copa de cerámica blanca. Una pieza clásica y sofisticada de gran presencia.",
+    precio: 175000,
+    img: "images/copa-rosas-pastel.jpg"
+  },
+  {
+    codigo: "PF-18",
+    nombre: "Domo Rosa Dorado",
+    categoria: ["rosas", "ramos-redondos", "cajas"],
+    descripcion: "Domo abundante de rosas rosadas con gypsophila y eucalipto sobre caja blanca con lazo dorado. Delicado, femenino y siempre acertado.",
+    precio: 155000,
+    img: "images/domo-rosas-rosadas.jpg"
   }
 ];
