@@ -5,14 +5,6 @@
 
 const PRODUCTS = [
   {
-    codigo: "PF-02",
-    nombre: "Girasoles Radiantes",
-    categoria: ["girasoles", "bouquets"],
-    descripcion: "Bouquet de girasoles frescos que transmite alegría, energía y buenos deseos.",
-    precio: 78000,
-    img: "images/producto-02.jpg"
-  },
-  {
     codigo: "PF-03",
     nombre: "Bouquet Primaveral",
     categoria: ["bouquets"],
@@ -59,14 +51,6 @@ const PRODUCTS = [
     descripcion: "Bouquet vibrante de gerberas de varios colores, alegre y lleno de vida.",
     precio: 72000,
     img: "images/producto-08.jpg"
-  },
-  {
-    codigo: "PF-10",
-    nombre: "Caja de Girasoles",
-    categoria: ["cajas", "girasoles"],
-    descripcion: "Caja decorativa con girasoles frescos, un regalo brillante y diferente.",
-    precio: 98000,
-    img: "images/producto-10.jpg"
   },
   {
     codigo: "PF-11",
@@ -123,5 +107,87 @@ const PRODUCTS = [
     descripcion: "Domo abundante de rosas rosadas con gypsophila y eucalipto sobre caja blanca con lazo dorado. Delicado, femenino y siempre acertado.",
     precio: 155000,
     img: "images/domo-rosas-rosadas.jpg"
+  },
+
+  /* ── Ramos en Girasoles ── */
+  {
+    codigo: "PF-19",
+    nombre: "Sol de Verano",
+    categoria: ["girasoles", "bouquets"],
+    descripcion: "Ramo de girasoles frescos con solidago, envuelto en papel blanco de lunares dorados y lazo chocolate. Luminoso y siempre acertado.",
+    precio: 85000,
+    img: "images/girasoles-sol-verano.jpg"
+  },
+  {
+    codigo: "PF-20",
+    nombre: "Girasoles Campestres",
+    categoria: ["girasoles", "bouquets"],
+    descripcion: "Girasoles con eucalipto y follaje fresco sobre envoltura kraft con lazo marfil. Un ramo natural, cálido y de aire campestre.",
+    precio: 90000,
+    img: "images/girasoles-campestres.jpg"
+  },
+  {
+    codigo: "PF-21",
+    nombre: "Abrazo de Sol",
+    categoria: ["girasoles", "bouquets"],
+    descripcion: "Ramo abundante de girasoles con eucalipto y solidago en envoltura kraft con lazo verde. Un abrazo de energía y buenos deseos.",
+    precio: 105000,
+    img: "images/girasoles-abrazo-sol.jpg"
+  },
+  {
+    codigo: "PF-22",
+    nombre: "Trópico Dorado",
+    categoria: ["girasoles", "bouquets", "premium"],
+    descripcion: "Girasoles combinados con lirios amarillos y aves del paraíso en envoltura kraft. Una composición exótica de gran carácter.",
+    precio: 120000,
+    img: "images/girasoles-tropico-dorado.jpg"
+  },
+  {
+    codigo: "PF-23",
+    nombre: "Caja Sol Radiante",
+    categoria: ["girasoles", "cajas", "ramos-redondos"],
+    descripcion: "Girasoles de gran tamaño montados en caja negra con lazo dorado. Presentación moderna y de mucho impacto visual.",
+    precio: 115000,
+    img: "images/girasoles-caja-radiante.jpg"
+  },
+  {
+    codigo: "PF-24",
+    nombre: "Cumpleaños de Sol",
+    categoria: ["girasoles", "cajas"],
+    descripcion: "Caja negra con girasoles y rosas amarillas, coronada por un globo burbuja personalizado con tu mensaje. Ideal para una celebración inolvidable.",
+    precio: 150000,
+    img: "images/girasoles-cumpleanos.jpg"
+  },
+  {
+    codigo: "PF-25",
+    nombre: "Corazón Sol y Chocolate",
+    categoria: ["girasoles", "cajas", "chocolates"],
+    descripcion: "Caja en forma de corazón con girasoles y chocolates Ferrero Rocher, rematada con lazo dorado. Un detalle dulce y luminoso.",
+    precio: 135000,
+    img: "images/girasoles-corazon-chocolate.jpg"
+  },
+  {
+    codigo: "PF-26",
+    nombre: "Sinfonía de Girasoles",
+    categoria: ["girasoles", "premium"],
+    descripcion: "Arreglo de gran formato con girasoles abiertos, solidago y follaje tropical en abanico. Una pieza imponente para ocasiones importantes.",
+    precio: 180000,
+    img: "images/girasoles-sinfonia.jpg"
+  },
+  {
+    codigo: "PF-27",
+    nombre: "Paraíso Tropical",
+    categoria: ["girasoles", "premium", "chocolates"],
+    descripcion: "Girasoles con aves del paraíso, hypericum y follaje tropical, acompañados de chocolates Ferrero Rocher. Nuestro arreglo más exuberante.",
+    precio: 195000,
+    img: "images/girasoles-paraiso-tropical.jpg"
+  },
+  {
+    codigo: "PF-28",
+    nombre: "Canasta Sol Tropical",
+    categoria: ["girasoles", "canastas", "premium"],
+    descripcion: "Canasta de dos niveles con girasoles, aves del paraíso y una selección de fruta fresca de temporada. Un regalo generoso y espectacular.",
+    precio: 220000,
+    img: "images/girasoles-canasta-tropical.jpg"
   }
 ];
