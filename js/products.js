@@ -13,14 +13,6 @@ const PRODUCTS = [
     img: "images/canasta-frutal.jpg"
   },
   {
-    codigo: "PF-05",
-    nombre: "Caja Sorpresa de Rosas",
-    categoria: ["cajas", "premium"],
-    descripcion: "Caja redonda con rosas premium compactas, presentación elegante y moderna.",
-    precio: 130000,
-    img: "images/producto-05.jpg"
-  },
-  {
     codigo: "PF-06",
     nombre: "Detalle Dulce con Chocolates",
     categoria: ["chocolates"],
@@ -215,5 +207,65 @@ const PRODUCTS = [
     descripcion: "Ramo buchón vibrante con lirios naranjas, gerberas, pompones y claveles en tonos cálidos. Alegría pura para celebrar la vida.",
     precio: 140000,
     img: "images/buchon-fiesta-tropical.jpg"
+  },
+
+  /* ── Cajas ── */
+  {
+    codigo: "PF-36",
+    nombre: "Corazón de Rosas Rojas",
+    categoria: ["cajas", "rosas", "chocolates"],
+    descripcion: "Caja en forma de corazón con rosas rojas y gypsophila, acompañada de un corazón de Ferrero Rocher. El regalo romántico por excelencia.",
+    precio: 165000,
+    img: "images/caja-corazon-rojo.jpg"
+  },
+  {
+    codigo: "PF-37",
+    nombre: "Caja Quinceañera",
+    categoria: ["cajas", "rosas"],
+    descripcion: "Caja con rosas fucsia y gypsophila, lazo rosado y globo burbuja personalizado con la edad y el mensaje que elijas.",
+    precio: 175000,
+    img: "images/caja-quince-globo.jpg"
+  },
+  {
+    codigo: "PF-38",
+    nombre: "Caja Coral y Chocolate",
+    categoria: ["cajas", "rosas", "chocolates"],
+    descripcion: "Caja negra con rosas coral intercaladas con chocolates Ferrero Rocher y lazo naranja. Presentación moderna y muy vistosa.",
+    precio: 180000,
+    img: "images/caja-coral-ferrero.jpg"
+  },
+
+  /* ── Canastas ── */
+  {
+    codigo: "PF-39",
+    nombre: "Canasta Rosas y Fruta",
+    categoria: ["canastas", "rosas"],
+    descripcion: "Canasta con rosas rojas y blancas, pompones fucsia y una selección de fruta fresca. Elegante y generosa para cualquier ocasión.",
+    precio: 175000,
+    img: "images/canasta-rosas-fruta.jpg"
+  },
+  {
+    codigo: "PF-40",
+    nombre: "Canasta Coral",
+    categoria: ["canastas", "rosas"],
+    descripcion: "Canasta con rosas coral y blancas sobre follaje variado, acompañada de bananos, uvas y manzanas. Un detalle cálido y completo.",
+    precio: 165000,
+    img: "images/canasta-coral-fruta.jpg"
+  },
+  {
+    codigo: "PF-41",
+    nombre: "Canasta Tropical Grande",
+    categoria: ["canastas", "premium"],
+    descripcion: "Composición de gran formato con rosas amarillas, aves del paraíso, heliconias y una canasta abundante de fruta fresca. Impacto asegurado.",
+    precio: 320000,
+    img: "images/canasta-tropical-grande.jpg"
+  },
+  {
+    codigo: "PF-42",
+    nombre: "Canasta Exótica con Vino",
+    categoria: ["canastas", "premium"],
+    descripcion: "Arreglo exótico con anturios, lirios, girasoles y aves del paraíso, con canasta de fruta fresca y una botella de vino. Nuestro regalo más completo.",
+    precio: 350000,
+    img: "images/canasta-vino-exotica.jpg"
   }
 ];
