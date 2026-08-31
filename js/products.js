@@ -119,28 +119,12 @@ const PRODUCTS = [
     img: "images/girasoles-campestres.jpg"
   },
   {
-    codigo: "PF-21",
-    nombre: "Abrazo de Sol",
-    categoria: ["girasoles", "bouquets"],
-    descripcion: "Ramo abundante de girasoles con eucalipto y solidago en envoltura kraft con lazo verde. Un abrazo de energía y buenos deseos.",
-    precio: 105000,
-    img: "images/girasoles-abrazo-sol.jpg"
-  },
-  {
     codigo: "PF-22",
     nombre: "Trópico Dorado",
     categoria: ["girasoles", "bouquets", "premium"],
     descripcion: "Girasoles combinados con lirios amarillos y aves del paraíso en envoltura kraft. Una composición exótica de gran carácter.",
     precio: 120000,
     img: "images/girasoles-tropico-dorado.jpg"
-  },
-  {
-    codigo: "PF-23",
-    nombre: "Caja Sol Radiante",
-    categoria: ["girasoles", "cajas", "ramos-redondos"],
-    descripcion: "Girasoles de gran tamaño montados en caja negra con lazo dorado. Presentación moderna y de mucho impacto visual.",
-    precio: 115000,
-    img: "images/girasoles-caja-radiante.jpg"
   },
   {
     codigo: "PF-24",
@@ -157,14 +141,6 @@ const PRODUCTS = [
     descripcion: "Caja en forma de corazón con girasoles y chocolates Ferrero Rocher, rematada con lazo dorado. Un detalle dulce y luminoso.",
     precio: 135000,
     img: "images/girasoles-corazon-chocolate.jpg"
-  },
-  {
-    codigo: "PF-26",
-    nombre: "Sinfonía de Girasoles",
-    categoria: ["girasoles", "premium"],
-    descripcion: "Arreglo de gran formato con girasoles abiertos, solidago y follaje tropical en abanico. Una pieza imponente para ocasiones importantes.",
-    precio: 180000,
-    img: "images/girasoles-sinfonia.jpg"
   },
   {
     codigo: "PF-27",
