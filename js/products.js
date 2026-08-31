@@ -5,14 +5,6 @@
 
 const PRODUCTS = [
   {
-    codigo: "PF-03",
-    nombre: "Bouquet Primaveral",
-    categoria: ["bouquets"],
-    descripcion: "Mezcla de flores de temporada en tonos pastel, perfecta para sorprender.",
-    precio: 95000,
-    img: "images/producto-03.jpg"
-  },
-  {
     codigo: "PF-04",
     nombre: "Canasta Frutal y Floral",
     categoria: ["canastas", "chocolates", "rosas"],
@@ -189,5 +181,63 @@ const PRODUCTS = [
     descripcion: "Canasta de dos niveles con girasoles, aves del paraíso y una selección de fruta fresca de temporada. Un regalo generoso y espectacular.",
     precio: 220000,
     img: "images/girasoles-canasta-tropical.jpg"
+  },
+
+  /* ── Ramos Buchones ── */
+  {
+    codigo: "PF-29",
+    nombre: "Pasión Carmesí",
+    categoria: ["bouquets", "rosas"],
+    descripcion: "Ramo buchón de rosas rojas compactas envuelto en papel negro y dorado. Elegante, intenso y perfecto para declarar un amor profundo.",
+    precio: 145000,
+    img: "images/buchon-pasion-carmesi.jpg"
+  },
+  {
+    codigo: "PF-30",
+    nombre: "Jardín Pastel",
+    categoria: ["bouquets", "rosas"],
+    descripcion: "Ramo buchón de rosas en tonos durazno, crema, amarillo y rojo con eucalipto y gypsophila. Una paleta suave de acabado impecable.",
+    precio: 150000,
+    img: "images/buchon-jardin-pastel.jpg"
+  },
+  {
+    codigo: "PF-31",
+    nombre: "Coral Dulce",
+    categoria: ["bouquets", "rosas", "chocolates"],
+    descripcion: "Ramo buchón de rosas coral y bicolor con follaje fresco, envuelto en papel rosado con lazo dorado y acompañado de Ferrero Rocher.",
+    precio: 155000,
+    img: "images/buchon-coral-dulce.jpg"
+  },
+  {
+    codigo: "PF-32",
+    nombre: "Corazón de Chocolate",
+    categoria: ["bouquets", "rosas", "chocolates"],
+    descripcion: "Ramo buchón de rosas fucsia que rodean un corazón de Ferrero Rocher, sobre envoltura marmolada con lazos rosa y lila.",
+    precio: 165000,
+    img: "images/buchon-corazon-ferrero.jpg"
+  },
+  {
+    codigo: "PF-33",
+    nombre: "Rosa Encanto",
+    categoria: ["bouquets", "rosas"],
+    descripcion: "Ramo buchón con lirios rosados, rosas fucsia, hortensia y boca de dragón en envoltura rosa. Delicado, aromático y muy femenino.",
+    precio: 160000,
+    img: "images/buchon-rosa-encanto.jpg"
+  },
+  {
+    codigo: "PF-34",
+    nombre: "Detalle Especial",
+    categoria: ["bouquets", "rosas"],
+    descripcion: "Ramo buchón de lirios y rosas en tonos rosa y rojo, con topper personalizado según la ocasión o profesión de quien lo recibe.",
+    precio: 155000,
+    img: "images/buchon-detalle-especial.jpg"
+  },
+  {
+    codigo: "PF-35",
+    nombre: "Fiesta Tropical",
+    categoria: ["bouquets"],
+    descripcion: "Ramo buchón vibrante con lirios naranjas, gerberas, pompones y claveles en tonos cálidos. Alegría pura para celebrar la vida.",
+    precio: 140000,
+    img: "images/buchon-fiesta-tropical.jpg"
   }
 ];
