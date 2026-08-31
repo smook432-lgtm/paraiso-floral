@@ -68,32 +68,33 @@
 /* Modo oscuro — solo se redefinen tokens, ningún color vive únicamente aquí */
 @media (prefers-color-scheme: dark){
   :root{
-    --bg:        #141011;
-    --surface:   #1C1719;
-    --surface-2: #241D20;
-    --border:    #352C2F;
+    /* Vino-carbón cálido — nunca negro puro, para sostener la misma elegancia del modo claro */
+    --bg:        #2A2023;
+    --surface:   #352930;
+    --surface-2: #402F38;
+    --border:    #56414B;
 
-    --text:      #F3EBEC;
-    --muted:     #B4A6A9;   /* 7.4:1 sobre --bg ✓ */
+    --text:      #F5ECEE;
+    --muted:     #C9B9BC;   /* 8.4:1 sobre --bg ✓ */
 
-    --brand:      #EFC4C6;  /* el acento se aclara para leer sobre oscuro */
-    --brand-soft: #D89A9D;
+    --brand:      #F0C9CB;  /* el acento se aclara para leer sobre oscuro */
+    --brand-soft: #DDA3A6;
     --brand-deep: #0F0B0C;
-    --gold:       #C9A46A;
-    --gold-text:  #D9B87F;  /* 8.1:1 sobre --bg ✓ */
+    --gold:       #D4AD74;
+    --gold-text:  #E3C48D;  /* 9.4:1 sobre --bg ✓ */
     /* --gold-soft NO cambia: siempre va sobre fondos vino, oscuros en ambos modos */
-    --olive:      #A7C79A;  /* precios legibles sobre oscuro */
+    --olive:      #ACCB9F;  /* precios legibles sobre oscuro */
 
-    /* En oscuro el verde se aclara y la tinta se oscurece: 7.5:1 ✓ */
-    --wa:        #25D366;
-    --wa-deep:   #3BE07B;
-    --wa-ink:    #0B1F12;
+    /* En oscuro el verde se aclara y la tinta se oscurece: 9.1:1 ✓ */
+    --wa:        #2FDB70;
+    --wa-deep:   #45E683;
+    --wa-ink:    #0E2313;
 
-    --focus:     #EFC4C6;
+    --focus:     #F0C9CB;
 
-    --sh-1: 0 1px 2px rgb(0 0 0 / .30), 0 1px 3px rgb(0 0 0 / .36);
-    --sh-2: 0 4px 12px rgb(0 0 0 / .38), 0 12px 32px rgb(0 0 0 / .44);
-    --sh-3: 0 8px 24px rgb(0 0 0 / .46), 0 24px 64px rgb(0 0 0 / .56);
+    --sh-1: 0 1px 2px rgb(0 0 0 / .26), 0 1px 3px rgb(0 0 0 / .32);
+    --sh-2: 0 4px 12px rgb(0 0 0 / .32), 0 12px 32px rgb(0 0 0 / .38);
+    --sh-3: 0 8px 24px rgb(0 0 0 / .40), 0 24px 64px rgb(0 0 0 / .48);
   }
 }
 
