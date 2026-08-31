@@ -21,14 +21,37 @@
 </head>
 <body>
 
+<!-- ══ Sprite de iconos de trazo (Lucide) ══ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8"/><path d="M16.5 8a2.5 2.5 0 0 0 0-5C13 3 12 8 12 8"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></symbol>
+    <symbol id="i-cake" viewBox="0 0 24 24"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v3M12 8v3M17 8v3"/><path d="M7 4h.01M12 4h.01M17 4h.01"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M11.56 3.27a.5.5 0 0 1 .88 0l2.95 5.6a1 1 0 0 0 1.51.3l4.28-3.67a.5.5 0 0 1 .8.52l-2.84 10.25a1 1 0 0 1-.95.73H5.81a1 1 0 0 1-.96-.73L2.02 6.02a.5.5 0 0 1 .8-.52L7.1 9.17a1 1 0 0 0 1.51-.3z"/><path d="M5 21h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M12 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M9 12a3 3 0 1 0-6 0 3 3 0 0 0 6 0z"/><path d="M21 12a3 3 0 1 0-6 0 3 3 0 0 0 6 0z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.34-.5.05-.96.23-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.76 0-1.31.69-1.96.93-2.22.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.22.53.76 1.83.83 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.24.09 1.54.73 1.8.86.27.13.44.2.51.31.07.11.07.65-.17 1.33z"/></symbol>
+  </defs>
+</svg>
+
 <!-- ══ Barra superior ══ -->
 <div class="topbar">
   <div class="wrap topbar-inner">
-    <span class="topbar-item">✦ Flores frescas todos los días</span>
+    <span class="topbar-item">Flores frescas todos los días</span>
     <span class="topbar-sep">·</span>
     <span class="topbar-item">Entrega a domicilio en Santa Rosa de Cabal</span>
     <span class="topbar-sep">·</span>
-    <span class="topbar-item">Dedicatoria de regalo</span>
+    <span class="topbar-item">Tarjeta de regalo incluida</span>
   </div>
 </div>
 
@@ -36,7 +59,7 @@
 <header class="header" id="header">
   <div class="wrap header-inner">
     <a href="#inicio" class="brand">
-      <img class="brand-logo" src="images/logo.jpg" alt="Floristería Paraíso Floral">
+      <img class="brand-logo" src="images/logo.jpg" alt="Floristería Paraíso Floral" width="46" height="46">
       <span class="brand-text">
         <span class="brand-name">Paraíso Floral</span>
         <span class="brand-sub">Floristería · Santa Rosa de Cabal</span>
@@ -51,10 +74,11 @@
     </nav>
 
     <a class="btn btn-wa btn-sm header-cta" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">
+      <svg class="ico ico-brand" aria-hidden="true"><use href="#i-whatsapp"/></svg>
       Pedir por WhatsApp
     </a>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -63,40 +87,47 @@
 <!-- ══ Portada ══ -->
 <section class="hero" id="inicio">
   <div class="hero-bg"></div>
+  <div class="hero-frame"></div>
   <div class="wrap hero-inner">
     <span class="eyebrow reveal">Floristería en Santa Rosa de Cabal</span>
     <h1 class="hero-title reveal">Flores que dicen<br><em>lo que sientes</em></h1>
     <p class="hero-text reveal">Ramos y arreglos elaborados a mano con flores frescas, listos para entregar a domicilio el mismo día.</p>
     <div class="hero-actions reveal">
       <a class="btn btn-wa" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">
+        <svg class="ico ico-brand" aria-hidden="true"><use href="#i-whatsapp"/></svg>
         Pedir por WhatsApp
       </a>
-      <a class="btn btn-ghost" href="#catalogo">Ver el catálogo</a>
+      <a class="btn btn-ghost" href="#catalogo">
+        Ver el catálogo
+        <svg class="ico ico-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+      </a>
     </div>
   </div>
-  <a href="#confianza" class="hero-scroll" aria-label="Bajar">↓</a>
+  <a href="#confianza" class="hero-scroll" aria-label="Bajar al contenido">
+    <svg class="ico" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+  </a>
 </section>
 
 <!-- ══ Franja de confianza ══ -->
 <section class="trust" id="confianza">
   <div class="wrap trust-grid">
     <div class="trust-item reveal">
-      <span class="trust-ico">✿</span>
+      <span class="trust-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-sparkles"/></svg></span>
       <h3>Flores frescas</h3>
       <p>Selección diaria para que tu ramo llegue en su mejor momento.</p>
     </div>
     <div class="trust-item reveal">
-      <span class="trust-ico">✦</span>
+      <span class="trust-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-truck"/></svg></span>
       <h3>Entrega a domicilio</h3>
       <p>Llevamos tu detalle en Santa Rosa de Cabal y alrededores.</p>
     </div>
     <div class="trust-item reveal">
-      <span class="trust-ico">✎</span>
-      <h3>Tarjeta dedicada</h3>
+      <span class="trust-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-gift"/></svg></span>
+      <h3>Tarjeta incluida</h3>
       <p>Tarjetas impresas con un diseño precioso, sin costo adicional.</p>
     </div>
     <div class="trust-item reveal">
-      <span class="trust-ico">✆</span>
+      <span class="trust-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-clock"/></svg></span>
       <h3>Pedido en minutos</h3>
       <p>Todo se coordina por WhatsApp, sin registros ni formularios.</p>
     </div>
@@ -113,35 +144,35 @@
     </div>
 
     <div class="occ-grid" id="occGrid">
-      <button class="occ" data-occ="rosas">
-        <span class="occ-ico">❤</span>
+      <button class="occ reveal" data-occ="rosas">
+        <span class="occ-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-heart"/></svg></span>
         <span class="occ-name">Amor y aniversario</span>
-        <span class="occ-go">Ver ramos →</span>
+        <span class="occ-go">Ver ramos <svg class="ico ico-arrow" aria-hidden="true" style="width:14px;height:14px"><use href="#i-arrow-right"/></svg></span>
       </button>
-      <button class="occ" data-occ="girasoles">
-        <span class="occ-ico">☀</span>
+      <button class="occ reveal" data-occ="girasoles">
+        <span class="occ-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-cake"/></svg></span>
         <span class="occ-name">Cumpleaños</span>
-        <span class="occ-go">Ver ramos →</span>
+        <span class="occ-go">Ver ramos <svg class="ico ico-arrow" aria-hidden="true" style="width:14px;height:14px"><use href="#i-arrow-right"/></svg></span>
       </button>
-      <button class="occ" data-occ="chocolates">
-        <span class="occ-ico">✧</span>
+      <button class="occ reveal" data-occ="chocolates">
+        <span class="occ-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-gift"/></svg></span>
         <span class="occ-name">Perdón y gratitud</span>
-        <span class="occ-go">Ver detalles →</span>
+        <span class="occ-go">Ver detalles <svg class="ico ico-arrow" aria-hidden="true" style="width:14px;height:14px"><use href="#i-arrow-right"/></svg></span>
       </button>
-      <button class="occ" data-occ="novia">
-        <span class="occ-ico">◈</span>
+      <button class="occ reveal" data-occ="novia">
+        <span class="occ-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-gem"/></svg></span>
         <span class="occ-name">Bodas y novia</span>
-        <span class="occ-go">Ver ramos →</span>
+        <span class="occ-go">Ver ramos <svg class="ico ico-arrow" aria-hidden="true" style="width:14px;height:14px"><use href="#i-arrow-right"/></svg></span>
       </button>
-      <button class="occ" data-occ="funebres">
-        <span class="occ-ico">✤</span>
+      <button class="occ reveal" data-occ="funebres">
+        <span class="occ-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-leaf"/></svg></span>
         <span class="occ-name">Condolencias</span>
-        <span class="occ-go">Ver arreglos →</span>
+        <span class="occ-go">Ver arreglos <svg class="ico ico-arrow" aria-hidden="true" style="width:14px;height:14px"><use href="#i-arrow-right"/></svg></span>
       </button>
-      <button class="occ" data-occ="premium">
-        <span class="occ-ico">✦</span>
+      <button class="occ reveal" data-occ="premium">
+        <span class="occ-ico"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-crown"/></svg></span>
         <span class="occ-name">Algo especial</span>
-        <span class="occ-go">Ver premium →</span>
+        <span class="occ-go">Ver premium <svg class="ico ico-arrow" aria-hidden="true" style="width:14px;height:14px"><use href="#i-arrow-right"/></svg></span>
       </button>
     </div>
   </div>
@@ -158,9 +189,12 @@
 
     <div class="tools reveal">
       <div class="search">
-        <span class="search-ico">⌕</span>
+        <span class="search-ico"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg></span>
+        <label for="searchInput" class="visually-hidden" hidden>Buscar en el catálogo</label>
         <input type="text" id="searchInput" placeholder="Buscar rosas, girasoles, canastas…" autocomplete="off">
-        <button id="clearSearch" aria-label="Limpiar búsqueda" hidden>×</button>
+        <button id="clearSearch" aria-label="Limpiar búsqueda" hidden>
+          <svg class="ico" aria-hidden="true"><use href="#i-x"/></svg>
+        </button>
       </div>
 
       <div class="chips" id="filterButtons">
@@ -197,11 +231,13 @@
 
 <!-- ══ Pedido personalizado ══ -->
 <section class="custom" id="personalizado">
+  <div class="custom-frame"></div>
   <div class="wrap custom-inner reveal">
     <span class="eyebrow">Diseño a tu medida</span>
     <h2>¿No encuentras justo lo que imaginas?</h2>
     <p>Cuéntanos el color, el presupuesto y la ocasión. Diseñamos un arreglo único para ti y te enviamos una foto antes de entregarlo.</p>
     <a class="btn btn-wa btn-lg" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20un%20arreglo%20personalizado.%20Mi%20presupuesto%20es%3A%20" target="_blank" rel="noopener">
+      <svg class="ico ico-brand" aria-hidden="true"><use href="#i-whatsapp"/></svg>
       Diseñar mi ramo por WhatsApp
     </a>
     <span class="custom-note">Te respondemos en minutos durante el horario de atención.</span>
@@ -250,23 +286,23 @@
 
     <div class="acc" id="acc">
       <details class="acc-item reveal">
-        <summary>¿Hacen entregas a domicilio?</summary>
+        <summary>¿Hacen entregas a domicilio?<svg class="ico acc-ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
         <div class="acc-body"><p>Sí. Realizamos entregas en Santa Rosa de Cabal y zonas cercanas. Escríbenos por WhatsApp con la dirección y te confirmamos disponibilidad y costo del domicilio.</p></div>
       </details>
       <details class="acc-item reveal">
-        <summary>¿Puedo pedir para el mismo día?</summary>
+        <summary>¿Puedo pedir para el mismo día?<svg class="ico acc-ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
         <div class="acc-body"><p>En la mayoría de los casos sí, siempre que nos escribas con anticipación dentro del horario de atención. Para fechas especiales te recomendamos reservar con un día de anticipación.</p></div>
       </details>
       <details class="acc-item reveal">
-        <summary>¿Cómo puedo pagar?</summary>
+        <summary>¿Cómo puedo pagar?<svg class="ico acc-ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
         <div class="acc-body"><p>Coordinamos el medio de pago directamente por WhatsApp al confirmar tu pedido.</p></div>
       </details>
       <details class="acc-item reveal">
-        <summary>¿Puedo incluir una tarjeta con dedicatoria?</summary>
+        <summary>¿Puedo incluir una tarjeta con dedicatoria?<svg class="ico acc-ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
         <div class="acc-body"><p>Claro. Incluimos una tarjeta impresa con un diseño muy bonito y tu mensaje, sin costo adicional. Solo envíanos el texto por WhatsApp.</p></div>
       </details>
       <details class="acc-item reveal">
-        <summary>¿Puedo pedir un arreglo distinto a los del catálogo?</summary>
+        <summary>¿Puedo pedir un arreglo distinto a los del catálogo?<svg class="ico acc-ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
         <div class="acc-body"><p>Sí. Diseñamos arreglos personalizados según tu presupuesto, colores y ocasión. Escríbenos y lo armamos contigo.</p></div>
       </details>
     </div>
@@ -276,13 +312,18 @@
 <!-- ══ Sobre nosotros ══ -->
 <section class="about">
   <div class="wrap about-inner reveal">
-    <div class="about-mark"><img src="images/logo.jpg" alt="Paraíso Floral"></div>
+    <div class="about-mark">
+      <img src="images/logo.jpg" alt="Paraíso Floral" width="172" height="172">
+    </div>
     <div class="about-copy">
       <span class="eyebrow dark">Paraíso Floral</span>
       <h2>Tu floristería en Santa Rosa de Cabal</h2>
       <p>Creamos arreglos florales frescos para cada momento importante: cumpleaños, aniversarios, nacimientos, condolencias y celebraciones. Cada ramo se elabora a mano, cuidando la selección de flores, el color y la presentación.</p>
       <p>Escríbenos y con gusto te ayudamos a elegir el detalle perfecto.</p>
-      <a class="link-arrow" href="https://wa.me/573146872446?text=Hola%2C%20quisiera%20asesor%C3%ADa%20para%20elegir%20un%20detalle" target="_blank" rel="noopener">Pedir asesoría por WhatsApp →</a>
+      <a class="link-arrow" href="https://wa.me/573146872446?text=Hola%2C%20quisiera%20asesor%C3%ADa%20para%20elegir%20un%20detalle" target="_blank" rel="noopener">
+        Pedir asesoría por WhatsApp
+        <svg class="ico ico-arrow" aria-hidden="true" style="width:16px;height:16px"><use href="#i-arrow-right"/></svg>
+      </a>
     </div>
   </div>
 </section>
@@ -322,7 +363,9 @@
 <div class="modal" id="modal" hidden>
   <div class="modal-backdrop" data-close></div>
   <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <button class="modal-close" data-close aria-label="Cerrar">
+      <svg class="ico ico-lg" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
     <div class="modal-media" id="modalMedia"></div>
     <div class="modal-info">
       <span class="modal-code" id="modalCode"></span>
@@ -330,25 +373,33 @@
       <p class="modal-desc" id="modalDesc"></p>
       <div class="modal-price" id="modalPrice"></div>
       <ul class="modal-includes">
-        <li>Flores frescas seleccionadas el día de la entrega</li>
-        <li>Tarjeta impresa con diseño especial y tu dedicatoria</li>
-        <li>Entrega a domicilio coordinada por WhatsApp</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Flores frescas seleccionadas el día de la entrega</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Tarjeta impresa con diseño especial y tu dedicatoria</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Entrega a domicilio coordinada por WhatsApp</li>
       </ul>
-      <a class="btn btn-wa btn-block" id="modalWa" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
-      <a class="btn btn-outline btn-block" id="modalCustom" href="#" target="_blank" rel="noopener">Quiero una variación de este</a>
+      <a class="btn btn-wa btn-block" id="modalWa" href="#" target="_blank" rel="noopener">
+        <svg class="ico ico-brand" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        Pedir por WhatsApp
+      </a>
+      <a class="btn btn-outline btn-block" id="modalCustom" href="#" target="_blank" rel="noopener">
+        Quiero una variación de este
+      </a>
     </div>
   </div>
 </div>
 
 <!-- ══ Botón flotante ══ -->
 <a class="fab" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.34-.5.05-.96.23-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.76 0-1.31.69-1.96.93-2.22.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.22.53.76 1.83.83 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.24.09 1.54.73 1.8.86.27.13.44.2.51.31.07.11.07.65-.17 1.33z"/></svg>
+  <svg class="ico ico-brand" style="width:26px;height:26px" aria-hidden="true"><use href="#i-whatsapp"/></svg>
 </a>
 
 <!-- ══ Barra fija móvil ══ -->
 <div class="mobile-bar">
   <a class="mobile-bar-ghost" href="#catalogo">Ver catálogo</a>
-  <a class="mobile-bar-wa" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  <a class="mobile-bar-wa" href="https://wa.me/573146872446?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20flores" target="_blank" rel="noopener">
+    <svg class="ico ico-brand" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    Pedir por WhatsApp
+  </a>
 </div>
 
 <script type="application/ld+json">
