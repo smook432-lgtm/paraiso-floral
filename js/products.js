@@ -13,30 +13,6 @@ const PRODUCTS = [
     img: "images/canasta-frutal.jpg"
   },
   {
-    codigo: "PF-06",
-    nombre: "Detalle Dulce con Chocolates",
-    categoria: ["chocolates"],
-    descripcion: "Ramo pequeño acompañado de chocolates finos, perfecto para una disculpa o agradecimiento.",
-    precio: 110000,
-    img: "images/producto-06.jpg"
-  },
-  {
-    codigo: "PF-07",
-    nombre: "Ramo de Novia Elegante",
-    categoria: ["novia", "premium"],
-    descripcion: "Ramo de novia en tonos blancos y verdes, diseño delicado y sofisticado.",
-    precio: 180000,
-    img: "images/producto-07.jpg"
-  },
-  {
-    codigo: "PF-08",
-    nombre: "Gerberas Multicolor",
-    categoria: ["bouquets"],
-    descripcion: "Bouquet vibrante de gerberas de varios colores, alegre y lleno de vida.",
-    precio: 72000,
-    img: "images/producto-08.jpg"
-  },
-  {
     codigo: "PF-11",
     nombre: "Canasta de Cumpleaños",
     categoria: ["canastas", "rosas"],
@@ -59,22 +35,6 @@ const PRODUCTS = [
     descripcion: "Domo abundante de rosas rojas con follaje fresco sobre caja negra y lazo dorado. Nuestra pieza más imponente para una ocasión inolvidable.",
     precio: 105000,
     img: "images/ramo-redondo-imperial.jpg"
-  },
-  {
-    codigo: "PF-15",
-    nombre: "Corona Fúnebre Blanca",
-    categoria: ["funebres"],
-    descripcion: "Corona en tonos blancos y verdes, elaborada con flores frescas como muestra de condolencia y respeto.",
-    precio: 210000,
-    img: "images/producto-15.jpg"
-  },
-  {
-    codigo: "PF-16",
-    nombre: "Ramo Fúnebre Clásico",
-    categoria: ["funebres"],
-    descripcion: "Ramo funerario en tonos blancos y follaje verde, una expresión sobria y elegante de acompañamiento.",
-    precio: 150000,
-    img: "images/producto-16.jpg"
   },
   {
     codigo: "PF-17",
@@ -267,5 +227,147 @@ const PRODUCTS = [
     descripcion: "Arreglo exótico con anturios, lirios, girasoles y aves del paraíso, con canasta de fruta fresca y una botella de vino. Nuestro regalo más completo.",
     precio: 350000,
     img: "images/canasta-vino-exotica.jpg"
+  },
+
+  /* ── Con Chocolates ── */
+  {
+    codigo: "PF-43",
+    nombre: "Corazón Rojo y Ferrero",
+    categoria: ["chocolates", "cajas", "rosas"],
+    descripcion: "Caja en forma de corazón con rosas rojas y un corazón de Ferrero Rocher, lazo rojo satinado. Un clásico romántico infalible.",
+    precio: 160000,
+    img: "images/choco-corazon-rosas-rojas.jpg"
+  },
+  {
+    codigo: "PF-44",
+    nombre: "Caja Madera Feliz Día",
+    categoria: ["chocolates", "cajas", "rosas"],
+    descripcion: "Caja de madera calada con mensaje \"Feliz Día\", rosas rojas y gypsophila arriba y un cajón de Ferrero Rocher en la base.",
+    precio: 150000,
+    img: "images/choco-caja-madera-feliz-dia.jpg"
+  },
+  {
+    codigo: "PF-45",
+    nombre: "Corazón de Girasoles y Ferrero",
+    categoria: ["chocolates", "cajas", "girasoles"],
+    descripcion: "Caja corazón en girasoles frescos y Ferrero Rocher, lazo dorado. Un detalle luminoso y dulce a la vez.",
+    precio: 145000,
+    img: "images/choco-corazon-girasoles.jpg"
+  },
+  {
+    codigo: "PF-46",
+    nombre: "Caja Azul con Ferrero",
+    categoria: ["chocolates", "cajas", "rosas"],
+    descripcion: "Caja blanca con rosas en un llamativo tono azul y Ferrero Rocher al centro, lazo azul rey. Una propuesta fuera de lo común.",
+    precio: 150000,
+    img: "images/choco-caja-azul-ferrero.jpg"
+  },
+  {
+    codigo: "PF-47",
+    nombre: "Ramo Romántico con Ferrero",
+    categoria: ["chocolates", "bouquets", "rosas", "premium"],
+    descripcion: "Ramo abundante de rosas rojas y orquídeas con un corazón de Ferrero Rocher y globo con mensaje personalizado. Ideal para aniversarios.",
+    precio: 190000,
+    img: "images/choco-ramo-rosas-globo.jpg"
+  },
+
+  /* ── Ramos Fúnebres ── */
+  {
+    codigo: "PF-48",
+    nombre: "Corazón Rojo y Blanco",
+    categoria: ["funebres"],
+    descripcion: "Gran corazón de rosas rojas y blancas con cinta de dedicatoria. Una expresión profunda de amor y despedida.",
+    precio: 280000,
+    img: "images/funebre-corazon-rojo-blanco.jpg"
+  },
+  {
+    codigo: "PF-49",
+    nombre: "Corazón Blanco y Crema",
+    categoria: ["funebres"],
+    descripcion: "Corazón elaborado con rosas blancas y crema, gypsophila y margaritas. Sobrio, elegante y lleno de paz.",
+    precio: 220000,
+    img: "images/funebre-corazon-blanco-crema.jpg"
+  },
+  {
+    codigo: "PF-50",
+    nombre: "Corona Girasoles y Blanco",
+    categoria: ["funebres"],
+    descripcion: "Corona ovalada de rosas blancas y girasoles con lazo blanco. Combina la solemnidad del blanco con la calidez del girasol.",
+    precio: 230000,
+    img: "images/funebre-girasoles-blanco.jpg"
+  },
+  {
+    codigo: "PF-51",
+    nombre: "Corona Blanca y Azul",
+    categoria: ["funebres"],
+    descripcion: "Corona circular de flores blancas con lirios y acentos en azul. Una composición serena y de gran presencia.",
+    precio: 210000,
+    img: "images/funebre-corona-blanca-azul.jpg"
+  },
+  {
+    codigo: "PF-52",
+    nombre: "Estandarte Lila y Blanco",
+    categoria: ["funebres"],
+    descripcion: "Arreglo alto en tonos lila, blanco y crema con aves del paraíso, ideal para acompañar una ceremonia en iglesia.",
+    precio: 240000,
+    img: "images/funebre-lila-blanco.jpg"
+  },
+
+  /* ── Premium ── */
+  {
+    codigo: "PF-53",
+    nombre: "Degradado de Rosas",
+    categoria: ["premium", "rosas"],
+    descripcion: "Arreglo en cascada con rosas en degradado de coral, rosado y durazno sobre base de madera. Elegancia en movimiento.",
+    precio: 190000,
+    img: "images/premium-rosas-degradado.jpg"
+  },
+  {
+    codigo: "PF-54",
+    nombre: "Cumpleaños con Globo y Perrito",
+    categoria: ["premium", "cajas"],
+    descripcion: "Arreglo de rosas coral con un adorable perrito hecho de flores, globo numérico y burbuja de \"Feliz Cumpleaños\" personalizables con la edad.",
+    precio: 230000,
+    img: "images/premium-98-globo-perrito.jpg"
+  },
+  {
+    codigo: "PF-55",
+    nombre: "Multicolor Clásico",
+    categoria: ["premium", "rosas", "cajas"],
+    descripcion: "Caja redonda con rosas rojas, fucsia y blancas combinadas con astromelias. Vibrante, abundante y siempre acertado.",
+    precio: 200000,
+    img: "images/premium-multicolor-clasico.jpg"
+  },
+  {
+    codigo: "PF-56",
+    nombre: "Corazón Morado y Mariposas",
+    categoria: ["premium", "rosas"],
+    descripcion: "Gran corazón de rosas moradas con mariposas doradas, orquídeas y gerberas fucsia en la base. Una pieza de autor, distinta a todo lo demás.",
+    precio: 260000,
+    img: "images/premium-corazon-morado-mariposas.jpg"
+  },
+  {
+    codigo: "PF-57",
+    nombre: "Corazón Rojo y Coral",
+    categoria: ["premium", "rosas"],
+    descripcion: "Imponente corazón de rosas rojas y coral sobre pedestal. Una declaración de amor a gran escala.",
+    precio: 240000,
+    img: "images/premium-corazon-rojo-coral.jpg"
+  },
+  {
+    codigo: "PF-58",
+    nombre: "Girasoles y Rosas Multicolor",
+    categoria: ["premium", "girasoles", "cajas"],
+    descripcion: "Caja negra con girasoles, rosas fucsia, naranja y amarillas en una explosión de color. Alegre, generoso y muy fotogénico.",
+    precio: 200000,
+    img: "images/premium-girasoles-rosas-multicolor.jpg"
+  },
+  {
+    codigo: "PF-59",
+    nombre: "Orquídeas y Ferrero",
+    categoria: ["premium", "chocolates"],
+    descripcion: "Arreglo alto de orquídeas cymbidium y aves del paraíso, acompañado de una caja de Ferrero Rocher. Sofisticado y exclusivo.",
+    precio: 250000,
+    img: "images/premium-orquideas-ferrero.jpg"
   }
 ];
