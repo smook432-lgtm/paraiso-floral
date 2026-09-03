@@ -84,7 +84,7 @@ function tarjeta(p) {
       <h3 class="card-name">${p.nombre}</h3>
       <p class="card-desc">${p.descripcion}</p>
       <div class="card-foot">
-        <span class="card-price">${precio(p.precio)}</span>
+        <span class="card-price">${precio(p.precio)}<span class="precio-nota" aria-hidden="true">*</span></span>
         <a class="card-order" href="${waPedido(p)}" target="_blank" rel="noopener">
           ${icono("i-whatsapp", "ico-brand")} Pedir
         </a>

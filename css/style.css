@@ -659,6 +659,18 @@ p{ max-width:70ch; }
   padding-top:var(--s-4); border-top:1px solid var(--border);
 }
 .card-price{ font-family:var(--serif); font-size:1.5rem; font-weight:600; color:var(--olive); }
+
+/* Aviso de que el precio depende de la temporada */
+.precio-nota{
+  font-family:var(--sans); font-size:.55em; font-weight:400;
+  color:var(--muted); vertical-align:super; margin-left:2px;
+}
+.precio-aviso{
+  font-size:var(--fs-6); line-height:1.6; color:var(--muted);
+  letter-spacing:.03em;
+}
+.precio-aviso-catalogo{ margin:var(--s-3) auto 0; text-align:center; }
+.modal-info .precio-aviso{ margin-top:calc(var(--s-4) * -1); margin-bottom:var(--s-5); }
 .card-order{
   display:inline-flex; align-items:center; gap:var(--s-2);
   min-height:44px;
