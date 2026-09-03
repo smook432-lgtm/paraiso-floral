@@ -369,6 +369,18 @@ p{ max-width:70ch; }
 }
 .hero-title{ font-size:var(--fs-1); font-weight:400; margin-bottom:var(--s-5); }
 .hero-title em{ font-style:italic; color:var(--gold-soft); }
+/* Va dentro del h1 para que el título lleve la palabra clave, con el mismo aspecto de antes */
+.hero-eyebrow{
+  display:block;
+  font-family:var(--sans);
+  font-size:var(--fs-6);
+  font-weight:500;
+  line-height:1.6;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--gold-soft);
+  margin-bottom:var(--s-4);
+}
 .hero-text{
   max-width:52ch; margin:0 auto var(--s-6);
   font-size:1.0625rem; color:rgb(255 255 255 / .88);
@@ -771,6 +783,7 @@ p{ max-width:70ch; }
   color:var(--gold-soft); margin-bottom:var(--s-4);
 }
 .footer-col p{ font-size:var(--fs-5); margin-bottom:var(--s-1); }
+.footer-col address{ font-style:normal; font-size:var(--fs-5); line-height:1.7; }
 .footer-col a{
   display:inline-flex; align-items:center; min-height:44px;
   background-image:linear-gradient(currentColor, currentColor);
