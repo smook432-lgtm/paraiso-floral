@@ -3,6 +3,7 @@
    ═══════════════════════════════════════════ */
 
 const WA = "573146872446"; // 57 (Colombia) + 314 687 2446
+const SITIO = "https://floristeriaparaisofloral.com";
 
 /* ── Utilidades ── */
 const $  = (s, c = document) => c.querySelector(s);
@@ -12,11 +13,28 @@ const precio = n => "$ " + n.toLocaleString("es-CO");
 
 const waLink = texto => `https://wa.me/${WA}?text=${encodeURIComponent(texto)}`;
 
-const waPedido = p =>
-  waLink(`Hola Paraíso Floral, quiero pedir:\n\n• ${p.nombre} (${p.codigo})\n• Valor: ${precio(p.precio)}\n\n¿Me confirman disponibilidad y entrega?`);
+// Enlace absoluto a la foto: al abrirlo se ve exactamente el arreglo del que hablan
+const fotoUrl = p => `${SITIO}/${p.img}`;
 
-const waVariacion = p =>
-  waLink(`Hola, me gusta el ${p.nombre} (${p.codigo}) pero quisiera una variación. ¿Me pueden asesorar?`);
+const waPedido = p => waLink(
+`Hola Paraíso Floral, quiero pedir este arreglo:
+
+*${p.codigo} — ${p.nombre}*
+Valor: ${precio(p.precio)}
+Foto: ${fotoUrl(p)}
+
+Para coordinar la entrega:
+• Fecha:
+• Dirección:
+• Dedicatoria para la tarjeta:`);
+
+const waVariacion = p => waLink(
+`Hola Paraíso Floral, me gusta este arreglo pero quisiera una variación:
+
+*${p.codigo} — ${p.nombre}*
+Foto: ${fotoUrl(p)}
+
+Lo que me gustaría cambiar:`);
 
 const icono = (id, extra = "") => `<svg class="ico ${extra}" aria-hidden="true"><use href="#${id}"/></svg>`;
 
