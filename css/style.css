@@ -721,6 +721,25 @@ p{ max-width:70ch; }
 .acc-body{ padding:0 var(--s-5) var(--s-5); }
 .acc-body p{ font-size:var(--fs-5); color:var(--muted); }
 
+/* ── 13b. MEDIOS DE PAGO ───────────────────────────────── */
+.payments{ background:var(--bg); }
+.pay-grid{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:var(--s-3);
+  max-width:820px; margin:0 auto;
+}
+.pay-badge{
+  display:inline-flex; align-items:center; gap:var(--s-2);
+  min-height:44px;
+  padding:var(--s-2) var(--s-5);
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-pill);
+  box-shadow:var(--sh-1);
+  font-size:var(--fs-5);
+  color:var(--text);
+}
+.pay-badge .ico{ color:var(--gold-text); width:18px; height:18px; }
+
 /* ── 14. SOBRE NOSOTROS ────────────────────────────────── */
 .about{ background:var(--surface); padding:var(--s-9) 0; border-top:1px solid var(--border); }
 .about-inner{
@@ -852,7 +871,9 @@ p{ max-width:70ch; }
   .about-inner{ grid-template-columns:1fr; text-align:center; gap:var(--s-6); justify-items:center; }
   .about-copy p{ margin-inline:auto; }
   .modal-panel{ grid-template-columns:1fr; }
-  .modal-media{ aspect-ratio:16/10; }
+  /* La foto completa siempre visible, sin recortar (las fotos son verticales) */
+  .modal-media{ aspect-ratio:auto; max-height:52vh; background:var(--surface-2); }
+  .modal-media img{ object-fit:contain; }
 }
 
 @media (max-width:820px){
