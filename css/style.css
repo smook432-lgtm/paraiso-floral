@@ -834,29 +834,6 @@ p{ max-width:70ch; }
 .modal-includes .ico{ width:16px; height:16px; margin-top:5px; color:var(--gold-text); }
 .modal-info .btn{ margin-bottom:var(--s-2); }
 
-/* Medios de pago dentro de la ficha */
-.modal-pay{
-  margin-bottom:var(--s-5);
-  padding-top:var(--s-4);
-  border-top:1px solid var(--border);
-}
-.modal-pay-title{
-  display:flex; align-items:center; gap:var(--s-2);
-  margin-bottom:var(--s-3);
-  font-size:var(--fs-6); letter-spacing:.16em; text-transform:uppercase;
-  color:var(--gold-text);
-}
-.modal-pay-title .ico{ width:16px; height:16px; }
-.modal-pay-list{ display:flex; flex-wrap:wrap; gap:6px; }
-.modal-pay-list li{
-  padding:5px 12px;
-  font-size:.75rem;
-  color:var(--muted);
-  background:var(--surface-2);
-  border:1px solid var(--border);
-  border-radius:var(--r-pill);
-}
-
 /* ── 17. FLOTANTE Y BARRA MÓVIL ────────────────────────── */
 .fab{
   position:fixed; right:var(--s-5); bottom:var(--s-5); z-index:90;
