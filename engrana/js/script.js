@@ -78,7 +78,7 @@ const abrirCaso = id => {
          </a>
        </div>`
     : `<div class="modal__acts">
-         <a class="btn btn--wa" href="#contacto" data-close>
+         <a class="btn btn--primary" href="#contacto" data-close>
            ${icono("i-whatsapp", "ico--solid")}<span>Quiero algo así</span>
          </a>
        </div>`;
@@ -205,7 +205,8 @@ $("#fab")?.setAttribute("target", "_blank");
 $("#fab")?.setAttribute("rel", "noopener noreferrer");
 
 /* ═══ 8. Formulario → mensaje de WhatsApp listo ═══ */
-const form = $("#form");
+const form   = $("#form");
+const formOk = $("#formOk");
 
 const marcarError = (campo, mal) => {
   const cont = campo.closest(".field");
@@ -229,6 +230,7 @@ form?.addEventListener("submit", e => {
   marcarError(negocio, faltaNegocio);
 
   if (faltaNombre || faltaNegocio) {
+    if (formOk) formOk.hidden = true;
     (faltaNombre ? nombre : negocio).focus();
     return;
   }
@@ -244,6 +246,7 @@ form?.addEventListener("submit", e => {
 ${msg}` : "");
 
   window.open(waLink(texto), "_blank", "noopener");
+  if (formOk) formOk.hidden = false;
 });
 
 // Quita el aviso de error apenas la persona empieza a escribir
@@ -252,6 +255,9 @@ ${msg}` : "");
     if (e.target.value.trim() !== "") marcarError(e.target, false);
   });
 });
+
+// Si vuelve a editar el formulario, la confirmación ya no aplica
+form?.addEventListener("input", () => { if (formOk) formOk.hidden = true; });
 
 /* ═══ 9. Año del pie ═══ */
 const year = $("#year");

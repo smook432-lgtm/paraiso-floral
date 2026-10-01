@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Engrana — Páginas web para negocios | Santa Rosa de Cabal</title>
 <meta name="description" content="Diseño y desarrollo de páginas web para negocios: catálogos, agendas de citas y sitios que reciben pedidos por WhatsApp. Portafolio de trabajos reales.">
-<meta name="theme-color" content="#0B1B4D">
+<meta name="theme-color" content="#111317">
 <!-- Cambia este dominio por el tuyo cuando publiques el sitio -->
 <link rel="canonical" href="https://engrana.netlify.app/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232050E0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3Cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3E%3C/svg%3E">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
 <meta name="geo.region" content="CO-RIS">
 <meta name="geo.placename" content="Santa Rosa de Cabal">
@@ -27,7 +28,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -64,7 +65,7 @@
 <header class="head" id="head">
   <div class="wrap head__in">
     <a class="logo" href="#inicio" aria-label="Engrana — inicio">
-      <span class="logo__mark"><svg class="ico" aria-hidden="true"><use href="#i-cog"/></svg></span>
+      <span class="logo__mark"><img src="images/logo.png" alt="" width="40" height="40"></span>
       <span class="logo__txt">
         <strong>Engrana</strong>
         <small>Páginas web para negocios</small>
@@ -79,7 +80,7 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <a class="btn btn--wa head__cta" id="headCta" href="#contacto">
+    <a class="btn btn--primary head__cta" id="headCta" href="#contacto">
       <svg class="ico ico--solid" aria-hidden="true"><use href="#i-whatsapp"/></svg>
       <span>Escríbeme</span>
     </a>
@@ -97,8 +98,8 @@
 <section class="hero" id="inicio">
   <div class="hero__glow" aria-hidden="true"></div>
   <div class="hero__gears" aria-hidden="true">
-    <svg viewBox="0 0 24 24" class="gear gear--a"><use href="#i-cog"/></svg>
-    <svg viewBox="0 0 24 24" class="gear gear--b"><use href="#i-cog"/></svg>
+    <img class="gear gear--a" src="images/logo.png" alt="" width="420" height="442">
+    <img class="gear gear--b" src="images/logo.png" alt="" width="240" height="252">
   </div>
 
   <div class="wrap hero__in">
@@ -342,11 +343,16 @@
           <textarea id="f-msg" name="mensaje" rows="4" placeholder="Qué vendes, qué te gustaría lograr con la página…"></textarea>
         </div>
 
-        <button class="btn btn--wa btn--block" type="submit">
+        <button class="btn btn--primary btn--block" type="submit">
           <svg class="ico ico--solid" aria-hidden="true"><use href="#i-whatsapp"/></svg>
           <span>Enviar por WhatsApp</span>
         </button>
         <p class="form__note">Se abre tu WhatsApp con el mensaje ya escrito. Tú decides si lo envías.</p>
+
+        <p class="ok" id="formOk" role="status" hidden>
+          <svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>
+          <span><strong>Listo.</strong> Abrimos WhatsApp con tu mensaje. Si no se abrió, escríbeme con el enlace de arriba.</span>
+        </p>
       </form>
     </div>
   </div>
@@ -358,7 +364,7 @@
 <footer class="foot">
   <div class="wrap foot__in">
     <a class="logo logo--foot" href="#inicio">
-      <span class="logo__mark"><svg class="ico" aria-hidden="true"><use href="#i-cog"/></svg></span>
+      <span class="logo__mark"><img src="images/logo.png" alt="" width="40" height="40"></span>
       <span class="logo__txt"><strong>Engrana</strong><small>Páginas web para negocios</small></span>
     </a>
     <nav class="foot__nav" aria-label="Enlaces del pie">

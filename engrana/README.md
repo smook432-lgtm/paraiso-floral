@@ -9,7 +9,7 @@ engrana/
 ├── css/style.css       todos los estilos
 ├── js/proyectos.js     ← AQUÍ EDITAS TUS TRABAJOS
 ├── js/script.js        interacciones (y tu WhatsApp y correo)
-├── images/             las fotos de los trabajos
+├── images/             el logo y las fotos de los trabajos
 ├── netlify.toml        configuración para publicar
 ├── robots.txt
 └── sitemap.xml
@@ -103,6 +103,57 @@ Cuando tengas el tuyo, reemplázalo en:
 
 ---
 
+## Identidad visual
+
+Todo el color vive en variables CSS al inicio de `css/style.css`. Si algún día
+cambias un tono, lo cambias ahí una sola vez y se actualiza en todo el sitio.
+
+| Variable | Valor | Para qué |
+|---|---|---|
+| `--bg` | `#111317` | fondo principal |
+| `--bg-card` | `#181B20` | tarjetas |
+| `--bg-hover` | `#1F232A` | superficies al pasar el cursor |
+| `--borde` | `#2A2F37` | bordes de 1 px |
+| `--texto` | `#F5F1E8` | títulos y texto principal |
+| `--texto-suave` | `#B9B5AC` | párrafos |
+| `--texto-tenue` | `#8A867E` | pies de línea y etiquetas |
+| `--naranja` | `#FF5A1F` | acciones y acentos |
+| `--naranja-claro` | `#FF7442` | el naranja al pasar el cursor |
+| `--naranja-fuerte` | `#E04715` | estados presionados |
+| `--naranja-tenue` | `rgba(255,90,31,.12)` | fondos de iconos y etiquetas |
+| `--verde` | `#22C55E` | **solo** confirmaciones |
+| `--rojo` | `#E5484D` | bordes de campos con error |
+| `--rojo-texto` | `#F27478` | el texto del error (ver nota) |
+
+**Las reglas que sigue el sitio**
+
+- Proporción 60 % grafito, 30 % textos y tarjetas, 10 % naranja.
+- El texto dentro de los botones naranjas va en grafito `#111317`, nunca en blanco.
+- El verde aparece en un solo lugar: el mensaje de confirmación al enviar el
+  formulario. En ningún otro sitio.
+- Por esa regla, **los botones de WhatsApp van en naranja, no en verde**. El icono
+  de WhatsApp se mantiene para que se entienda a dónde lleva.
+- `--rojo-texto` es un `--rojo` aclarado. El `#E5484D` original sobre una tarjeta da
+  4,4:1 de contraste, apenas por debajo del mínimo legible; se usa para el borde del
+  campo y la versión aclarada para la letra.
+
+**El sitio es oscuro siempre.** La paleta está construida sobre grafito, así que no
+hay versión clara: se ve igual aunque el celular esté en modo claro.
+
+**Tipografías:** Space Grotesk en los títulos e Inter en los textos, cargadas desde
+Google Fonts.
+
+**El logo** está en `images/` en cuatro versiones, todas generadas del original:
+
+- `logo.png` — fondo transparente, para el encabezado y el pie
+- `logo-fondo.png` — con el grafito de fondo, por si lo necesitas suelto
+- `favicon.png` — el iconito de la pestaña del navegador
+- `apple-touch-icon.png` — el icono al guardar la página en un iPhone
+
+Si cambias el logo, reemplaza esos cuatro archivos manteniendo los nombres.
+
+---
+
 ## Qué trae el sitio
 
 - **Portada** con tu propuesta y dos botones de acción.
@@ -113,4 +164,5 @@ Cuando tengas el tuyo, reemplázalo en:
 - **Preguntas**: precio, mensualidad, quién edita el contenido, cobertura.
 - **Contacto**: un formulario que arma el mensaje y lo abre en tu WhatsApp
   (no necesita servidor ni base de datos), más tus enlaces directos.
-- Modo claro y oscuro automáticos, menú para celular y botón flotante de WhatsApp.
+- Menú para celular, botón flotante de WhatsApp y el engranaje de la marca como
+  marca de agua en la portada.
