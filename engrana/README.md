@@ -22,13 +22,13 @@ engrana/
 Abre `js/script.js`. En las primeras líneas están los dos datos que debes cambiar:
 
 ```js
-const WHATSAPP = "573146872446";        // 57 (Colombia) + tu número sin espacios
+const WHATSAPP = "573115637061";        // 57 (Colombia) + 311 563 7061
 const CORREO   = "hola@engrana.co";     // tu correo de contacto
 ```
 
-Ahora mismo tiene el número de la floristería como valor de prueba.
-Si tu WhatsApp de trabajo es otro, cámbialo ahí y listo: se actualiza en todos los
-botones del sitio a la vez.
+El WhatsApp ya es el tuyo. **El correo todavía es de ejemplo**: cámbialo por el que
+uses de verdad. Si algún día cambias de número, lo editas aquí y se actualiza en
+todos los botones del sitio a la vez.
 
 ---
 

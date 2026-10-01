@@ -4,7 +4,7 @@
    ⚠ CAMBIA ESTOS DOS DATOS POR LOS TUYOS ANTES DE PUBLICAR
    ═══════════════════════════════════════════════════════ */
 
-const WHATSAPP = "573146872446";        // 57 (Colombia) + tu número sin espacios
+const WHATSAPP = "573115637061";        // 57 (Colombia) + 311 563 7061
 const CORREO   = "hola@engrana.co";     // tu correo de contacto
 
 /* ── Utilidades ── */
