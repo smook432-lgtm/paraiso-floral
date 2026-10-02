@@ -82,15 +82,26 @@ const abrirCaso = id => {
          </a>
        </div>`;
 
+  // Un ejemplo se presenta como lo que es: un diseño de muestra
+  const aviso = p.ejemplo
+    ? `<p class="modal__aviso">Diseño de muestra. Este negocio no existe: la página
+       está hecha para mostrar cómo se vería un sitio así.</p>`
+    : "";
+
+  const titulos = p.ejemplo
+    ? ["El problema de siempre", "Lo que incluiría", "Lo que consigue el negocio"]
+    : ["El reto", "Lo que construí", "Resultados"];
+
   modalBody.innerHTML = `
     ${foto}
     <p class="modal__meta">${esc(p.rubro)} · ${esc(p.anio)}</p>
     <h3 id="modalTitle">${esc(p.nombre)}</h3>
-    <h4>El reto</h4>
+    ${aviso}
+    <h4>${titulos[0]}</h4>
     <p>${esc(p.reto)}</p>
-    <h4>Lo que construí</h4>
+    <h4>${titulos[1]}</h4>
     <p>${esc(p.solucion)}</p>
-    <h4>Resultados</h4>
+    <h4>${titulos[2]}</h4>
     <ul class="ticks">${p.logros.map(l => `<li>${esc(l)}</li>`).join("")}</ul>
     ${enlace}`;
 

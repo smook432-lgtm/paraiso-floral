@@ -44,70 +44,75 @@ const PROYECTOS = [
   },
 
   /* ─── Las tres tarjetas de abajo son EJEMPLOS ───
-     Reemplázalas por trabajos reales: cambia los textos,
-     pon ejemplo: false y sube la foto a la carpeta images/. */
+     Son disenos de muestra: el negocio no existe. Las maquetas que
+     generaron las fotos estan en la carpeta muestras/.
+     Cuando tengas un trabajo real, reemplaza los textos, sube la foto
+     y pon ejemplo: false. */
 
   {
     id: "ejemplo-barberia",
-    nombre: "Barbería Nombre del Negocio",
+    nombre: "Barbería El Cafetal",
     rubro: "Barbería · Ejemplo",
-    anio: "2025",
-    img: "",
+    anio: "2026",
+    img: "images/trabajo-barberia.jpg",
     url: "",
     ejemplo: true,
-    tags: ["Agenda online", "Recordatorios", "Panel de admin"],
+    tags: ["Agenda online", "Horarios por barbero", "Panel de admin"],
     resumen:
-      "Agenda de citas en línea con horarios reales y aviso automático al barbero cuando entra una reserva.",
+      "Agenda de citas con horarios por barbero: el cliente aparta su hora y el cupo se bloquea al instante.",
     reto:
-      "Las citas se agendaban por mensajes y se cruzaban dos clientes en el mismo horario más de una vez por semana.",
+      "Las citas se agendan por mensajes, se cruzan dos clientes en el mismo horario más de una vez por semana y el barbero termina contestando el celular con las manos ocupadas.",
     solucion:
-      "Una página con calendario de disponibilidad por barbero, bloqueo del horario apenas alguien reserva y confirmación al cliente.",
+      "Calendario de disponibilidad por barbero, bloqueo del horario apenas alguien reserva, confirmación automática al cliente por WhatsApp y un panel para ver la agenda del día desde el celular.",
     logros: [
-      "Reservas 24 horas sin contestar mensajes",
+      "Reservas a toda hora, sin contestar mensajes",
       "Cero cruces de horario",
-      "Panel para ver la agenda del día desde el celular"
+      "Servicios con precio y duración a la vista",
+      "La agenda del día en el bolsillo"
     ]
   },
   {
     id: "ejemplo-restaurante",
-    nombre: "Restaurante Nombre del Negocio",
+    nombre: "Sazón de la Montaña",
     rubro: "Restaurante · Ejemplo",
-    anio: "2025",
-    img: "",
+    anio: "2026",
+    img: "images/trabajo-restaurante.jpg",
     url: "",
     ejemplo: true,
     tags: ["Carta digital", "Código QR", "Domicilios"],
     resumen:
       "Carta digital que se actualiza desde el celular y se abre con un código QR en cada mesa.",
     reto:
-      "Reimprimir la carta cada vez que cambiaba un precio costaba tiempo y plata.",
+      "Reimprimir la carta cada vez que sube un precio cuesta tiempo y plata, y el plato agotado se descubre cuando el cliente ya lo pidió.",
     solucion:
-      "Carta en línea con fotos, categorías y disponibilidad del día, más pedido a domicilio por WhatsApp.",
+      "Carta con fotos, categorías y precios que el dueño cambia desde el celular, sello de «agotado» por plato, un código QR por mesa y pedido a domicilio que llega por WhatsApp.",
     logros: [
       "Precios actualizados en segundos",
       "Un QR por mesa, sin cartas impresas",
-      "Pedidos a domicilio con la dirección y el total ya escritos"
+      "El cliente ve lo que de verdad hay en la cocina",
+      "Domicilios con la dirección y el total ya escritos"
     ]
   },
   {
     id: "ejemplo-inmobiliaria",
-    nombre: "Inmobiliaria Nombre del Negocio",
+    nombre: "Inmobiliaria Cordillera",
     rubro: "Finca raíz · Ejemplo",
-    anio: "2025",
-    img: "",
+    anio: "2026",
+    img: "images/trabajo-inmobiliaria.jpg",
     url: "",
     ejemplo: true,
-    tags: ["Buscador", "Galería", "Formulario"],
+    tags: ["Buscador con filtros", "Ficha por inmueble", "Contacto al asesor"],
     resumen:
-      "Listado de inmuebles con filtros por barrio, precio y número de habitaciones.",
+      "Listado de inmuebles con filtros por barrio, precio y habitaciones, y contacto directo con el asesor.",
     reto:
-      "Los inmuebles solo se mostraban en publicaciones sueltas que se perdían en el muro.",
+      "Los inmuebles solo se muestran en publicaciones sueltas que se pierden en el muro, y el interesado escribe sin decir cuál le gustó.",
     solucion:
-      "Un buscador con filtros, galería de fotos por inmueble y formulario de contacto que llega directo al asesor.",
+      "Buscador con filtros, ficha por inmueble con galería y características, un enlace propio para compartir cada uno y un botón que le escribe al asesor con los datos del inmueble ya incluidos.",
     logros: [
-      "Cada inmueble con su enlace propio para compartir",
+      "Cada inmueble con su enlace para compartir",
       "Filtros por barrio, precio y habitaciones",
-      "Contactos que llegan con los datos del inmueble incluidos"
+      "El asesor sabe de qué inmueble le hablan",
+      "Un catálogo que no se pierde en el muro"
     ]
   }
 ];

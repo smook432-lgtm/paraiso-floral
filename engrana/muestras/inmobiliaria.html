@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Inmobiliaria Cordillera — maqueta</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F6F9; --papel:#FFFFFF; --borde:#DDE3EC;
+    --tinta:#101828; --suave:#5A6679; --tenue:#8A94A6;
+    --azul:#1B4D8F; --azul-claro:#2E6FC0; --acento:#0E9F6E;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.55}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 32px}
+  h1,h2,h3,h4{font-family:Manrope,system-ui,sans-serif;letter-spacing:-.02em;line-height:1.1}
+  header{background:var(--papel);border-bottom:1px solid var(--borde)}
+  .head{display:flex;align-items:center;gap:30px;height:74px}
+  .marca{margin-right:auto;display:flex;align-items:center;gap:11px}
+  .marca__ico{width:38px;height:38px;border-radius:10px;background:var(--azul);display:grid;place-items:center}
+  .marca__ico svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .marca b{font-family:Manrope,sans-serif;font-weight:800;font-size:17px;display:block;line-height:1.1}
+  .marca span{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--tenue)}
+  nav{display:flex;gap:26px;font-size:14px;color:var(--suave)}
+  .cta{background:var(--azul);color:#fff;padding:10px 20px;border-radius:10px;font-weight:600;font-size:14px}
+  /* portada */
+  .hero{padding:52px 0 34px;text-align:center}
+  h1{font-size:46px;font-weight:800}
+  .sub{color:var(--suave);font-size:16px;margin-top:14px}
+  /* buscador */
+  .buscador{display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:12px;background:var(--papel);border:1px solid var(--borde);border-radius:16px;padding:14px;margin-top:30px;box-shadow:0 14px 36px rgba(16,24,40,.07);text-align:left}
+  .campo{border-right:1px solid var(--borde);padding:4px 14px}
+  .campo:nth-child(3){border-right:0}
+  .campo small{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue);margin-bottom:3px}
+  .campo b{font-weight:600;font-size:14.5px}
+  .buscar{background:var(--azul);color:#fff;border-radius:11px;display:flex;align-items:center;gap:8px;padding:0 24px;font-weight:600;font-size:14px}
+  .filtros{display:flex;gap:9px;margin-top:18px;flex-wrap:wrap;justify-content:center}
+  .f{border:1px solid var(--borde);background:var(--papel);border-radius:999px;padding:7px 15px;font-size:12.5px;color:var(--suave)}
+  .f.on{background:var(--azul);border-color:var(--azul);color:#fff;font-weight:600}
+  /* resultados */
+  .res{display:flex;align-items:baseline;gap:10px;margin:40px 0 16px}
+  .res h2{font-size:24px;font-weight:800}
+  .res span{color:var(--tenue);font-size:13.5px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .inm{background:var(--papel);border:1px solid var(--borde);border-radius:16px;overflow:hidden;box-shadow:0 2px 6px rgba(16,24,40,.04)}
+  .img{height:160px;position:relative;background:linear-gradient(135deg,#C9D8EC,#8FA9C9)}
+  .img.b{background:linear-gradient(135deg,#D6E4D2,#9CBB97)}
+  .img.c{background:linear-gradient(135deg,#EDDCC9,#CBAC89)}
+  .sello{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.95);border-radius:999px;padding:4px 11px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--azul)}
+  .sello.v{background:var(--acento);color:#fff}
+  .cuerpo{padding:16px}
+  .cuerpo .precio{font-family:Manrope,sans-serif;font-weight:800;font-size:20px;color:var(--azul)}
+  .cuerpo h4{font-size:15px;font-weight:700;margin-top:4px}
+  .cuerpo .zona{font-size:12.5px;color:var(--tenue);margin-top:2px}
+  .specs{display:flex;gap:14px;margin-top:13px;padding-top:13px;border-top:1px solid var(--borde);font-size:12.5px;color:var(--suave)}
+  .specs b{font-weight:600;color:var(--tinta)}
+</style>
+</head>
+<body>
+<header><div class="wrap head">
+  <div class="marca">
+    <span class="marca__ico"><svg viewBox="0 0 24 24"><path d="M3 10 12 3l9 7"/><path d="M5 9v11h14V9"/><path d="M10 20v-6h4v6"/></svg></span>
+    <span><b>Cordillera</b><span>Finca raíz</span></span>
+  </div>
+  <nav><a>Comprar</a><a>Arrendar</a><a>Vender mi inmueble</a><a>Asesores</a></nav>
+  <span class="cta">Publicar inmueble</span>
+</div></header>
+
+<section class="wrap hero">
+  <h1>Encuentra tu próxima casa<br>en Santa Rosa de Cabal</h1>
+  <p class="sub">38 inmuebles verificados. Filtra por barrio, precio y habitaciones, y escribe directo al asesor.</p>
+  <div class="buscador">
+    <div class="campo"><small>Barrio o zona</small><b>Centro, Santa Rosa de Cabal</b></div>
+    <div class="campo"><small>Precio hasta</small><b>$ 350.000.000</b></div>
+    <div class="campo"><small>Habitaciones</small><b>3 o más</b></div>
+    <span class="buscar">Buscar</span>
+  </div>
+  <div class="filtros">
+    <span class="f on">Casa</span><span class="f">Apartamento</span><span class="f">Finca</span>
+    <span class="f">Lote</span><span class="f">Local</span><span class="f">Con parqueadero</span><span class="f">Estrena</span>
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom:70px">
+  <div class="res"><h2>Inmuebles disponibles</h2><span>38 resultados · ordenados por más recientes</span></div>
+  <div class="grid">
+    <div class="inm">
+      <div class="img"><span class="sello">Venta</span></div>
+      <div class="cuerpo"><div class="precio">$ 310.000.000</div><h4>Casa de dos pisos con patio</h4>
+        <p class="zona">Barrio El Jardín</p>
+        <div class="specs"><span><b>3</b> hab.</span><span><b>2</b> baños</span><span><b>120</b> m²</span></div></div>
+    </div>
+    <div class="inm">
+      <div class="img b"><span class="sello v">Nuevo</span></div>
+      <div class="cuerpo"><div class="precio">$ 1.800.000 <span style="font-size:13px;font-weight:600;color:var(--tenue)">/ mes</span></div>
+        <h4>Apartamento con balcón</h4>
+        <p class="zona">Cerca al parque principal</p>
+        <div class="specs"><span><b>2</b> hab.</span><span><b>1</b> baño</span><span><b>68</b> m²</span></div></div>
+    </div>
+    <div class="inm">
+      <div class="img c"><span class="sello">Venta</span></div>
+      <div class="cuerpo"><div class="precio">$ 520.000.000</div><h4>Finca cafetera con vista</h4>
+        <p class="zona">Vía a Termales</p>
+        <div class="specs"><span><b>4</b> hab.</span><span><b>3</b> baños</span><span><b>2.1</b> ha</span></div></div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

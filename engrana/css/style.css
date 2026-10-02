@@ -445,6 +445,7 @@ button,input,select,textarea{ font:inherit; color:inherit }
 .badge--live{ color:var(--naranja); border-color:var(--naranja) }
 
 .work__body{
+  flex:1;                       /* para que el boton quede abajo y alinee entre tarjetas */
   display:flex; flex-direction:column; gap:var(--s-3);
   padding:var(--s-5);
 }
@@ -789,6 +790,15 @@ a.clink:hover .clink__go{ transform:translate(2px,-2px); color:var(--naranja) }
   font-family:var(--display);
   font-size:var(--fs-6); font-weight:600; letter-spacing:.1em;
   text-transform:uppercase; color:var(--texto-tenue); margin-bottom:var(--s-2);
+}
+.modal__aviso{
+  margin-top:var(--s-4);
+  padding:var(--s-3) var(--s-4);
+  border:1px dashed var(--borde);
+  border-radius:var(--r-sm);
+  background:var(--bg);
+  color:var(--texto-tenue);
+  font-size:var(--fs-5);
 }
 .modal__acts{ margin-top:var(--s-6) }
 
