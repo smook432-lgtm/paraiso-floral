@@ -43,3 +43,11 @@ El número está configurado en dos archivos:
 - `js/script.js` (variable `WHATSAPP_NUMBER`, botones "Pedir por WhatsApp" de cada producto)
 
 Actualmente: `573146872446` (57 = Colombia + 314 687 2446).
+
+---
+
+## Otro sitio en este repositorio: `engrana/`
+
+La carpeta `engrana/` contiene un **sitio aparte**: el portafolio de Engrana
+(diseño y desarrollo web). No comparte archivos con la floristería y se publica
+como un sitio independiente. Las instrucciones están en `engrana/README.md`.

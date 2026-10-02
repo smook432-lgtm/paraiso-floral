@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sazón de la Montaña — maqueta</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --crema:#FBF7EF; --papel:#FFFFFF; --arena:#F2EADC; --borde:#E3D8C5;
+    --tinta:#241F19; --suave:#6B6154; --tenue:#978B7B;
+    --verde:#2F5D45; --verde-claro:#3E7A5A; --tomate:#C1502E;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--crema);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.55}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 32px}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.05;letter-spacing:-.01em}
+  header{background:var(--verde);color:#fff}
+  .head{display:flex;align-items:center;gap:32px;height:74px}
+  .marca{margin-right:auto;display:flex;align-items:center;gap:12px}
+  .marca__ico{width:40px;height:40px;border-radius:50%;background:#fff;color:var(--verde);display:grid;place-items:center;font-family:Fraunces,serif;font-weight:700;font-size:18px}
+  .marca b{font-family:Fraunces,serif;font-size:19px;display:block;line-height:1.1}
+  .marca span{font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+  nav{display:flex;gap:26px;font-size:14px;opacity:.9}
+  .cta{background:#fff;color:var(--verde);padding:10px 20px;border-radius:999px;font-weight:600;font-size:14px}
+  /* portada */
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;padding:60px 0 44px;align-items:center}
+  .etq{display:inline-block;background:var(--arena);border-radius:999px;padding:6px 14px;font-size:12px;color:var(--suave);margin-bottom:20px}
+  h1{font-size:60px}
+  h1 em{font-style:italic;color:var(--tomate)}
+  .sub{color:var(--suave);font-size:17px;max-width:42ch;margin-top:18px}
+  .acts{display:flex;gap:12px;margin-top:28px}
+  .btnv{background:var(--verde);color:#fff;padding:12px 24px;border-radius:999px;font-weight:600;font-size:14px}
+  .btnb{border:1px solid var(--borde);background:var(--papel);padding:12px 24px;border-radius:999px;font-weight:600;font-size:14px}
+  /* tarjeta QR */
+  .qr{background:var(--papel);border:1px solid var(--borde);border-radius:20px;padding:28px;text-align:center;box-shadow:0 18px 44px rgba(36,31,25,.08)}
+  .qr h3{font-size:22px;margin-bottom:6px}
+  .qr p{font-size:13px;color:var(--tenue);margin-bottom:20px}
+  .qrbox{width:150px;height:150px;margin:0 auto;border-radius:14px;background:
+    repeating-linear-gradient(90deg,var(--tinta) 0 9px,transparent 9px 18px),
+    repeating-linear-gradient(0deg,var(--tinta) 0 9px,transparent 9px 18px);
+    background-color:var(--papel);border:7px solid var(--tinta);opacity:.9}
+  .qr small{display:block;margin-top:18px;font-size:12px;color:var(--suave)}
+  /* carta */
+  .carta{padding:20px 0 70px}
+  .chips{display:flex;gap:10px;margin:22px 0 28px;flex-wrap:wrap}
+  .chip{border:1px solid var(--borde);background:var(--papel);border-radius:999px;padding:8px 18px;font-size:13px;font-weight:500;color:var(--suave)}
+  .chip.on{background:var(--verde);border-color:var(--verde);color:#fff}
+  .platos{display:grid;grid-template-columns:1fr 1fr;gap:14px 34px}
+  .plato{display:flex;gap:16px;align-items:flex-start;background:var(--papel);border:1px solid var(--borde);border-radius:16px;padding:16px}
+  .foto{width:72px;height:72px;border-radius:12px;flex:none;background:linear-gradient(135deg,#E8D9BE,#D9BF95)}
+  .foto.b{background:linear-gradient(135deg,#DCE8D4,#B5CFA6)}
+  .foto.c{background:linear-gradient(135deg,#F2D9CE,#E0A98E)}
+  .foto.d{background:linear-gradient(135deg,#E6DCF0,#C7B4DD)}
+  .plato h4{font-family:Fraunces,serif;font-size:17px;font-weight:700}
+  .plato p{font-size:12.5px;color:var(--tenue);margin-top:3px}
+  .precio{margin-left:auto;font-family:Fraunces,serif;font-weight:700;font-size:17px;color:var(--verde);white-space:nowrap}
+  .agotado{display:inline-block;margin-top:7px;background:#F6E4DE;color:var(--tomate);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:999px;font-weight:600}
+</style>
+</head>
+<body>
+<header><div class="wrap head">
+  <div class="marca"><span class="marca__ico">SM</span><span><b>Sazón de la Montaña</b><span>Restaurante</span></span></div>
+  <nav><a>La carta</a><a>Domicilios</a><a>Nosotros</a></nav>
+  <span class="cta">Pedir a domicilio</span>
+</div></header>
+
+<section class="wrap hero">
+  <div>
+    <span class="etq">Cocina de la región · Santa Rosa de Cabal</span>
+    <h1>La carta de hoy,<br><em>siempre al día</em></h1>
+    <p class="sub">Los precios y los platos del día se actualizan desde el celular. Lo que ves en la carta es lo que hay en la cocina.</p>
+    <div class="acts"><span class="btnv">Ver la carta</span><span class="btnb">Pedir a domicilio</span></div>
+  </div>
+  <div class="qr">
+    <h3>La carta en la mesa</h3>
+    <p>Un código por mesa, sin cartas impresas</p>
+    <div class="qrbox"></div>
+    <small>Escanea y pide sin esperar al mesero</small>
+  </div>
+</section>
+
+<section class="wrap carta">
+  <h2 style="font-size:36px">Nuestra carta</h2>
+  <div class="chips">
+    <span class="chip on">Todo</span><span class="chip">Desayunos</span><span class="chip">Platos fuertes</span>
+    <span class="chip">Asados</span><span class="chip">Bebidas</span><span class="chip">Postres</span>
+  </div>
+  <div class="platos">
+    <div class="plato"><span class="foto"></span><span><h4>Bandeja paisa</h4><p>Frijoles, chicharrón, chorizo, arepa y huevo</p></span><span class="precio">$ 32.000</span></div>
+    <div class="plato"><span class="foto b"></span><span><h4>Trucha al ajillo</h4><p>Con patacón y ensalada de la casa</p></span><span class="precio">$ 34.000</span></div>
+    <div class="plato"><span class="foto c"></span><span><h4>Sancocho de gallina</h4><p>Olla de barro, para dos personas</p><span class="agotado">Agotado hoy</span></span><span class="precio">$ 38.000</span></div>
+    <div class="plato"><span class="foto d"></span><span><h4>Churrasco de la casa</h4><p>300 g con papa criolla y chimichurri</p></span><span class="precio">$ 42.000</span></div>
+  </div>
+</section>
+</body>
+</html>
