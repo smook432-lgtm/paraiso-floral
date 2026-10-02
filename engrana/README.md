@@ -8,7 +8,7 @@ engrana/
 ├── index.html          la página completa
 ├── css/style.css       todos los estilos
 ├── js/proyectos.js     ← AQUÍ EDITAS TUS TRABAJOS
-├── js/script.js        interacciones (y tu WhatsApp y correo)
+├── js/script.js        interacciones (y tu número de WhatsApp)
 ├── images/             el logo y las fotos de los trabajos
 ├── netlify.toml        configuración para publicar
 ├── robots.txt
@@ -17,18 +17,18 @@ engrana/
 
 ---
 
-## 1. Cambia tus datos de contacto (lo primero)
+## 1. Tu número de contacto
 
-Abre `js/script.js`. En las primeras líneas están los dos datos que debes cambiar:
+Todo el contacto del sitio va por WhatsApp: no hay formulario con servidor ni
+correo. El número vive en una sola línea, al inicio de `js/script.js`:
 
 ```js
 const WHATSAPP = "573115637061";        // 57 (Colombia) + 311 563 7061
-const CORREO   = "hola@engrana.co";     // tu correo de contacto
 ```
 
-El WhatsApp ya es el tuyo. **El correo todavía es de ejemplo**: cámbialo por el que
-uses de verdad. Si algún día cambias de número, lo editas aquí y se actualiza en
-todos los botones del sitio a la vez.
+Si algún día cambias de número, lo editas ahí y se actualiza de una vez en el botón
+del encabezado, el botón flotante, la tarjeta de contacto y el mensaje que arma el
+formulario.
 
 ---
 
@@ -163,6 +163,6 @@ Si cambias el logo, reemplaza esos cuatro archivos manteniendo los nombres.
 - **Proceso**: los cuatro pasos, explicados sin tecnicismos.
 - **Preguntas**: precio, mensualidad, quién edita el contenido, cobertura.
 - **Contacto**: un formulario que arma el mensaje y lo abre en tu WhatsApp
-  (no necesita servidor ni base de datos), más tus enlaces directos.
+  (no necesita servidor ni base de datos), más el enlace directo al chat.
 - Menú para celular, botón flotante de WhatsApp y el engranaje de la marca como
   marca de agua en la portada.

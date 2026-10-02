@@ -1,11 +1,10 @@
 /* ═══════════════════════════════════════════════════════
    Engrana — interacciones
 
-   ⚠ CAMBIA ESTOS DOS DATOS POR LOS TUYOS ANTES DE PUBLICAR
+   Todo el contacto va por WhatsApp. Si cambias de número, es aquí.
    ═══════════════════════════════════════════════════════ */
 
 const WHATSAPP = "573115637061";        // 57 (Colombia) + 311 563 7061
-const CORREO   = "hola@engrana.co";     // tu correo de contacto
 
 /* ── Utilidades ── */
 const $  = (s, c = document) => c.querySelector(s);
@@ -193,11 +192,6 @@ const waDirect = $("#waDirect");
 if (waDirect) { waDirect.href = saludo; waDirect.target = "_blank"; waDirect.rel = "noopener noreferrer"; }
 const waLabel = $("#waLabel");
 if (waLabel) waLabel.textContent = telVisible;
-
-const mailDirect = $("#mailDirect");
-if (mailDirect) mailDirect.href = `mailto:${CORREO}?subject=${encodeURIComponent("Quiero una página para mi negocio")}`;
-const mailLabel = $("#mailLabel");
-if (mailLabel) mailLabel.textContent = CORREO;
 
 $("#headCta")?.setAttribute("href", "#contacto");
 $("#fab")?.setAttribute("href", saludo);
