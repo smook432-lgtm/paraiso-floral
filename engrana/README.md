@@ -55,8 +55,8 @@ como este:
 }
 ```
 
-**Las tres últimas tarjetas son ejemplos de muestra** (barbería, restaurante e
-inmobiliaria). Son negocios que no existen: sirven para enseñar cómo se vería un
+**Las cuatro últimas tarjetas son ejemplos de muestra** (barbería, estética,
+restaurante e inmobiliaria). Son negocios que no existen: sirven para enseñar cómo se vería un
 sitio de ese tipo mientras consigues clientes reales. Van marcadas con el sello
 *Ejemplo* en la tarjeta y, al abrir el caso, con un aviso que lo dice en palabras.
 A medida que hagas trabajos de verdad, reemplaza sus textos, sube la foto y pon
@@ -64,17 +64,17 @@ A medida que hagas trabajos de verdad, reemplaza sus textos, sube la foto y pon
 
 ### Las maquetas de los ejemplos
 
-Las fotos de esas tres tarjetas no son capturas de sitios publicados: son maquetas
-que viven en `muestras/` (`barberia.html`, `restaurante.html`, `inmobiliaria.html`).
-Cada una es una página suelta, sin funcionar, hecha solo para que la captura se vea
-como un sitio de verdad.
+Las fotos de esas cuatro tarjetas no son capturas de sitios publicados: son maquetas
+que viven en `muestras/` (`barberia.html`, `estetica.html`, `restaurante.html`,
+`inmobiliaria.html`). Cada una es una página suelta, sin funcionar, hecha solo para
+que la captura se vea como un sitio de verdad.
 
 Si quieres cambiar una maqueta, edita su HTML, ábrelo en el navegador y toma una
 captura de 1280 × 800 px. Guárdala en `images/` con el mismo nombre que ya tiene
-(`trabajo-barberia.jpg`, `trabajo-restaurante.jpg`, `trabajo-inmobiliaria.jpg`) y
-la tarjeta se actualiza sola.
+(`trabajo-barberia.jpg`, `trabajo-estetica.jpg`, `trabajo-restaurante.jpg`,
+`trabajo-inmobiliaria.jpg`) y la tarjeta se actualiza sola.
 
-Cuando los tres ejemplos sean reemplazados por trabajos reales, puedes borrar la
+Cuando los cuatro ejemplos sean reemplazados por trabajos reales, puedes borrar la
 carpeta `muestras/` completa.
 
 El primer proyecto de la lista es el que sale grande, a lo ancho. Si quieres destacar

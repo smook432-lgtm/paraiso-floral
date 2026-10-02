@@ -378,7 +378,8 @@ button,input,select,textarea{ font:inherit; color:inherit }
 /* ── 8. TRABAJOS ───────────────────────────────────────── */
 .works{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  /* min() evita que la columna desborde en pantallas angostas */
+  grid-template-columns:repeat(auto-fit, minmax(min(380px, 100%), 1fr));
   gap:var(--s-5);
 }
 .work{
@@ -429,7 +430,8 @@ button,input,select,textarea{ font:inherit; color:inherit }
 .work__ph span{ font-size:var(--fs-5) }
 
 .badge{
-  position:absolute; top:var(--s-4); left:var(--s-4);
+  /* abajo a la derecha: arriba a la izquierda taparia el logo de la maqueta */
+  position:absolute; bottom:var(--s-4); right:var(--s-4);
   display:inline-flex; align-items:center; gap:var(--s-1);
   padding:var(--s-1) var(--s-3);
   border-radius:var(--r-pill);

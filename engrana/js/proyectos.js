@@ -72,6 +72,28 @@ const PROYECTOS = [
     ]
   },
   {
+    id: "ejemplo-estetica",
+    nombre: "Estética Aura",
+    rubro: "Centro de estética · Ejemplo",
+    anio: "2026",
+    img: "images/trabajo-estetica.jpg",
+    url: "",
+    ejemplo: true,
+    tags: ["Agenda por profesional", "Catálogo de tratamientos", "Recordatorios"],
+    resumen:
+      "Agenda de citas por tratamiento y profesional, con el precio y la duración a la vista antes de confirmar.",
+    reto:
+      "Las citas se piden por mensaje directo, se pierden entre las conversaciones y la clienta no sabe cuánto cuesta ni cuánto dura hasta que pregunta. Cuando alguien no llega, el cupo se pierde completo.",
+    solucion:
+      "Catálogo de tratamientos con foto, duración y precio; agenda que cruza la disponibilidad de cada profesional con el tiempo que toma cada tratamiento; resumen de la cita antes de confirmar y recordatorio automático por WhatsApp el día anterior.",
+    logros: [
+      "La clienta ve precio y duración antes de agendar",
+      "Cada profesional con su propia agenda, sin cruces",
+      "El recordatorio del día antes reduce las que no llegan",
+      "Bonos de regalo que se venden desde la misma página"
+    ]
+  },
+  {
     id: "ejemplo-restaurante",
     nombre: "Sazón de la Montaña",
     rubro: "Restaurante · Ejemplo",
