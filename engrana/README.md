@@ -161,7 +161,8 @@ Si cambias el logo, reemplaza esos cuatro archivos manteniendo los nombres.
   (el reto, lo que construiste y los resultados).
 - **Servicios**: los cuatro tipos de trabajo que ofreces.
 - **Proceso**: los cuatro pasos, explicados sin tecnicismos.
-- **Preguntas**: precio, mensualidad, quién edita el contenido, cobertura.
+- **Preguntas**: precio, qué cubre la mensualidad, quién edita el contenido,
+  cobertura y qué pasa si ya tienes página.
 - **Contacto**: un formulario que arma el mensaje y lo abre en tu WhatsApp
   (no necesita servidor ni base de datos), más el enlace directo al chat.
 - Menú para celular, botón flotante de WhatsApp y el engranaje de la marca como
