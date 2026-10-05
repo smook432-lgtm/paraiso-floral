@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keratinas B&amp;G · Expertos en Lisos | Alisados en Dosquebradas y Pereira</title>
+<meta name="description" content="Centro de Keratinas B&G, by Blanca Aguirre. Alisados orgánicos, Liso Gloss, keratina y terapias capilares en Dosquebradas, área metropolitana de Pereira. Pide tu asesoría por WhatsApp.">
+<meta name="theme-color" content="#070605">
+<link rel="icon" type="image/png" href="assets/logos/logo_mono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Marca B&G: negro, dorado y crema */
+  --ink:#070605;            /* negro de marca */
+  --ink-2:#13100b;          /* superficie oscura */
+  --ink-line:rgb(201 162 74/.22);
+  --gold:#c9a24a;
+  --gold-hi:#ecd28e;
+  --gold-deep:#7d5f1c;      /* dorado legible sobre crema (AA) */
+  --on-ink:#f6f0e4;
+  --on-ink-muted:#bfb39d;
+  --paper:#f6f0e4;          /* crema */
+  --paper-2:#efe5d2;
+  --paper-line:#dccbaa;
+  --on-paper:#1a150e;
+  --on-paper-muted:#5e523f;
+  --accent-text:var(--gold-deep);
+  --wa:#1f9d55;
+  --sh-1:0 1px 2px rgb(7 6 5/.06),0 1px 3px rgb(7 6 5/.08);
+  --sh-2:0 4px 12px rgb(7 6 5/.10),0 12px 32px rgb(7 6 5/.14);
+  --sh-3:0 8px 24px rgb(7 6 5/.14),0 24px 64px rgb(7 6 5/.22);
+  --r-sm:8px;--r-md:14px;--r-lg:20px;--r-xl:28px;
+  --arch:999px 999px var(--r-lg) var(--r-lg);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --t-fast:150ms;--t:240ms;--t-slow:420ms;
+  --serif:'Cormorant Garamond','Cormorant',Garamond,'Times New Roman',serif;
+  --sans:'Jost','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --max:1180px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#16120c;--paper-2:#1d1810;--paper-line:#3a2f1d;
+    --on-paper:#f3ebdc;--on-paper-muted:#c2b59d;--accent-text:var(--gold-hi);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#16120c;--paper-2:#1d1810;--paper-line:#3a2f1d;
+  --on-paper:#f3ebdc;--on-paper-muted:#c2b59d;--accent-text:var(--gold-hi);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--on-ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+::selection{background:var(--gold);color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+html{scrollbar-color:var(--gold) var(--ink)}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1.08;margin:0}
+p{margin:0}
+
+/* ---------- Header ---------- */
+.top{position:fixed;inset:0 0 auto 0;z-index:40;padding-top:env(safe-area-inset-top,0px);transition:background var(--t) var(--ease),border-color var(--t) var(--ease);border-bottom:1px solid transparent}
+.top.is-scrolled{background:rgb(7 6 5/.72);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom-color:var(--ink-line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px}
+.brand img{width:38px;height:auto}
+.brand span{font-family:var(--serif);font-size:20px;letter-spacing:.01em;color:var(--on-ink)}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-size:15px;color:var(--on-ink-muted);position:relative;padding:10px 0;transition:color var(--t-fast) var(--ease)}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform var(--t) var(--ease)}
+.nav a:hover{color:var(--on-ink)}
+.nav a:hover::after{transform:scaleX(1)}
+
+/* ---------- Buttons ---------- */
+.btn{--h:48px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:var(--h);padding:0 22px;border-radius:999px;font:500 15px/1 var(--sans);text-decoration:none;cursor:pointer;border:1px solid transparent;position:relative;overflow:hidden;isolation:isolate;transition:transform var(--t) var(--ease),box-shadow var(--t) var(--ease),filter var(--t) var(--ease)}
+.btn svg{width:18px;height:18px;flex:none;transition:transform var(--t) var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn:active{transform:translateY(-1px) scale(.985)}
+.btn-gold{background:linear-gradient(180deg,var(--gold-hi),var(--gold));color:var(--ink);box-shadow:var(--sh-1)}
+.btn-gold::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,transparent 30%,rgb(255 255 255/.45) 50%,transparent 70%);transform:translateX(-120%);transition:transform 480ms var(--ease)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:var(--sh-2);filter:brightness(1.04)}
+.btn-gold:hover::before{transform:translateX(120%)}
+.btn-line{background:transparent;color:var(--on-ink);border-color:var(--ink-line)}
+.btn-line:hover{transform:translateY(-2px);border-color:var(--gold)}
+.btn-sm{--h:44px;padding:0 18px;font-size:14px}
+.on-paper .btn-line{color:var(--on-paper);border-color:var(--paper-line)}
+.on-paper .btn-line:hover{border-color:var(--accent-text)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:112px 0 64px;background:radial-gradient(70% 55% at 75% 20%,rgb(201 162 74/.16),transparent 70%),var(--ink);overflow:hidden}
+.hero .wrap{display:grid;gap:40px;align-items:center}
+.hero-logo{width:min(250px,64vw);margin-bottom:28px}
+.hero h1{font-size:clamp(42px,11vw,76px);color:var(--on-ink);max-width:12ch}
+.hero .lead{margin-top:20px;color:var(--on-ink-muted);font-size:18px;max-width:40ch}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;border-top:1px solid var(--ink-line);max-width:480px}
+.facts div{padding:16px 12px 0 0}
+.facts div+div{padding-left:14px;border-left:1px solid var(--ink-line)}
+.facts b{display:block;font:600 30px/1 var(--serif);color:var(--gold-hi)}
+.facts span{display:block;margin-top:6px;font-size:13px;line-height:1.35;color:var(--on-ink-muted)}
+.hero-media{position:relative;justify-self:center;width:min(100%,440px)}
+.hero-media .arch{aspect-ratio:3/4;border-radius:var(--arch);overflow:hidden;border:1px solid var(--ink-line);box-shadow:var(--sh-3);background:var(--ink-2)}
+.hero-media .arch img{width:100%;height:100%;object-fit:cover}
+.hero-media::before{content:"";position:absolute;inset:-14px -14px 22px;border:1px solid rgb(201 162 74/.45);border-radius:var(--arch);pointer-events:none}
+.hero-note{position:absolute;left:-8px;bottom:28px;background:rgb(7 6 5/.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--ink-line);border-radius:var(--r-md);padding:12px 16px;font-size:14px;line-height:1.35;max-width:220px;box-shadow:var(--sh-2)}
+.hero-note b{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--gold-hi);display:block}
+
+/* carga orquestada del hero */
+.in{opacity:0;transform:translateY(16px);animation:rise var(--t-slow) var(--ease) forwards;animation-delay:var(--d,0ms)}
+.hero-media.in{transform:translateY(24px) scale(.98)}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ---------- Secciones ---------- */
+section{position:relative}
+.sec{padding:88px 0}
+.on-paper{background:var(--paper);color:var(--on-paper)}
+.sec-head{display:grid;gap:14px;margin-bottom:36px;max-width:640px}
+.sec-head h2{font-size:clamp(36px,8vw,56px)}
+.sec-head p{font-size:17px;color:var(--on-ink-muted);max-width:52ch}
+.on-paper .sec-head p{color:var(--on-paper-muted)}
+.ornament{width:56px;height:12px;color:var(--gold)}
+.on-paper .ornament{color:var(--accent-text)}
+
+/* ---------- Pasarela ---------- */
+.runway-shell{position:relative}
+.runway{display:grid;grid-auto-flow:column;grid-auto-columns:min(80vw,330px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 20px 28px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.runway::-webkit-scrollbar{display:none}
+.card{scroll-snap-align:start;display:flex;flex-direction:column;background:var(--paper-2);border:1px solid var(--paper-line);border-radius:var(--r-xl);padding:12px 12px 20px;box-shadow:var(--sh-1);transition:transform var(--t) var(--ease),box-shadow var(--t) var(--ease)}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh-3)}
+.dark .card{background:var(--ink-2);border-color:var(--ink-line);color:var(--on-ink)}
+.media{position:relative;aspect-ratio:3/4;border-radius:var(--arch);overflow:hidden;background:var(--paper-line)}
+.dark .media{background:#1d1810}
+.media img,.media video{width:100%;height:100%;object-fit:cover;transition:transform 600ms var(--ease)}
+.card:hover .media img,.card:hover .media video{transform:scale(1.03)}
+.media .clip{position:absolute;inset:0;opacity:0;transition:opacity 700ms var(--ease),transform 600ms var(--ease)}
+.media .clip.is-playing{opacity:1}
+.tag{position:absolute;left:12px;right:12px;bottom:12px;background:rgb(7 6 5/.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--gold-hi);font-size:13px;line-height:1.3;padding:8px 12px;border-radius:var(--r-sm);text-align:center}
+.card-body{padding:18px 8px 0;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:30px;font-weight:600}
+.card .desc{margin-top:8px;font-size:15px;line-height:1.55;color:var(--on-paper-muted)}
+.dark .card .desc{color:var(--on-ink-muted)}
+.perks{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:6px}
+.perks li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45}
+.perks svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--accent-text)}
+.dark .perks svg{color:var(--gold)}
+.price{margin-top:auto;padding-top:20px;display:flex;align-items:baseline;gap:8px}
+.price small{font-size:14px;color:var(--on-paper-muted)}
+.dark .price small{color:var(--on-ink-muted)}
+.price strong{font:600 32px/1 var(--serif);color:var(--accent-text)}
+.dark .price strong{color:var(--gold-hi)}
+.card .btn{margin-top:16px;width:100%}
+.rw-ui{display:flex;align-items:center;gap:16px;padding:0 20px;max-width:var(--max);margin:0 auto}
+.progress{flex:1;height:2px;background:var(--paper-line);border-radius:2px;overflow:hidden}
+.dark .progress{background:var(--ink-line)}
+.progress i{display:block;height:100%;background:var(--accent-text);transform-origin:left;transform:scaleX(.2);transition:transform var(--t-fast) linear}
+.dark .progress i{background:var(--gold)}
+.arrows{display:flex;gap:8px}
+.arrow{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:transparent;border:1px solid var(--paper-line);color:var(--on-paper);cursor:pointer;transition:transform var(--t) var(--ease),border-color var(--t) var(--ease),opacity var(--t) var(--ease)}
+.dark .arrow{border-color:var(--ink-line);color:var(--on-ink)}
+.arrow:hover{transform:translateY(-2px);border-color:var(--accent-text)}
+.arrow:active{transform:scale(.96)}
+.arrow[disabled]{opacity:.35;cursor:default;transform:none}
+.arrow svg{width:18px;height:18px}
+.note{margin:28px auto 0;padding:0 20px;max-width:var(--max);font-size:14.5px;color:var(--on-paper-muted)}
+.dark .note{color:var(--on-ink-muted)}
+
+/* ---------- Incluido ---------- */
+.included{padding:64px 0;background:var(--ink);border-top:1px solid var(--ink-line);border-bottom:1px solid var(--ink-line)}
+.included h2{font-size:clamp(30px,6.5vw,42px);margin-bottom:28px}
+.inc-grid{display:grid;gap:20px}
+.inc{display:flex;gap:16px;align-items:flex-start}
+.inc .ic{width:52px;height:52px;flex:none;border-radius:50%;border:1px solid rgb(201 162 74/.5);display:grid;place-items:center;color:var(--gold)}
+.inc .ic svg{width:22px;height:22px}
+.inc b{display:block;font:600 22px/1.2 var(--serif)}
+.inc span{display:block;font-size:14.5px;color:var(--on-ink-muted);margin-top:2px}
+
+/* ---------- Resultados / Instagram ---------- */
+.results{padding:88px 0;background:radial-gradient(60% 60% at 20% 30%,rgb(201 162 74/.10),transparent 70%),var(--ink)}
+.results .wrap{display:grid;gap:28px}
+.results h2{font-size:clamp(36px,8vw,54px);max-width:16ch}
+.results p{color:var(--on-ink-muted);max-width:48ch}
+.quote-list{display:grid;gap:18px;margin-top:12px}
+.quote{margin:0;background:var(--ink-2);border:1px solid var(--ink-line);border-radius:var(--r-xl);padding:10px 10px 22px;display:flex;flex-direction:column;transition:transform var(--t) var(--ease),box-shadow var(--t) var(--ease)}
+.quote:hover{transform:translateY(-4px);box-shadow:var(--sh-3)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.ba div{position:relative;aspect-ratio:360/447;overflow:hidden;background:#1d1810}
+.ba div:first-child{border-radius:var(--r-lg) var(--r-sm) var(--r-sm) var(--r-lg)}
+.ba div:last-child{border-radius:var(--r-sm) var(--r-lg) var(--r-lg) var(--r-sm)}
+.ba img{width:100%;height:100%;object-fit:cover}
+.ba span{position:absolute;left:8px;bottom:8px;font-size:12.5px;line-height:1;padding:7px 10px;border-radius:999px;background:rgb(7 6 5/.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--on-ink)}
+.ba div:last-child span{background:linear-gradient(180deg,var(--gold-hi),var(--gold));color:var(--ink)}
+.quote figcaption{padding:18px 10px 0;display:flex;flex-direction:column;flex:1}
+.stars{display:flex;gap:2px;color:var(--gold)}
+.stars svg{width:16px;height:16px}
+.quote p{margin-top:12px;font:500 21px/1.4 var(--serif);color:var(--on-ink)}
+.quote .who{margin-top:auto;padding-top:14px;font-size:14px;color:var(--on-ink-muted)}
+
+/* ---------- Ubicación ---------- */
+.visit .wrap{display:grid;gap:40px;align-items:center}
+.visit .arch{aspect-ratio:3/4;border-radius:var(--arch);overflow:hidden;border:1px solid var(--paper-line);box-shadow:var(--sh-2);max-width:420px;width:100%;justify-self:center}
+.visit .arch img{width:100%;height:100%;object-fit:cover}
+.visit h2{font-size:clamp(36px,8vw,54px)}
+.addr{margin-top:20px;font-size:19px;line-height:1.5}
+.addr small{display:block;font-size:15px;color:var(--on-paper-muted);margin-top:4px}
+.info{margin-top:24px;display:grid;gap:14px;border-top:1px solid var(--paper-line);padding-top:20px}
+.info div{display:flex;gap:12px;align-items:flex-start;font-size:15.5px}
+.info svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--accent-text)}
+.info a{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size var(--t) var(--ease)}
+.info a:hover{background-size:100% 1px}
+.visit .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* ---------- Footer ---------- */
+footer{padding:56px 0 calc(40px + env(safe-area-inset-bottom,0px));background:var(--ink);border-top:1px solid var(--ink-line);text-align:center}
+footer img{width:150px;margin:0 auto 18px}
+footer p{color:var(--on-ink-muted);font-size:14px}
+.socials{display:flex;justify-content:center;gap:10px;margin:20px 0}
+.socials a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--ink-line);color:var(--on-ink);transition:transform var(--t) var(--ease),border-color var(--t) var(--ease)}
+.socials a:hover{transform:translateY(-2px);border-color:var(--gold)}
+.socials a:active{transform:scale(.96)}
+.socials svg{width:20px;height:20px}
+.credit{margin-top:18px;font-size:12.5px}
+.credit a{color:var(--gold);text-decoration:none}
+
+/* ---------- WhatsApp flotante ---------- */
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--wa);color:#fff;box-shadow:var(--sh-3);transition:transform var(--t) var(--ease),opacity var(--t) var(--ease);opacity:0;transform:translateY(12px)}
+.wa-float.show{opacity:1;transform:none}
+.wa-float:hover{transform:translateY(-3px)}
+.wa-float:active{transform:scale(.95)}
+.wa-float svg{width:30px;height:30px}
+
+/* revelado al hacer scroll: solo encabezados de sección */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity var(--t-slow) var(--ease),transform var(--t-slow) var(--ease);transition-delay:var(--d,0ms)}
+.reveal.is-in{opacity:1;transform:none}
+
+/* ---------- Escritorio ---------- */
+@media (min-width:860px){
+  .wrap{padding:0 32px}
+  .nav{display:flex}
+  .hero{padding:140px 0 96px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;gap:64px}
+  .hero-media{justify-self:end}
+  .sec{padding:120px 0}
+  .runway{grid-auto-columns:calc((min(100vw,var(--max)) - 64px - 36px)/3);padding:8px max(32px,calc((100vw - var(--max))/2 + 32px)) 32px;scroll-padding:0 max(32px,calc((100vw - var(--max))/2 + 32px))}
+  .rw-ui,.note{padding:0 32px}
+  .inc-grid{grid-template-columns:repeat(3,1fr);gap:32px}
+  .quote-list{grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
+  .visit .wrap{grid-template-columns:.9fr 1.1fr;gap:72px}
+  .visit .arch{justify-self:start}
+}
+@media (max-width:859px){.arrows{display:none}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal,.in{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Keratinas B&G, ir al inicio">
+      <img id="logoMono" src="assets/logos/logo_mono.png" alt="" width="38" height="27">
+      <span>Keratinas B&amp;G</span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#alisados">Alisados</a>
+      <a href="#terapias">Terapias</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#visitanos">Visítanos</a>
+    </nav>
+    <a class="btn btn-gold btn-sm js-wa" data-msg="general" href="#" target="_blank" rel="noopener">Pide asesoría</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <img class="hero-logo in" id="logoHero" src="assets/logos/logo_full.png" alt="B&G, Expertos en Lisos, by Blanca Aguirre" width="250" height="156" style="--d:60ms">
+      <h1 class="in" style="--d:160ms">Cabello liso, sano y con brillo de verdad.</h1>
+      <p class="lead in" style="--d:260ms" id="heroLead"></p>
+      <div class="actions in" style="--d:340ms">
+        <a class="btn btn-gold js-wa" data-msg="general" href="#" target="_blank" rel="noopener">Pide tu asesoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="#alisados">Ver alisados</a>
+      </div>
+      <div class="facts in" style="--d:420ms" id="facts"></div>
+    </div>
+    <div class="hero-media in" style="--d:200ms">
+      <div class="arch"><img id="heroImg" src="assets/fotos/hero.webp" alt="Cabello largo, liso y brillante después de un alisado B&G" width="620" height="827" fetchpriority="high"></div>
+      <div class="hero-note"><b>Asesoría personalizada</b>Te recomendamos el alisado ideal para tu tipo de cabello.</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-paper" id="alisados">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <svg class="ornament" viewBox="0 0 56 12" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 6h22M34 6h22"/><path d="M28 1l5 5-5 5-5-5z"/></svg>
+      <h2>Nuestros alisados</h2>
+      <p>Desliza y encuentra el tuyo. Cuando sepas cuál te interesa, pide asesoría y te respondemos por WhatsApp.</p>
+    </div>
+  </div>
+  <div class="runway-shell">
+    <div class="runway" id="rwAlisados" tabindex="0" aria-label="Alisados disponibles"></div>
+    <div class="rw-ui"><div class="progress"><i></i></div><div class="arrows"><button class="arrow" data-dir="-1" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button><button class="arrow" data-dir="1" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button></div></div>
+  </div>
+  <p class="note" id="priceNote"></p>
+</section>
+
+<section class="included">
+  <div class="wrap">
+    <h2 class="reveal">Incluido en todos nuestros alisados</h2>
+    <div class="inc-grid">
+      <div class="inc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg></div><div><b>Terapia de brillo láser</b><span>Para un acabado con más luz.</span></div></div>
+      <div class="inc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div><div><b>Diagnóstico capilar profesional</b><span>Revisamos tu cabello antes de empezar.</span></div></div>
+      <div class="inc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.6 7.6L20 18M8.6 16.4L20 6"/></svg></div><div><b>Corte de puntas</b><span>En tratamientos de alisado completos.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="terapias" style="background:var(--ink)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <svg class="ornament" viewBox="0 0 56 12" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 6h22M34 6h22"/><path d="M28 1l5 5-5 5-5-5z"/></svg>
+      <h2>Terapias capilares</h2>
+      <p>Rituales para consentir tu cabello y tu cuero cabelludo, solos o como complemento de tu alisado.</p>
+    </div>
+  </div>
+  <div class="runway-shell">
+    <div class="runway" id="rwTerapias" tabindex="0" aria-label="Terapias capilares"></div>
+    <div class="rw-ui"><div class="progress"><i></i></div><div class="arrows"><button class="arrow" data-dir="-1" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button><button class="arrow" data-dir="1" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button></div></div>
+  </div>
+</section>
+
+<section class="results" id="resultados">
+  <div class="wrap">
+    <div class="reveal">
+      <svg class="ornament" viewBox="0 0 56 12" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 6h22M34 6h22"/><path d="M28 1l5 5-5 5-5-5z"/></svg>
+      <h2 style="margin-top:14px">Resultados reales, todos los días</h2>
+      <p style="margin-top:14px" id="resultsText"></p>
+      <div class="actions" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
+        <a class="btn btn-gold" id="igBtn" href="#" target="_blank" rel="noopener">Ver resultados en Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" id="googleBtn" href="#" target="_blank" rel="noopener" hidden>Opiniones en Google</a>
+      </div>
+    </div>
+    <div class="quote-list" id="quotes"></div>
+  </div>
+</section>
+
+<section class="sec on-paper visit" id="visitanos">
+  <div class="wrap">
+    <div class="arch reveal"><img id="localImg" src="assets/fotos/local.webp" alt="Interior del Centro de Keratinas B&G, con espejos en arco y sillas de cuero" width="650" height="867"></div>
+    <div class="reveal">
+      <svg class="ornament" viewBox="0 0 56 12" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 6h22M34 6h22"/><path d="M28 1l5 5-5 5-5-5z"/></svg>
+      <h2 style="margin-top:14px">Visítanos en Dosquebradas</h2>
+      <p class="addr" id="addr"></p>
+      <div class="info" id="info"></div>
+      <div class="actions">
+        <a class="btn btn-gold" id="mapBtn" href="#" target="_blank" rel="noopener">Cómo llegar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line js-wa" data-msg="general" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img id="logoFoot" src="assets/logos/logo_full.png" alt="B&G, Expertos en Lisos" width="150" height="94" loading="lazy">
+    <p>Centro de Keratinas B&amp;G · Dosquebradas, área metropolitana de Pereira</p>
+    <div class="socials" id="socials"></div>
+    <p>© <span id="yr"></span> Keratinas B&amp;G. Todos los derechos reservados.</p>
+    <p class="credit">Página creada por <a href="https://instagram.com/engrana_ia" target="_blank" rel="noopener">Engrana</a></p>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" data-msg="general" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" id="waFloat"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.4-8.4z"/></svg></a>
+
+<script>
+/* =========================================================
+   CONFIGURACIÓN — aquí se cambian textos, precios y servicios
+   ========================================================= */
+const CONFIG = {
+  negocio: "Keratinas B&G",
+  whatsapp: "573054563602",
+  mensajeGeneral: "Hola Blanca, vi su página y quiero una asesoría.",
+  mensajeServicio: "Hola Blanca, vi su página y quiero asesoría sobre {servicio}.",
+  instagram: "https://www.instagram.com/keratinasbyg_pereira",
+  instagramUsuario: "@keratinasbyg_pereira",
+  facebook: "",            // pegar aquí el link de la página de Facebook
+  google: "https://share.google/8mNqWLUY4JjavBmK1", // reseñas y perfil de Google
+  direccion: "Cra. 21A #12-19, La Aurora, Dosquebradas",
+  referencia: "Cerca del barrio Santa Mónica · Área metropolitana de Pereira",
+  mapa: "https://www.google.com/maps/search/?api=1&query=Centro+de+Keratinas+B%26G+Cra+21A+12-19+La+Aurora+Dosquebradas",
+  horarios: [],            // ej: ["Lunes a sábado: 8:00 a.m. – 6:00 p.m."]
+  financiacion: "Puedes financiar tu alisado con Sistecrédito.",
+  desde: 2020,
+  clientas: "8.000",
+  seguidores: "75 mil",
+  notaPrecios: "Los precios marcados “desde” dependen del largo y el estado de tu cabello. Te confirmamos el valor exacto en la asesoría por WhatsApp.",
+
+  /* FOTOS Y VIDEOS DE CADA SERVICIO
+     foto:  nombre de la foto en assets/fotos/, sin el ".webp"   → foto:"tradicional"
+     video: nombre COMPLETO del video en assets/videos/          → video:"tradicional.mp4"
+            Si lo dejas vacío (video:"") se ve solo la foto.
+            Con video, la foto se muestra mientras carga y el video aparece encima,
+            sin sonido y en bucle, solo cuando la tarjeta está en pantalla. */
+  alisados: [
+    { nombre:"Keratina Tradicional", foto:"tradicional", video:"", desde:true, precio:"$180.000",
+      desc:"Un liso clásico, suave y con acabado natural.",
+      beneficios:["Cabello liso y suave","Acabado natural"] },
+    { nombre:"Alisado Orgánico CXPlastia", foto:"cxplastia", video:"", desde:true, precio:"$225.000",
+      desc:"Nuestro alisado orgánico para un liso con brillo y movimiento.",
+      beneficios:["Liso con brillo","Nutrición y suavidad","Movimiento natural"] },
+    { nombre:"Liso Gloss", foto:"lisogloss", video:"", desde:true, precio:"$285.000",
+      desc:"Alisado con nanotecnología para un cabello sedoso.",
+      beneficios:["Nanotecnología","Extra brillo","Cabello sedoso"] },
+    { nombre:"Liso Gloss Premium", foto:"premium", video:"", desde:true, precio:"$375.000",
+      desc:"El Liso Gloss con un paso extra de cuidado.",
+      beneficios:["Nanotecnología","Extra brillo","Incluye hidratación post cuidado"] },
+    { nombre:"Liso Gloss Premium Completo", foto:"completo", video:"", desde:true, precio:"$499.000",
+      etiqueta:"Nuestra experiencia más completa",
+      desc:"El alisado, el cuidado en casa y una terapia, todo en uno.",
+      beneficios:["Alisado Liso Gloss","Línea capilar completa incluida","Una terapia Hidra Gloss"] },
+    { nombre:"Liso Especial", foto:"especial", video:"", desde:true, precio:"$320.000",
+      etiqueta:"Para niñas, embarazadas y mujeres en lactancia",
+      desc:"Un alisado pensado para etapas que piden más cuidado.",
+      beneficios:["Apto para niñas","Apto en embarazo y lactancia"] }
+  ],
+
+  terapias: [
+    { nombre:"Head Spa Completo", foto:"headspa", video:"", desde:false, precio:"$120.000",
+      desc:"Un momento para relajarte mientras cuidamos tu cuero cabelludo.", beneficios:["Ritual de relax para el cuero cabelludo"] },
+    { nombre:"Ice Gloss", foto:"icegloss", video:"", desde:false, precio:"$165.000",
+      desc:"Ritual en frío para un cabello con brillo.", beneficios:["Ritual en frío"] },
+    { nombre:"Hidra Gloss", foto:"hidragloss", video:"", desde:false, precio:"$190.000",
+      etiqueta:"Nuestro ritual más completo",
+      desc:"Ozono y frío en un solo ritual.", beneficios:["Ozono + frío"] }
+  ],
+
+  testimonios: [ // reseñas reales de Google; fotos en assets/resenas/, sin el ".webp"
+    { autora:"Natalia G.", antes:"rv_natalia_a", despues:"rv_natalia_d",
+      texto:"Muy buena atención, su personal es muy amable, cuentan con excelentes instalaciones. Me realicé mi alisado y me ha encantado: el cabello queda suave y nutritivo, las puntas quedan sanas…" },
+    { autora:"Ana Elizabeth G.", antes:"rv_ana_a", despues:"rv_ana_d",
+      texto:"Excelente atención y quedé súper feliz con el resultado de mi cabello." },
+    { autora:"Arle C.", antes:"rv_arle_a", despues:"rv_arle_d",
+      texto:"Un lugar muy agradable y una excelente atención, súper recomendado 10/10." }
+  ]
+};
+</script>
+<script>
+(function(){
+  const C = CONFIG, $ = s=>document.querySelector(s);
+  const check = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+  const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const wa = msg=>`https://wa.me/${C.whatsapp}?text=${encodeURIComponent(msg)}`;
+  const foto = n=>`assets/fotos/${n}.webp`, resena = n=>`assets/resenas/${n}.webp`;
+  const video = n=>/[\/:]/.test(n) ? n : `assets/videos/${n}`;
+
+  // Textos
+  $('#heroLead').textContent = `Alisados orgánicos y terapias capilares en Dosquebradas. Desde ${C.desde}, más de ${C.clientas} clientas han confiado en nuestras manos.`;
+  $('#facts').innerHTML = `<div><b>${C.desde}</b><span>abrimos nuestras puertas</span></div><div><b>+${C.clientas}</b><span>clientas atendidas</span></div><div><b>${C.seguidores}</b><span>nos siguen en Instagram</span></div>`;
+  $('#priceNote').textContent = C.notaPrecios;
+  $('#resultsText').textContent = `En ${C.instagramUsuario} compartimos los resultados de nuestras clientas. Míralos y elige el liso que quieres para ti.`;
+  $('#igBtn').href = C.instagram;
+  if (C.google){ const g=$('#googleBtn'); g.href=C.google; g.hidden=false; }
+  $('#addr').innerHTML = `${esc(C.direccion)}<small>${esc(C.referencia)}</small>`;
+  const ic = {
+    clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+    phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>',
+    card:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg>'
+  };
+  const tel = C.whatsapp.replace(/^57/,'').replace(/(\d{3})(\d{3})(\d{4})/,'$1 $2 $3');
+  let info = `<div>${ic.phone}<span>WhatsApp: <a class="js-wa" data-msg="general" href="#" target="_blank" rel="noopener">${tel}</a></span></div>`;
+  if (C.horarios.length) info += `<div>${ic.clock}<span>${C.horarios.map(esc).join('<br>')}</span></div>`;
+  if (C.financiacion) info += `<div>${ic.card}<span>${esc(C.financiacion)}</span></div>`;
+  $('#info').innerHTML = info;
+  $('#mapBtn').href = C.mapa;
+  $('#yr').textContent = new Date().getFullYear();
+
+  // Redes
+  const soc = [];
+  soc.push(`<a href="${C.instagram}" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>`);
+  if (C.facebook) soc.push(`<a href="${C.facebook}" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>`);
+  soc.push(`<a class="js-wa" data-msg="general" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></a>`);
+  $('#socials').innerHTML = soc.join('');
+
+  // Testimonios (solo se muestran si hay)
+  if (C.testimonios.length){
+    $('#resultados').classList.add('has-quotes');
+    const stars = '<span class="stars" aria-label="5 de 5 estrellas">'+'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>'.repeat(5)+'</span>';
+    $('#quotes').innerHTML = C.testimonios.map(t=>`<figure class="quote">
+      <div class="ba"><div><img src="${resena(t.antes)}" alt="Cabello de ${esc(t.autora)} antes del alisado" loading="lazy" width="360" height="447"><span>Antes</span></div><div><img src="${resena(t.despues)}" alt="Cabello de ${esc(t.autora)} después del alisado" loading="lazy" width="360" height="447"><span>Después</span></div></div>
+      <figcaption>${stars}<p>“${esc(t.texto)}”</p><span class="who">${esc(t.autora)} · Reseña en Google</span></figcaption></figure>`).join('');
+  }
+
+  // Tarjetas de servicio
+  function card(s){
+    const msg = C.mensajeServicio.replace('{servicio}', s.nombre);
+    // la foto siempre está; si hay video, va encima y aparece cuando empieza a reproducirse
+    const media = `<img src="${foto(s.foto)}" alt="Resultado del servicio ${esc(s.nombre)}" loading="lazy" width="600" height="800">`
+      + (s.video ? `<video class="clip" muted loop playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true" data-src="${esc(video(s.video))}"></video>` : '');
+    return `<article class="card">
+      <div class="media">${media}${s.etiqueta?`<span class="tag">${esc(s.etiqueta)}</span>`:''}</div>
+      <div class="card-body">
+        <h3>${esc(s.nombre)}</h3>
+        <p class="desc">${esc(s.desc)}</p>
+        <ul class="perks">${s.beneficios.map(b=>`<li>${check}<span>${esc(b)}</span></li>`).join('')}</ul>
+        <div class="price">${s.desde?'<small>Desde</small>':''}<strong>${esc(s.precio)}</strong></div>
+        <a class="btn btn-gold" href="${wa(msg)}" target="_blank" rel="noopener">Pide asesoría ${arrow}</a>
+      </div></article>`;
+  }
+  $('#rwAlisados').innerHTML = C.alisados.map(card).join('');
+  $('#rwTerapias').innerHTML = C.terapias.map(card).join('');
+
+  // Enlaces generales a WhatsApp
+  document.querySelectorAll('.js-wa').forEach(a=>a.href = wa(C.mensajeGeneral));
+
+  // Pasarela: progreso y flechas
+  document.querySelectorAll('.runway-shell').forEach(shell=>{
+    const rw = shell.querySelector('.runway'), bar = shell.querySelector('.progress i');
+    const [prev,next] = shell.querySelectorAll('.arrow');
+    const update = ()=>{
+      const max = rw.scrollWidth - rw.clientWidth;
+      const vis = rw.clientWidth / rw.scrollWidth;
+      const p = max>0 ? rw.scrollLeft/max : 1;
+      bar.style.transform = `scaleX(${Math.min(1, vis + (1-vis)*p)})`;
+      if (prev){ prev.disabled = rw.scrollLeft < 4; next.disabled = rw.scrollLeft > max-4; }
+      shell.querySelector('.rw-ui').style.visibility = max>4 ? 'visible':'hidden';
+    };
+    const step = dir=>{ const c = rw.querySelector('.card'); rw.scrollBy({left:dir*(c.offsetWidth+18), behavior:'smooth'}); };
+    shell.querySelectorAll('.arrow').forEach(b=>b.addEventListener('click',()=>step(+b.dataset.dir)));
+    rw.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'){e.preventDefault();step(1)} if(e.key==='ArrowLeft'){e.preventDefault();step(-1)} });
+    rw.addEventListener('scroll',update,{passive:true}); window.addEventListener('resize',update); update();
+  });
+
+  // Videos: solo cargan y se reproducen cuando la tarjeta está en pantalla.
+  // Con "ahorro de datos" o "reducir movimiento" activados en el celular se queda la foto.
+  const clips = document.querySelectorAll('video.clip');
+  const ahorro = (navigator.connection && navigator.connection.saveData) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (ahorro || !('IntersectionObserver' in window)) clips.forEach(v=>v.remove());
+  else {
+    const vio = new IntersectionObserver(es=>es.forEach(e=>{
+      const v = e.target;
+      if (e.isIntersecting){
+        if (!v.src){ v.muted = true; v.src = v.dataset.src; }
+        v.play().catch(()=>{});
+      } else v.pause();
+    }),{threshold:.35});
+    clips.forEach(v=>{
+      v.addEventListener('playing',()=>v.classList.add('is-playing'),{once:true});
+      v.addEventListener('error',()=>{ vio.unobserve(v); v.remove(); }); // si el archivo no existe, queda la foto
+      vio.observe(v);
+    });
+  }
+
+  // Header con vidrio y botón flotante
+  const top = $('#top'), fl = $('#waFloat');
+  const onScroll = ()=>{ top.classList.toggle('is-scrolled', scrollY>8); fl.classList.toggle('show', scrollY>480); };
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // Revelado de encabezados
+  const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target)} }),{threshold:.15,rootMargin:'0px 0px -8%'});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.setProperty('--d',`${(i%2)*90}ms`); io.observe(el); });
+})();
+</script>
+</body>
+</html>

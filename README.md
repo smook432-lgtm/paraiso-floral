@@ -51,3 +51,9 @@ Actualmente: `573146872446` (57 = Colombia + 314 687 2446).
 La carpeta `engrana/` contiene un **sitio aparte**: el portafolio de Engrana
 (diseño y desarrollo web). No comparte archivos con la floristería y se publica
 como un sitio independiente. Las instrucciones están en `engrana/README.md`.
+
+## Otro sitio en este repositorio: `keratinas-bg/`
+
+La carpeta `keratinas-bg/` es la página de **Keratinas B&G** (centro de alisados en
+Dosquebradas). Tampoco comparte archivos con la floristería y se publica como un sitio
+independiente. Las instrucciones (videos, Netlify y dominio) están en `keratinas-bg/README.md`.
