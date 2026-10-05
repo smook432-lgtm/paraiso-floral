@@ -58,6 +58,7 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none!important}
+[tabindex="-1"]:focus{outline:none}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);-webkit-text-size-adjust:100%;scrollbar-color:var(--gold) var(--ink)}
 html.menu-open{overflow:hidden}
 body{margin:0;background:var(--ink);color:var(--on-ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -554,6 +555,17 @@ const CONFIG = {
 <script>
 (function(){
   const C = CONFIG, $ = s=>document.querySelector(s);
+
+  // El enlace de la página siempre abre desde el inicio:
+  // sin volver a la posición anterior y sin saltar a una sección (#resultados, etc.)
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (location.hash){
+    history.replaceState(null, '', location.pathname + location.search);
+    let toco = false;
+    ['wheel','touchstart','keydown'].forEach(t=>addEventListener(t,()=>{ toco = true; },{once:true,passive:true}));
+    const alInicio = ()=>{ if (!toco) scrollTo(0,0); };
+    alInicio(); addEventListener('DOMContentLoaded', alInicio); addEventListener('load', alInicio);
+  }
   const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
   const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const wa = msg=>`https://wa.me/${C.whatsapp}?text=${encodeURIComponent(msg)}`;
@@ -672,6 +684,17 @@ const CONFIG = {
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
   addEventListener('keydown',e=>{ if(e.key==='Escape' && mb.getAttribute('aria-expanded')==='true'){ setMenu(false); mb.focus(); } });
   matchMedia('(min-width:860px)').addEventListener('change',e=>{ if(e.matches) setMenu(false); });
+
+  // Enlaces internos (menú, "Ver alisados", logo): bajan a la sección sin cambiar la dirección,
+  // así el enlace que se copie y se comparta siempre abre desde el inicio.
+  document.addEventListener('click',e=>{
+    const a = e.target.closest('a[href^="#"]'); if (!a) return;
+    const id = a.getAttribute('href').slice(1), t = id && document.getElementById(id); if (!t) return;
+    e.preventDefault();
+    const modo = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    if (id === 'inicio') scrollTo({top:0, behavior:modo}); else t.scrollIntoView({behavior:modo, block:'start'});
+    t.setAttribute('tabindex','-1'); t.focus({preventScroll:true});
+  });
 
   // Encabezado con vidrio al bajar
   const top = $('#top');
