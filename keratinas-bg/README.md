@@ -53,8 +53,8 @@ Para quitar un video, deja `video:""`.
 | Qué | Valor |
 |---|---|
 | Formato | **MP4** (H.264). Funciona en iPhone, Android y en el navegador de Instagram |
-| Forma | **Vertical 3:4** (la forma de la tarjeta). Un Reel 9:16 también funciona, pero se recorta arriba y abajo y pesa más sin necesidad |
-| Tamaño | **720 × 960 px** |
+| Forma | **Vertical 2:3** (la forma del arco de la tarjeta). Si tu app no tiene 2:3, usa 3:4 o 9:16: la página recorta los bordes sola; deja el cabello en el centro |
+| Tamaño | **720 × 1080 px** |
 | Duración | 10 a 15 segundos |
 | Sonido | Ninguno (quítale la pista de audio: pesa y no se usa) |
 | **Peso máximo** | **1,5 MB por video.** Lo ideal: entre 0,8 y 1,2 MB |
@@ -68,13 +68,13 @@ pantalla, a la vez se descargan uno o dos como mucho.
 **Opción A — CapCut (en el celular o el computador).** Seguramente ya lo usan para Instagram.
 
 1. Abre el video y recorta los 10–15 segundos que mejor muestren el resultado.
-2. *Formato / Relación de aspecto* → **3:4**. Acomoda el cabello en el centro.
+2. *Formato / Relación de aspecto* → **2:3** (o 3:4 si no aparece). Acomoda el cabello en el centro.
 3. Silencia el clip (ícono de volumen → apagado).
 4. *Exportar* → resolución **720p**, **30 fps**, tasa de bits **baja** o "recomendada".
 5. Mira el peso del archivo. Si pasa de 1,5 MB, expórtalo otra vez con tasa de bits más baja
    o acórtalo un poco.
 
-**Opción B — HandBrake (gratis, Windows y Mac: handbrake.fr).** Para videos que ya están en 3:4.
+**Opción B — HandBrake (gratis, Windows y Mac: handbrake.fr).** Para videos que ya están en forma vertical.
 
 1. Abre el video. *Preset*: **Fast 720p30**.
 2. Pestaña *Dimensiones*: ancho **720**.
@@ -83,11 +83,11 @@ pantalla, a la vez se descargan uno o dos como mucho.
 5. Marca **Web Optimized** y dale *Iniciar*.
 
 **Opción C — Mándamelos** y los dejo listos. Como referencia técnica, este es el comando
-que se usa (ffmpeg); recorta al centro en 3:4, quita el audio, optimiza para web y
+que se usa (ffmpeg); recorta al centro en 2:3, quita el audio, optimiza para web y
 nunca deja pasar el video de unos 1,4 MB:
 
 ```
-ffmpeg -i original.mp4 -t 15 -vf "scale=720:960:force_original_aspect_ratio=increase,crop=720:960,fps=30" -c:v libx264 -preset slow -crf 28 -maxrate 750k -bufsize 1500k -profile:v high -pix_fmt yuv420p -an -movflags +faststart liso-gloss.mp4
+ffmpeg -i original.mp4 -t 15 -vf "scale=720:1080:force_original_aspect_ratio=increase,crop=720:1080,fps=30" -c:v libx264 -preset slow -crf 28 -maxrate 750k -bufsize 1500k -profile:v high -pix_fmt yuv420p -an -movflags +faststart liso-gloss.mp4
 ```
 
 ---

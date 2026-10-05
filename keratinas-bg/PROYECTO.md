@@ -28,6 +28,10 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
 ## Estado actual
 - index.html: página completa y funcional. Todo es editable desde el objeto CONFIG al inicio del script.
 - Las imágenes viven en assets/ (fotos, reseñas y logos); ya no hay base64 en el HTML.
+- Fotos de servicios recortadas en 2:3 desde los afiches de originales/, sin texto del afiche.
+  Lo ideal es reemplazarlas por las fotos SIN texto (las bases de los afiches) cuando la clienta las envíe.
+- Diseño: secciones alternadas negro/crema, fotos en arcos con filete dorado (espejos del local),
+  menú de pantalla completa en celular y botón flotante "Pide asesoría" que aparece al bajar.
   originales/ (archivos tal como los mandó la clienta) no está en el repositorio: no hace parte del sitio.
 - Lista para publicar en Netlify (netlify.toml en esta carpeta). Instrucciones en README.md.
 - Marca: negro #070605, dorado #c9a24a / #ecd28e, crema #f6f0e4. Tipografías: Cormorant Garamond + Jost.
@@ -37,7 +41,7 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
 ## Pendiente
 1. Videos: uno por servicio (sobre todo los alisados). Clips de 10–15 s, sin sonido, en bucle,
    que solo carguen cuando la tarjeta está en pantalla. El soporte ya está listo y probado: archivo en
-   assets/videos/ + su nombre en el campo `video` del servicio. MP4 720×960, máximo 1,5 MB (ver README.md).
+   assets/videos/ + su nombre en el campo `video` del servicio. MP4 720×1080 (2:3), máximo 1,5 MB (ver README.md).
 2. Horarios de atención (CONFIG.horarios) y link de Facebook (CONFIG.facebook).
 3. Publicarla en internet con dominio propio. Al tener el dominio: sitemap.xml y línea Sitemap en robots.txt.
 
