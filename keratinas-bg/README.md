@@ -102,7 +102,7 @@ Cada cambio que se guarde en el repositorio se publica solo.
 2. *Add new project* → *Import an existing project* → **GitHub**.
 3. Autoriza a Netlify y elige el repositorio `paraiso-floral`.
 4. En la configuración:
-   - *Branch to deploy*: `main`
+   - *Branch to deploy*: `master`
    - *Base directory*: **`keratinas-bg`** ← lo más importante; sin esto publicaría la floristería
    - *Build command*: déjalo vacío
    - *Publish directory*: déjalo como lo propone Netlify (`keratinas-bg`)
