@@ -182,30 +182,30 @@ section{position:relative}
 .dark .frame{border-color:var(--frame-ink)}
 .card:hover .frame{border-color:var(--accent-text)}
 .dark .card:hover .frame{border-color:var(--gold)}
-.media{position:relative;aspect-ratio:2/3;border-radius:var(--arch);overflow:hidden;background:var(--paper-2);isolation:isolate}
+.media{position:relative;width:100%;aspect-ratio:3/4;max-height:max(190px,calc(100vh - 385px));max-height:max(190px,calc(100svh - 385px));border-radius:var(--arch);overflow:hidden;background:var(--paper-2);isolation:isolate}
 .dark .media{background:#1d1810}
-.media img,.media video{width:100%;height:100%;object-fit:cover;transition:transform 600ms var(--ease)}
+.media img,.media video{width:100%;height:100%;object-fit:cover;object-position:50% 22%;transition:transform 600ms var(--ease)}
 .card:hover .media img,.card:hover .media video{transform:scale(1.035)}
 .media .clip{position:absolute;inset:0;opacity:0;transition:opacity 700ms var(--ease),transform 600ms var(--ease)}
 .media .clip.is-playing{opacity:1}
-.card-body{padding:22px 6px 0;display:flex;flex-direction:column;flex:1}
-.card .label{min-height:1.4em;font:500 11px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text);margin-bottom:10px}
-.dark .card .label{color:var(--gold-hi)}
-.card h3{font-size:29px;font-weight:600;line-height:1.08;text-wrap:balance}
-.card .desc{margin-top:10px;font-size:15px;line-height:1.55;color:var(--on-paper-muted)}
+.tag{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);width:max-content;max-width:calc(100% - 32px);padding:7px 14px;border-radius:999px;background:rgb(7 6 5/.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--gold-hi);font:500 12px/1.3 var(--sans);letter-spacing:.03em;text-align:center}
+.card-body{padding:16px 6px 0;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:26px;font-weight:600;line-height:1.08;text-wrap:balance}
+.card .desc{margin-top:6px;font-size:14.5px;line-height:1.5;color:var(--on-paper-muted)}
 .dark .card .desc{color:var(--on-ink-muted)}
-.perks{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:7px}
-.perks li{display:flex;gap:12px;align-items:baseline;font-size:14.5px;line-height:1.45}
+.perks{list-style:none;padding:0;margin:10px 0 0;display:flex;flex-wrap:wrap;gap:4px 16px}
+.perks li{display:flex;gap:9px;align-items:baseline;font-size:13.5px;line-height:1.45}
 .perks li::before{content:"";flex:none;width:5px;height:5px;transform:translateY(-2px) rotate(45deg);background:var(--accent-text)}
 .dark .perks li::before{background:var(--gold)}
-.card-foot{margin-top:auto;padding-top:20px}
-.price{display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid var(--paper-line)}
-.dark .price{border-top-color:var(--ink-line)}
-.price small{font:500 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--on-paper-muted)}
+.card-foot{margin-top:auto;padding-top:14px}
+.deal{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;border-top:1px solid var(--paper-line)}
+.dark .deal{border-top-color:var(--ink-line)}
+.price{display:flex;flex-direction:column;gap:5px;min-width:0}
+.price small{font:500 10.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--on-paper-muted)}
 .dark .price small{color:var(--on-ink-muted)}
-.price strong{font:600 31px/1 var(--serif);font-variant-numeric:lining-nums;color:var(--on-paper)}
+.price strong{font:600 27px/1 var(--serif);font-variant-numeric:lining-nums;color:var(--on-paper);white-space:nowrap}
 .dark .price strong{color:var(--gold-hi)}
-.card .btn{margin-top:16px;width:100%}
+.card .btn{flex:none;white-space:nowrap}
 .rw-ui{display:flex;align-items:center;gap:16px;padding:0 20px;max-width:var(--max);margin:0 auto}
 .progress{flex:1;height:1px;background:var(--paper-line);overflow:hidden}
 .dark .progress{background:var(--ink-line)}
@@ -320,6 +320,7 @@ html.menu-open .wa-float{opacity:0;visibility:hidden}
   .hero-note{display:block}
   .sec{padding:128px 0}
   .sec-head{margin-bottom:52px}
+  .media{max-height:max(250px,calc(100vh - 340px));max-height:max(250px,calc(100svh - 340px))}
   .runway{grid-auto-columns:calc((min(100vw,var(--max)) - 64px - 72px)/3);gap:36px;padding:12px max(32px,calc((100vw - var(--max))/2 + 32px)) 36px;scroll-padding:0 max(32px,calc((100vw - var(--max))/2 + 32px))}
   .rw-ui,.note{padding:0 32px}
   .included{padding:80px 0 88px}
@@ -492,7 +493,8 @@ const CONFIG = {
   google: "https://share.google/8mNqWLUY4JjavBmK1", // reseñas y perfil de Google
   direccion: "Cra. 21A #12-19, La Aurora, Dosquebradas",
   referencia: "Cerca del barrio Santa Mónica · Área metropolitana de Pereira",
-  mapa: "https://www.google.com/maps/search/?api=1&query=Centro+de+Keratinas+B%26G+Cra+21A+12-19+La+Aurora+Dosquebradas",
+  mapa: "https://share.google/8mNqWLUY4JjavBmK1", // botón "Cómo llegar": perfil exacto del local en Google.
+                                                // Mejor aún: pegar aquí el enlace de Google Maps (Compartir → Copiar enlace).
   horarios: [],            // ej: ["Lunes a sábado: 8:00 a.m. – 6:00 p.m."]
   financiacion: "Puedes financiar tu alisado con Sistecrédito.",
   desde: 2020,
@@ -603,16 +605,15 @@ const CONFIG = {
     const media = `<img src="${foto(s.foto)}" alt="Resultado del servicio ${esc(s.nombre)}" loading="lazy" width="600" height="900">`
       + (s.video ? `<video class="clip" muted loop playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true" data-src="${esc(video(s.video))}"></video>` : '');
     return `<article class="card">
-      <div class="frame"><div class="media">${media}</div></div>
+      <div class="frame"><div class="media">${media}${s.etiqueta?`<span class="tag">${esc(s.etiqueta)}</span>`:''}</div></div>
       <div class="card-body">
-        <p class="label"${s.etiqueta?'':' aria-hidden="true"'}>${s.etiqueta?esc(s.etiqueta):''}</p>
         <h3>${esc(s.nombre)}</h3>
         <p class="desc">${esc(s.desc)}</p>
         <ul class="perks">${s.beneficios.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>
-        <div class="card-foot">
+        <div class="card-foot"><div class="deal">
           <div class="price">${s.desde?'<small>Desde</small>':''}<strong>${esc(s.precio)}</strong></div>
-          <a class="btn ${boton}" href="${wa(msg)}" target="_blank" rel="noopener" aria-label="Pide asesoría sobre ${esc(s.nombre)} por WhatsApp">Pide asesoría ${arrow}</a>
-        </div>
+          <a class="btn btn-sm ${boton}" href="${wa(msg)}" target="_blank" rel="noopener" aria-label="Pide asesoría sobre ${esc(s.nombre)} por WhatsApp">Pide asesoría ${arrow}</a>
+        </div></div>
       </div></article>`;
   }
   $('#rwAlisados').innerHTML = C.alisados.map(s=>card(s,'btn-dark')).join('');
@@ -677,10 +678,14 @@ const CONFIG = {
   const onScroll = ()=>top.classList.toggle('is-scrolled', scrollY>8);
   addEventListener('scroll',onScroll,{passive:true}); onScroll();
 
-  // Botón flotante de asesoría: aparece cuando el botón de la portada ya no se ve
-  const fl = $('#waFloat');
-  new IntersectionObserver(([e])=>fl.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0))
-    .observe($('.hero .actions'));
+  // Botón flotante de asesoría: aparece al dejar atrás la portada y se esconde
+  // mientras haya otro botón de asesoría en pantalla (tarjetas, ubicación), para no taparlo.
+  const fl = $('#waFloat'), heroCta = $('.hero .actions'), visibles = new Set();
+  let pasoPortada = false;
+  const pintar = ()=>fl.classList.toggle('show', pasoPortada && visibles.size===0);
+  new IntersectionObserver(([e])=>{ pasoPortada = !e.isIntersecting && e.boundingClientRect.top < 0; pintar(); }).observe(heroCta);
+  const cio = new IntersectionObserver(es=>{ es.forEach(e=>e.isIntersecting ? visibles.add(e.target) : visibles.delete(e.target)); pintar(); });
+  document.querySelectorAll('.deal, .visit .actions').forEach(el=>cio.observe(el));
 
   // Revelado suave al entrar en pantalla (una sola vez)
   const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target)} }),{threshold:.12,rootMargin:'0px 0px -6%'});
