@@ -8,10 +8,9 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Fotos, logos y videos: el celular los guarda un día y no los vuelve a descargar.
-# (Si reemplazas un archivo con el mismo nombre, el cambio se ve como máximo al día siguiente
-#  en los celulares que ya habían entrado; para verlo de inmediato, usa un nombre nuevo.)
+# Fotos, logos y videos: el navegador siempre pregunta si cambiaron (respuesta muy rápida si no).
+# Así, si reemplazas un archivo con el mismo nombre, el cambio se ve de inmediato.
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"

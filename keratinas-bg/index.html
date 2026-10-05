@@ -555,7 +555,7 @@ const CONFIG = {
   const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
   const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const wa = msg=>`https://wa.me/${C.whatsapp}?text=${encodeURIComponent(msg)}`;
-  const foto = n=>`assets/fotos/${n}.webp`, resena = n=>`assets/resenas/${n}.webp`;
+  const foto = n=>`assets/fotos/${n}.webp?v=2`, resena = n=>`assets/resenas/${n}.webp`;
   const video = n=>/[\/:]/.test(n) ? n : `assets/videos/${n}`;
 
   // Textos
