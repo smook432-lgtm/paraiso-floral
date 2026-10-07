@@ -28,13 +28,16 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
 ## Estado actual
 - index.html: página completa y funcional. Todo es editable desde el objeto CONFIG al inicio del script.
 - Las imágenes viven en assets/ (fotos, reseñas y logos); ya no hay base64 en el HTML.
+  originales/ (archivos tal como los mandó la clienta) no está en el repositorio: no hace parte del sitio.
 - Fotos de servicios recortadas en 2:3 desde los afiches de originales/, sin texto del afiche.
   Lo ideal es reemplazarlas por las fotos SIN texto (las bases de los afiches) cuando la clienta las envíe.
 - Diseño: secciones alternadas negro/crema, fotos en arcos con filete dorado (espejos del local),
   menú de pantalla completa en celular y botón flotante "Pide asesoría" que aparece al bajar.
+- Orden de la página (pedido 07-oct): inicio (foto centrada) → Incluido en los alisados → Alisados
+  (del más caro al más barato, uno debajo del otro; en computador, cuadrícula de 3) → Resultados → Visítanos.
+- Terapias capilares: se quitaron de la página a pedido. Sus datos siguen en CONFIG.terapias por si vuelven.
 - Tarjetas de servicio: la foto ajusta su alto a la pantalla para que cada tarjeta (foto, precio y botón)
   quepa completa, del celular más bajo al computador. Verificado en 7 tamaños de pantalla.
-  originales/ (archivos tal como los mandó la clienta) no está en el repositorio: no hace parte del sitio.
 - Lista para publicar en Netlify (netlify.toml en esta carpeta). Instrucciones en README.md.
 - Marca: negro #070605, dorado #c9a24a / #ecd28e, crema #f6f0e4. Tipografías: Cormorant Garamond + Jost.
   Fotos enmarcadas en arcos (como los espejos dorados de su local).
