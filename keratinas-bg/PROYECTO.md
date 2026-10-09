@@ -35,6 +35,8 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
   menú de pantalla completa en celular y botón flotante "Pide asesoría" que aparece al bajar.
 - Orden de la página (pedido 07-oct): inicio (foto centrada) → Incluido en los alisados → Alisados
   (del más caro al más barato, uno debajo del otro; en computador, cuadrícula de 3) → Resultados → Visítanos.
+- Foto del inicio: Blanca Aguirre con su línea B&G Cosmetics (assets/fotos/blanca.webp), junto a la firma
+  "Expertos en Lisos · by Blanca Aguirre", para dar credibilidad (pedido de la clienta, 09-oct).
 - Terapias capilares: se quitaron de la página a pedido. Sus datos siguen en CONFIG.terapias por si vuelven.
 - Tarjetas de servicio: la foto ajusta su alto a la pantalla para que cada tarjeta (foto, precio y botón)
   quepa completa, del celular más bajo al computador. Verificado en 7 tamaños de pantalla.
