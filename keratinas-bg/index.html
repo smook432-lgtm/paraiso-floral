@@ -213,9 +213,10 @@ section{position:relative}
 .included h2{font-size:clamp(28px,7vw,40px);text-align:center;margin:14px auto 32px;max-width:18ch;text-wrap:balance}
 .included .kicker{display:flex;justify-content:center}
 .inc-grid{display:grid;gap:22px;max-width:420px;margin:0 auto}
-.inc{display:flex;gap:16px;align-items:center}
+.inc{display:flex;gap:16px;align-items:flex-start}
 .inc .ic{width:52px;height:52px;flex:none;border-radius:50%;border:1px solid var(--frame-paper);display:grid;place-items:center;color:var(--accent-text)}
 .inc .ic svg{width:22px;height:22px}
+.inc b{padding-top:12px}
 .inc b{display:block;font:600 21px/1.2 var(--serif)}
 .inc span{display:block;font-size:14.5px;color:var(--on-paper-muted);margin-top:2px}
 
@@ -305,7 +306,8 @@ html.menu-open .wa-float{opacity:0;visibility:hidden}
   .note{padding:0 32px}
   .included{padding:80px 0 88px}
   .inc-grid{grid-template-columns:repeat(3,1fr);gap:40px;max-width:none}
-  .inc{flex-direction:column;text-align:center;gap:14px}
+  .inc{flex-direction:column;align-items:center;text-align:center;gap:14px}
+  .inc b{padding-top:0}
   .quote-list{grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
   .visit .wrap{grid-template-columns:.9fr 1.1fr;gap:96px}
   .visit-media{justify-self:center;width:min(100%,420px)}
@@ -375,8 +377,8 @@ html.menu-open .wa-float{opacity:0;visibility:hidden}
     <p class="kicker reveal">En cada alisado</p>
     <h2 class="reveal">Incluido en todos nuestros alisados</h2>
     <div class="inc-grid">
-      <div class="inc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg></div><div><b>Terapia de brillo láser</b><span>Para un acabado con más luz.</span></div></div>
-      <div class="inc reveal" style="--d:90ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div><div><b>Diagnóstico capilar profesional</b><span>Revisamos tu cabello antes de empezar.</span></div></div>
+      <div class="inc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg></div><div><b>Terapia de brillo láser</b><span>Terapia de luz fotónica, incluida en tus servicios, para potenciar la luminosidad y dejar tu cabello con un aspecto más saludable, radiante y hermoso.</span></div></div>
+      <div class="inc reveal" style="--d:90ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div><div><b>Diagnóstico capilar completo</b><span>Analizamos tu cabello con capilógrafo, una cámara microscópica que nos permite identificar alteraciones y problemas capilares.</span></div></div>
       <div class="inc reveal" style="--d:180ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.6 7.6L20 18M8.6 16.4L20 6"/></svg></div><div><b>Corte de puntas</b><span>En tratamientos de alisado completos.</span></div></div>
     </div>
   </div>
@@ -449,7 +451,8 @@ const CONFIG = {
   mensajeServicio: "Hola Blanca, vi su página y quiero asesoría sobre {servicio}.",
   instagram: "https://www.instagram.com/keratinasbyg_pereira",
   instagramUsuario: "@keratinasbyg_pereira",
-  facebook: "",            // pegar aquí el link de la página de Facebook
+  facebook: "https://www.facebook.com/keratinaspereira",
+  tiktok: "https://www.tiktok.com/@keratinasbyg_pereira",
   google: "https://share.google/8mNqWLUY4JjavBmK1", // reseñas y perfil de Google
   direccion: "Cra. 21A #12-19, La Aurora, Dosquebradas",
   referencia: "Cerca del barrio Santa Mónica · Área metropolitana de Pereira",
@@ -558,6 +561,7 @@ const CONFIG = {
   // Redes
   const soc = [];
   soc.push(`<a href="${C.instagram}" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>`);
+  if (C.tiktok) soc.push(`<a href="${C.tiktok}" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.4 4.6 5 4.9"/></svg></a>`);
   if (C.facebook) soc.push(`<a href="${C.facebook}" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>`);
   soc.push(`<a class="js-wa" data-msg="general" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></a>`);
   $('#socials').innerHTML = soc.join('');

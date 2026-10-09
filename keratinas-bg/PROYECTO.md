@@ -5,7 +5,8 @@
 - Dirección: Cra. 21A #12-19, La Aurora, Dosquebradas (cerca del barrio Santa Mónica, área metropolitana de Pereira).
 - WhatsApp del negocio: 305 456 3602 (en código: 573054563602).
 - Instagram: @keratinasbyg_pereira (75 mil seguidores). Cuenta alterna: @keratinas_pereirabyg2.
-- Facebook: "Keratinas Pereira B&G" (falta el link).
+- Facebook: https://www.facebook.com/keratinaspereira
+- TikTok: https://www.tiktok.com/@keratinasbyg_pereira
 - Google (reseñas): https://share.google/8mNqWLUY4JjavBmK1
 - Desde 2020, más de 8.000 clientas. Financiación con Sistecrédito.
 
@@ -22,7 +23,8 @@ Alisados:
 - Liso Gloss Premium — desde $375.000
 - Liso Gloss Premium Completo — desde $499.000 (alisado + línea capilar completa + una terapia Hidra Gloss)
 - Liso Especial — desde $320.000 (niñas, embarazadas y lactancia)
-Incluido en todos los alisados: terapia de brillo láser, diagnóstico capilar, corte de puntas (en alisados completos).
+Incluido en todos los alisados: terapia de brillo láser (luz fotónica), diagnóstico capilar completo con capilógrafo,
+corte de puntas (en alisados completos).
 Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.000 (ozono + frío).
 
 ## Estado actual
@@ -49,7 +51,7 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
 1. Videos: uno por servicio (sobre todo los alisados). Clips de 10–15 s, sin sonido, en bucle,
    que solo carguen cuando la tarjeta está en pantalla. El soporte ya está listo y probado: archivo en
    assets/videos/ + su nombre en el campo `video` del servicio. MP4 720×960 (3:4), máximo 1,5 MB (ver README.md).
-2. Horarios de atención (CONFIG.horarios) y link de Facebook (CONFIG.facebook).
+2. Horarios de atención (CONFIG.horarios).
 3. Publicarla en internet con dominio propio. Al tener el dominio: sitemap.xml y línea Sitemap en robots.txt.
 
 ## Reglas
