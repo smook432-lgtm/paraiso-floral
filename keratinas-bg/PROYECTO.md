@@ -45,7 +45,8 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
 - Lista para publicar en Netlify (netlify.toml en esta carpeta). Instrucciones en README.md.
 - Marca: negro #070605, dorado #c9a24a / #ecd28e, crema #f6f0e4. Tipografías: Cormorant Garamond + Jost.
   Fotos enmarcadas en arcos (como los espejos dorados de su local).
-- 3 reseñas reales de Google con fotos de antes/después (Natalia G., Ana Elizabeth G., Arle C.).
+- 3 reseñas reales de Google con fotos de antes/después (Luz Restrepo, Marce G, Ana Leon), enviadas por la
+  clienta en capturas el 09-oct. Fotos recortadas de las capturas: si llegan los originales, se verán más nítidas.
 
 ## Pendiente
 1. Videos: uno por servicio (sobre todo los alisados). Clips de 10–15 s, sin sonido, en bucle,
