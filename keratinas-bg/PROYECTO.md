@@ -49,9 +49,11 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
   clienta en capturas el 09-oct. Fotos recortadas de las capturas: si llegan los originales, se verán más nítidas.
 
 ## Pendiente
-1. Videos: uno por servicio (sobre todo los alisados). Clips de 10–15 s, sin sonido, en bucle,
+1. Videos: uno por servicio (sobre todo los alisados). Completos, sin recortar (unos 30 s; pedido de la clienta), sin sonido, en bucle,
    que solo carguen cuando la tarjeta está en pantalla. El soporte ya está listo y probado: archivo en
-   assets/videos/ + su nombre en el campo `video` del servicio. MP4 720×960 (3:4), máximo 1,5 MB (ver README.md).
+   assets/videos/ + su nombre en el campo `video` del servicio. MP4 720×960 (3:4), máximo 2,5 MB (ver README.md).
+   Los originales pesan ~100 MB: para recibirlos, exportarlos a 720p sin recortar (quedan <25 MB y se
+   pueden subir a GitHub) o subirlos como archivos de un "Release" de GitHub (acepta hasta 2 GB).
 2. Horarios de atención (CONFIG.horarios).
 3. Publicarla en internet con dominio propio. Al tener el dominio: sitemap.xml y línea Sitemap en robots.txt.
 
