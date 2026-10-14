@@ -91,7 +91,17 @@ ffmpeg -i original.mp4 -vf "scale=720:960:force_original_aspect_ratio=increase,c
 
 ---
 
-## 3. Publicar en Netlify
+## 3. Dónde está publicada
+
+**Hoy: GitHub Pages.** No hay que hacer nada: cada cambio de esta carpeta que llega a la rama
+`master` se publica solo en 1–2 minutos (`.github/workflows/keratinas-pages.yml`; se ve en la
+pestaña *Actions* del repositorio). En *Settings → Pages* están el dominio `keratinasbyg.com` y
+la casilla *Enforce HTTPS*. Los archivos `.md` y `netlify.toml` no se publican.
+
+Lo de abajo (Netlify) queda como referencia: se usó hasta el 14-oct-2026, cuando el plan gratis
+se quedó sin créditos y dejó de publicar cambios.
+
+### Publicar en Netlify (referencia)
 
 ### Opción conectada a GitHub (recomendada)
 
@@ -133,7 +143,8 @@ Cada cambio que se guarde en el repositorio se publica solo.
 4. Espera. El cambio puede tardar desde minutos hasta 24–48 horas.
 5. Netlify activa el candado (HTTPS) solo y gratis. Revísalo en *Domain management → HTTPS*.
 
-Dominio actual: **keratinasbyg.com** (comprado en Netlify, oct-2026). Ya están `sitemap.xml`,
+Dominio actual: **keratinasbyg.com** (comprado en Netlify, oct-2026; su DNS en Netlify apunta a GitHub Pages:
+4 registros `A` 185.199.108.153 / .109 / .110 / .111 y `CNAME www` → `smook432-lgtm.github.io`). Ya están `sitemap.xml`,
 la línea `Sitemap:` en `robots.txt`, la dirección canónica y la imagen para compartir
 (`assets/og.jpg`, 1200×630). Falta darla de alta en Google Search Console y ponerla en el
 perfil de Google del negocio y en las redes. Si algún día cambia el dominio, hay que

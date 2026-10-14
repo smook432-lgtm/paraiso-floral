@@ -42,7 +42,11 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
 - Terapias capilares: se quitaron de la página a pedido. Sus datos siguen en CONFIG.terapias por si vuelven.
 - Tarjetas de servicio: la foto ajusta su alto a la pantalla para que cada tarjeta (foto, precio y botón)
   quepa completa, del celular más bajo al computador. Verificado en 7 tamaños de pantalla.
-- Lista para publicar en Netlify (netlify.toml en esta carpeta). Instrucciones en README.md.
+- Publicación (desde 14-oct-2026): GitHub Pages, con .github/workflows/keratinas-pages.yml. Cada cambio en
+  keratinas-bg/ que llega a master se publica solo (gratis, sin créditos). Se dejó Netlify porque el plan gratis
+  se quedó sin créditos y dejó de publicar. El dominio sigue registrado en Netlify (renueva 10-sep-2027,
+  US$16,99) y su DNS apunta a GitHub: 4 registros A (185.199.108-111.153) + CNAME www → smook432-lgtm.github.io.
+  keratinasbyg.netlify.app quedó con una versión vieja: usar solo keratinasbyg.com.
 - Marca: negro #070605, dorado #c9a24a / #ecd28e, crema #f6f0e4. Tipografías: Cormorant Garamond + Jost.
   Fotos enmarcadas en arcos (como los espejos dorados de su local).
 - 3 reseñas reales de Google con fotos de antes/después (Luz Restrepo, Marce G, Ana Leon), enviadas por la
@@ -55,7 +59,7 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
    Los originales pesan ~100 MB: para recibirlos, exportarlos a 720p sin recortar (quedan <25 MB y se
    pueden subir a GitHub) o subirlos como archivos de un "Release" de GitHub (acepta hasta 2 GB).
 2. Horarios de atención (CONFIG.horarios).
-3. Dominio: keratinasbyg.com (comprado en Netlify el 14-oct). Listos sitemap.xml, robots.txt, canónica e imagen
+3. Dominio: keratinasbyg.com (comprado en Netlify el 14-oct, US$14; servido desde GitHub Pages). Listos sitemap.xml, robots.txt, canónica e imagen
    para compartir (assets/og.jpg). Falta: confirmar candado HTTPS, Google Search Console, poner el link en
    Instagram/Google/Facebook.
 
