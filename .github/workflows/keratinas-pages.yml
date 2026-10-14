@@ -1,0 +1,38 @@
+# Publica la página de Keratinas B&G (carpeta keratinas-bg/) en GitHub Pages,
+# con el dominio keratinasbyg.com. Solo corre cuando cambia algo de esa carpeta.
+name: Publicar Keratinas B&G
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "keratinas-bg/**"
+      - ".github/workflows/keratinas-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      # Solo lo que ve la clienta: sin notas internas (.md) ni configuración de Netlify.
+      - name: Preparar archivos del sitio
+        run: rsync -a --exclude='*.md' --exclude='netlify.toml' --exclude='.gitkeep' keratinas-bg/ _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
