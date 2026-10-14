@@ -133,6 +133,8 @@ Cada cambio que se guarde en el repositorio se publica solo.
 4. Espera. El cambio puede tardar desde minutos hasta 24–48 horas.
 5. Netlify activa el candado (HTTPS) solo y gratis. Revísalo en *Domain management → HTTPS*.
 
-Cuando el dominio funcione, hay que agregar `sitemap.xml` y la línea `Sitemap:` en
-`robots.txt` con la dirección definitiva, y darla de alta en Google Search Console
-y en el perfil de Google del negocio.
+Dominio actual: **keratinasbyg.com** (comprado en Netlify, oct-2026). Ya están `sitemap.xml`,
+la línea `Sitemap:` en `robots.txt`, la dirección canónica y la imagen para compartir
+(`assets/og.jpg`, 1200×630). Falta darla de alta en Google Search Console y ponerla en el
+perfil de Google del negocio y en las redes. Si algún día cambia el dominio, hay que
+cambiarlo en esos tres archivos y en las etiquetas `og:` de `index.html`.

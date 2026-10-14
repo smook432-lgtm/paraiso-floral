@@ -55,7 +55,9 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
    Los originales pesan ~100 MB: para recibirlos, exportarlos a 720p sin recortar (quedan <25 MB y se
    pueden subir a GitHub) o subirlos como archivos de un "Release" de GitHub (acepta hasta 2 GB).
 2. Horarios de atención (CONFIG.horarios).
-3. Publicarla en internet con dominio propio. Al tener el dominio: sitemap.xml y línea Sitemap en robots.txt.
+3. Dominio: keratinasbyg.com (comprado en Netlify el 14-oct). Listos sitemap.xml, robots.txt, canónica e imagen
+   para compartir (assets/og.jpg). Falta: confirmar candado HTTPS, Google Search Console, poner el link en
+   Instagram/Google/Facebook.
 
 ## Reglas
 - No inventar reseñas, precios, beneficios ni datos del negocio. Si falta algo, preguntar.
