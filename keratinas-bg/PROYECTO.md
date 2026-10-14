@@ -20,9 +20,9 @@ Alisados:
 - Keratina Tradicional — desde $180.000
 - Alisado Orgánico CXPlastia — desde $225.000
 - Liso Gloss — desde $285.000
-- Liso Gloss Premium — desde $375.000
+- Liso Gloss Premium — desde $385.000
 - Liso Gloss Premium Completo — desde $499.000 (alisado + línea capilar completa + una terapia Hidra Gloss)
-- Liso Especial — desde $320.000 (niñas, embarazadas y lactancia)
+- Liso Especial — desde $360.000 (niñas, embarazadas y lactancia)
 Incluido en todos los alisados: terapia de brillo láser (luz fotónica), diagnóstico capilar completo con capilógrafo,
 corte de puntas (en alisados completos).
 Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.000 (ozono + frío).
