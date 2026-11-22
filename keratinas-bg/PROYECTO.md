@@ -52,7 +52,17 @@ Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.0
 - 3 reseñas reales de Google con fotos de antes/después (Luz Restrepo, Marce G, Ana Leon), enviadas por la
   clienta en capturas el 09-oct. Fotos recortadas de las capturas: si llegan los originales, se verán más nítidas.
 
+- Catálogo de productos (22-nov, pedido de la clienta): keratinasbyg.com/productos/ con Línea de alisado
+  (Liso Gloss 1000 mL $499.000 · Shampoo Profesional paso 1 500 mL $55.000), Línea de cuidado capilar
+  (Shampoo Hidratante 400 mL · Tratamiento Capilar 400 mL $48.000 · Sérum Capilar 30 mL $35.000 ·
+  Repair Gloss 180 mL $55.000), Kits (Especial $120.000, antes $128.000; Completo $169.900, antes $183.000),
+  Resultados en Google y Asesoría por WhatsApp. Precios, presentaciones y beneficios tomados de sus piezas
+  oficiales. Cada producto tiene botón "Pedir por WhatsApp" con su nombre. En el inicio hay un bloque
+  "Productos" y un enlace en el menú. Fotos originales (24) en el historial de git (commit ca916fb).
+
 ## Pendiente
+0. Precio del Shampoo Hidratante: no aparece en las piezas (la tarjeta dice "Consúltalo"). Por los kits
+   daría $45.000; confirmar con la clienta antes de ponerlo.
 1. Videos: uno por servicio (sobre todo los alisados). Completos, sin recortar (unos 30 s; pedido de la clienta), sin sonido, en bucle,
    que solo carguen cuando la tarjeta está en pantalla. El soporte ya está listo y probado: archivo en
    assets/videos/ + su nombre en el campo `video` del servicio. MP4 720×960 (3:4), máximo 2,5 MB (ver README.md).

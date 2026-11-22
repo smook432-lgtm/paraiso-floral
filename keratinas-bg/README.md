@@ -6,9 +6,12 @@ El contexto del negocio y lo pendiente está en `PROYECTO.md`.
 
 ```
 keratinas-bg/
-├── index.html          la página completa (diseño + CONFIG con textos y precios)
+├── index.html          página principal: alisados, resultados, ubicación (CONFIG con textos y precios)
+├── productos/index.html catálogo de productos capilares (CATALOGO con productos, precios y kits)
 ├── assets/
+│   ├── estilos.css     diseño compartido por las dos páginas
 │   ├── fotos/          foto de cada servicio, portada (hero) y local
+│   ├── productos/      fotos de los productos y kits (recortadas 4:5 y 1:1, .webp)
 │   ├── resenas/        fotos de antes y después de las reseñas de Google
 │   ├── logos/          logo completo y logo pequeño (también es el ícono de la pestaña)
 │   └── videos/         ← AQUÍ VAN LOS VIDEOS DE LOS SERVICIOS
@@ -17,7 +20,8 @@ keratinas-bg/
 └── PROYECTO.md         contexto del cliente
 ```
 
-Todo lo editable está en el objeto `CONFIG`, al final de `index.html`.
+Todo lo editable está en el objeto `CONFIG`, al final de `index.html`, y en `CATALOGO`, al final de
+`productos/index.html`. Las reseñas están en los dos: si cambian, se cambian en ambos.
 
 ---
 
