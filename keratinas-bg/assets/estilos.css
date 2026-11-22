@@ -317,3 +317,11 @@ html.menu-open .wa-float{opacity:0;visibility:hidden}
 /* celulares muy angostos: el botón baja debajo del precio */
 @media (max-width:359px){.deal{flex-wrap:wrap}.deal .btn{width:100%}}
 .kit h3{font-size:26px;font-weight:600;line-height:1.1;text-wrap:balance}
+/* Punto de venta (dirección) */
+.where{display:flex;gap:14px;align-items:flex-start;margin-top:30px;padding-top:22px;border-top:1px solid var(--ink-line)}
+.where svg{width:22px;height:22px;flex:none;margin-top:3px;color:var(--gold)}
+.where b{display:block;font:500 11px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-hi)}
+.where span{display:block;margin-top:6px;font:500 21px/1.3 var(--serif);color:var(--on-ink)}
+.where small{display:block;font:400 14px/1.5 var(--sans);color:var(--on-ink-muted);margin-top:4px}
+.where a{display:inline-block;margin-top:8px;font-size:14.5px;color:var(--gold-hi);text-decoration:none;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 1px no-repeat;padding-bottom:2px;transition:background-size var(--t) var(--ease)}
+.where a:hover{background-size:100% 1px}
