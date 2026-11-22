@@ -11,67 +11,42 @@
 - Desde 2020, más de 8.000 clientas. Financiación con Sistecrédito.
 
 ## Lo que pidió la clienta
-Una "vitrina de servicios", NO una tienda: cada servicio con sus resultados (fotos y video),
-y un botón "Pide asesoría" que lleva a WhatsApp. Sin carrito ni pagos.
-Productos (shampoo, tratamiento, sérum y litro de keratina) se agregan MÁS ADELANTE.
+1. (oct-2026) Vitrina de servicios de alisado con botón a WhatsApp. Sin carrito ni pagos.
+2. (22-nov-2026) Catálogo de productos capilares B&G Cosmetics.
+3. (22-nov-2026) **La página queda enfocada exclusivamente en los productos capilares.** Se quitó todo lo de
+   servicios de alisado, precios de servicios, "Incluido en los alisados", citas y ubicación. Se conservan,
+   por pedido expreso: "Asesoría por WhatsApp" y "Resultados de nuestros alisados en Google".
+   La versión anterior (servicios) queda en el historial de git (último commit con ella: 218a290).
 
-## Servicios y precios (de sus piezas oficiales)
-Alisados:
-- Keratina Tradicional — desde $180.000
-- Alisado Orgánico CXPlastia — desde $225.000
-- Liso Gloss — desde $285.000
-- Liso Gloss Premium — desde $385.000
-- Liso Gloss Premium Completo — desde $499.000 (alisado + línea capilar completa + una terapia Hidra Gloss)
-- Liso Especial — desde $360.000 (niñas, embarazadas y lactancia)
-Incluido en todos los alisados: terapia de brillo láser (luz fotónica), diagnóstico capilar completo con capilógrafo,
-corte de puntas (en alisados completos).
-Terapias: Head Spa Completo $120.000 · Ice Gloss $165.000 · Hidra Gloss $190.000 (ozono + frío).
+## Catálogo (datos de sus piezas oficiales)
+Línea de alisado:
+- Liso Gloss (CX Plastia, fórmula nueva mejorada) — 1000 mL — $499.000
+- Shampoo Profesional de limpieza, paso 1 alisado — 500 mL — $55.000
+Línea de cuidado capilar (Hair Gloss):
+- Shampoo Hidratante — 400 mL — precio sin confirmar (la tarjeta dice "Consúltalo"; por los kits sería $45.000)
+- Tratamiento Capilar (fórmula mejorada) — 400 mL — $48.000
+- Sérum Capilar (suero reparador de puntas con filtro UV) — 30 mL — $35.000
+- Repair Gloss (proteína capilar, 6 beneficios en 1) — 180 mL — $55.000
+Kits:
+- Kit Especial de Post Cuidado (shampoo hidratante + tratamiento + sérum) — $120.000 (antes $128.000)
+- Kit Post Cuidado Completo (los anteriores + Repair Gloss) — $169.900 (antes $183.000)
 
 ## Estado actual
-- index.html: página completa y funcional. Todo es editable desde el objeto CONFIG al inicio del script.
-- Las imágenes viven en assets/ (fotos, reseñas y logos); ya no hay base64 en el HTML.
-  originales/ (archivos tal como los mandó la clienta) no está en el repositorio: no hace parte del sitio.
-- Fotos de servicios recortadas en 2:3 desde los afiches de originales/, sin texto del afiche.
-  Lo ideal es reemplazarlas por las fotos SIN texto (las bases de los afiches) cuando la clienta las envíe.
-- Diseño: secciones alternadas negro/crema, fotos en arcos con filete dorado (espejos del local),
-  menú de pantalla completa en celular y botón flotante "Pide asesoría" que aparece al bajar.
-- Orden de la página (pedido 07-oct): inicio (foto centrada) → Incluido en los alisados → Alisados
-  (del más caro al más barato, uno debajo del otro; en computador, cuadrícula de 3) → Resultados → Visítanos.
-- Foto del inicio: Blanca Aguirre con su línea B&G Cosmetics (assets/fotos/blanca.webp), junto a la firma
-  "Expertos en Lisos · by Blanca Aguirre", para dar credibilidad (pedido de la clienta, 09-oct).
-- Terapias capilares: se quitaron de la página a pedido. Sus datos siguen en CONFIG.terapias por si vuelven.
-- Tarjetas de servicio: la foto ajusta su alto a la pantalla para que cada tarjeta (foto, precio y botón)
-  quepa completa, del celular más bajo al computador. Verificado en 7 tamaños de pantalla.
-- Publicación (desde 14-oct-2026): GitHub Pages, con .github/workflows/keratinas-pages.yml. Cada cambio en
-  keratinas-bg/ que llega a master se publica solo (gratis, sin créditos). Se dejó Netlify porque el plan gratis
-  se quedó sin créditos y dejó de publicar. El dominio sigue registrado en Netlify (renueva 10-sep-2027,
-  US$16,99) y su DNS apunta a GitHub: 4 registros A (185.199.108-111.153) + CNAME www → smook432-lgtm.github.io.
-  keratinasbyg.netlify.app quedó con una versión vieja: usar solo keratinasbyg.com.
-- Marca: negro #070605, dorado #c9a24a / #ecd28e, crema #f6f0e4. Tipografías: Cormorant Garamond + Jost.
-  Fotos enmarcadas en arcos (como los espejos dorados de su local).
-- 3 reseñas reales de Google con fotos de antes/después (Luz Restrepo, Marce G, Ana Leon), enviadas por la
-  clienta en capturas el 09-oct. Fotos recortadas de las capturas: si llegan los originales, se verán más nítidas.
-
-- Catálogo de productos (22-nov, pedido de la clienta): keratinasbyg.com/productos/ con Línea de alisado
-  (Liso Gloss 1000 mL $499.000 · Shampoo Profesional paso 1 500 mL $55.000), Línea de cuidado capilar
-  (Shampoo Hidratante 400 mL · Tratamiento Capilar 400 mL $48.000 · Sérum Capilar 30 mL $35.000 ·
-  Repair Gloss 180 mL $55.000), Kits (Especial $120.000, antes $128.000; Completo $169.900, antes $183.000),
-  Resultados en Google y Asesoría por WhatsApp. Precios, presentaciones y beneficios tomados de sus piezas
-  oficiales. Cada producto tiene botón "Pedir por WhatsApp" con su nombre. En el inicio hay un bloque
-  "Productos" y un enlace en el menú. Fotos originales (24) en el historial de git (commit ca916fb).
+- index.html: catálogo completo. Orden: portada → Línea de alisado → Cuidado capilar → Kits →
+  Resultados de nuestros alisados (3 reseñas reales de Google con antes/después) → Asesoría por WhatsApp.
+- Cada producto y kit tiene botón "Pedir por WhatsApp" con su nombre. Botón flotante de asesoría al bajar.
+- /productos/ redirige al inicio (fue la dirección del catálogo unos días).
+- Fotos de productos recortadas de las piezas de la clienta, sin texto, en formato uniforme.
+  Las 24 piezas originales (con texto, para redes) están en el historial de git (commit ca916fb).
+- Diseño: negro #070605, dorado #c9a24a / #ecd28e, crema #f6f0e4. Cormorant Garamond + Jost. Arcos dorados.
+- Publicación: GitHub Pages (.github/workflows/keratinas-pages.yml); cada cambio en keratinas-bg/ que llega a
+  master se publica solo. Dominio keratinasbyg.com registrado en Netlify (renueva 10-sep-2027, US$16,99),
+  DNS apuntando a GitHub (4 registros A 185.199.108-111.153 + CNAME www → smook432-lgtm.github.io). HTTPS activo.
 
 ## Pendiente
-0. Precio del Shampoo Hidratante: no aparece en las piezas (la tarjeta dice "Consúltalo"). Por los kits
-   daría $45.000; confirmar con la clienta antes de ponerlo.
-1. Videos: uno por servicio (sobre todo los alisados). Completos, sin recortar (unos 30 s; pedido de la clienta), sin sonido, en bucle,
-   que solo carguen cuando la tarjeta está en pantalla. El soporte ya está listo y probado: archivo en
-   assets/videos/ + su nombre en el campo `video` del servicio. MP4 720×960 (3:4), máximo 2,5 MB (ver README.md).
-   Los originales pesan ~100 MB: para recibirlos, exportarlos a 720p sin recortar (quedan <25 MB y se
-   pueden subir a GitHub) o subirlos como archivos de un "Release" de GitHub (acepta hasta 2 GB).
-2. Horarios de atención (CONFIG.horarios).
-3. Dominio: keratinasbyg.com (comprado en Netlify el 14-oct, US$14; servido desde GitHub Pages). Listos sitemap.xml, robots.txt, canónica e imagen
-   para compartir (assets/og.jpg). HTTPS activo y verificado
-   (14-oct). Falta: Google Search Console y poner el link en Instagram/Google/Facebook.
+1. Precio del Shampoo Hidratante (confirmar si es $45.000).
+2. Envíos: si hacen y a dónde, para ponerlo en la página.
+3. Google Search Console y poner el link en Instagram/Google/Facebook.
 
 ## Reglas
 - No inventar reseñas, precios, beneficios ni datos del negocio. Si falta algo, preguntar.

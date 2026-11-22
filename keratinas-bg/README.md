@@ -6,94 +6,40 @@ El contexto del negocio y lo pendiente está en `PROYECTO.md`.
 
 ```
 keratinas-bg/
-├── index.html          página principal: alisados, resultados, ubicación (CONFIG con textos y precios)
-├── productos/index.html catálogo de productos capilares (CATALOGO con productos, precios y kits)
+├── index.html          la página: catálogo de productos capilares (CATALOGO con productos, precios y kits)
+├── productos/          /productos/ solo redirige al inicio (enlace viejo, por si alguien lo tiene)
 ├── assets/
-│   ├── estilos.css     diseño compartido por las dos páginas
-│   ├── fotos/          foto de cada servicio, portada (hero) y local
-│   ├── productos/      fotos de los productos y kits (recortadas 4:5 y 1:1, .webp)
+│   ├── estilos.css     el diseño de la página
+│   ├── productos/      fotos de los productos y kits (.webp)
 │   ├── resenas/        fotos de antes y después de las reseñas de Google
 │   ├── logos/          logo completo y logo pequeño (también es el ícono de la pestaña)
-│   └── videos/         ← AQUÍ VAN LOS VIDEOS DE LOS SERVICIOS
-├── netlify.toml        configuración para publicar
-├── robots.txt
+│   ├── fotos/          blanca.webp (foto de Blanca con la línea B&G; hoy no se usa en la página)
+│   └── og.jpg          imagen que aparece al compartir el link (1200×630)
+├── netlify.toml        configuración vieja de Netlify (referencia; hoy se publica en GitHub Pages)
+├── robots.txt, sitemap.xml
 └── PROYECTO.md         contexto del cliente
 ```
 
-Todo lo editable está en el objeto `CONFIG`, al final de `index.html`, y en `CATALOGO`, al final de
-`productos/index.html`. Las reseñas están en los dos: si cambian, se cambian en ambos.
+Todo lo editable está en el objeto `CATALOGO`, al final de `index.html`: productos, presentaciones,
+precios, beneficios, kits, reseñas y mensajes de WhatsApp.
 
----
+## 1. Cambiar un producto o un precio
 
-## 1. Poner el video de un servicio
+En `CATALOGO`, cada producto es un bloque así:
 
-1. Prepara el video (ver la sección 2) y guárdalo en `assets/videos/`.
-   Nombre en minúsculas, sin espacios ni tildes: `liso-gloss.mp4`, no `Liso Glóss.MP4`.
-   Ojo: en internet las mayúsculas cuentan. `Tradicional.mp4` y `tradicional.mp4` son
-   archivos distintos.
-2. En `CONFIG`, busca el servicio y escribe el nombre completo en `video`:
-
-   ```js
-   { nombre:"Liso Gloss", foto:"lisogloss", video:"liso-gloss.mp4", ...
-   ```
-
-Eso es todo. Lo que pasa en la página:
-
-- La foto se sigue viendo hasta que el video empieza; entonces el video aparece encima
-  con un fundido suave.
-- Se reproduce solo, **sin sonido y en bucle**.
-- **Solo se descarga cuando la tarjeta está en pantalla** (al menos un tercio visible).
-  Si la clienta no baja hasta los alisados, no gasta datos en videos.
-- Se pausa cuando la tarjeta sale de la pantalla.
-- Si el celular tiene activado "ahorro de datos" o "reducir movimiento", se queda la foto.
-- Si el archivo no existe o falla, se queda la foto. La página nunca se ve rota.
-
-Para quitar un video, deja `video:""`.
-
----
-
-## 2. Cómo debe ser cada video
-
-| Qué | Valor |
-|---|---|
-| Formato | **MP4** (H.264). Funciona en iPhone, Android y en el navegador de Instagram |
-| Forma | **Vertical 3:4** (la forma del arco de la tarjeta). Un video 9:16 también funciona: la página recorta los bordes sola; deja el cabello en el centro |
-| Tamaño | **720 × 960 px** |
-| Duración | El video completo (unos 30 segundos). No hace falta recortarlo |
-| Sonido | Ninguno (quítale la pista de audio: pesa y no se usa) |
-| **Peso máximo** | **2,5 MB por video** de 30 s. Lo ideal: entre 1,5 y 2 MB |
-
-Por qué 2,5 MB: la mayoría de clientas llegan desde Instagram, con datos del celular.
-El video empieza a verse apenas llega el primer pedazo (no espera a bajar entero) y, como
-solo bajan los que están en pantalla, a la vez se descargan uno o dos como mucho.
-
-### Cómo comprimirlo sin saber programar
-
-**Opción A — CapCut (en el celular o el computador).** Seguramente ya lo usan para Instagram.
-
-1. Abre el video completo (no hace falta recortarlo).
-2. *Formato / Relación de aspecto* → **3:4**. Acomoda el cabello en el centro.
-3. Silencia el clip (ícono de volumen → apagado).
-4. *Exportar* → resolución **720p**, **30 fps**, tasa de bits **baja** o "recomendada".
-5. Mira el peso del archivo. Si pasa de 2,5 MB, expórtalo otra vez con tasa de bits más baja.
-
-**Opción B — HandBrake (gratis, Windows y Mac: handbrake.fr).** Para videos que ya están en forma vertical.
-
-1. Abre el video. *Preset*: **Fast 720p30**.
-2. Pestaña *Dimensiones*: ancho **720**.
-3. Pestaña *Video*: códec **H.264**, *Calidad constante* **RF 28** (si pesa más de 2,5 MB, sube a 30).
-4. Pestaña *Audio*: borra todas las pistas.
-5. Marca **Web Optimized** y dale *Iniciar*.
-
-**Opción C — Mándamelos** y los dejo listos. Como referencia técnica, este es el comando
-que se usa (ffmpeg); recorta al centro en 3:4, quita el audio, optimiza para web y
-no deja pasar un video de 30 s de unos 2,3 MB:
-
-```
-ffmpeg -i original.mp4 -vf "scale=720:960:force_original_aspect_ratio=increase,crop=720:960,fps=30" -c:v libx264 -preset slow -crf 28 -maxrate 600k -bufsize 1200k -profile:v high -pix_fmt yuv420p -an -movflags +faststart liso-gloss.mp4
+```js
+{ nombre:"Sérum Capilar", foto:"serum-capilar", presentacion:"30 mL", precio:"$35.000", ... }
 ```
 
----
+- `foto`: nombre de la foto en `assets/productos/`, sin el `.webp`. Las fotos van en 4:5 (800×1000);
+  las de los kits, cuadradas (800×800).
+- `precio:""` hace que la tarjeta diga "Consúltalo" (el precio se da por WhatsApp).
+- El botón "Pedir por WhatsApp" de cada producto abre el chat con el nombre y la presentación.
+
+## 2. Imagen al compartir
+
+`assets/og.jpg` es la tarjeta que se ve al mandar el link por WhatsApp, Instagram o Facebook.
+WhatsApp guarda la vista previa un tiempo: si se cambia, puede tardar en verse.
 
 ## 3. Dónde está publicada
 
