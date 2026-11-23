@@ -35,6 +35,8 @@ Kits:
 - index.html: catálogo completo. Orden: portada → Línea de alisado → Cuidado capilar → Kits →
   Resultados de nuestros alisados (3 reseñas reales de Google con antes/después) → Asesoría por WhatsApp
   (con "Punto de venta": Cra. 21A #12-19, La Aurora, Dosquebradas, el mismo Centro de Keratinas, y "Cómo llegar").
+- Todas las fotos se abren completas al tocarlas (visor con flechas, deslizar y Esc). Las de productos y
+  kits abren la versión sin recortar (assets/productos/*-full.webp, 1024×1024).
 - Cada producto y kit tiene botón "Pedir por WhatsApp" con su nombre. Botón flotante de asesoría al bajar.
 - /productos/ redirige al inicio (fue la dirección del catálogo unos días).
 - Fotos de productos recortadas de las piezas de la clienta, sin texto, en formato uniforme.

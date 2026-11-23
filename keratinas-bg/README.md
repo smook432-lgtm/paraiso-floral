@@ -34,6 +34,8 @@ En `CATALOGO`, cada producto es un bloque así:
 - `foto`: nombre de la foto en `assets/productos/`, sin el `.webp`. Las fotos van en 4:5 (800×1000);
   las de los kits, cuadradas (800×800).
 - `precio:""` hace que la tarjeta diga "Consúltalo" (el precio se da por WhatsApp).
+- Al tocar la foto se abre completa: se usa `assets/productos/<foto>-full.webp` (la foto sin recortar).
+  Si un producto nuevo no la tiene, el visor muestra la misma foto de la tarjeta.
 - El botón "Pedir por WhatsApp" de cada producto abre el chat con el nombre y la presentación.
 
 ## 2. Imagen al compartir
